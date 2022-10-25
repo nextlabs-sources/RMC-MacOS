@@ -1,0 +1,39 @@
+
+/* Class = "NSTextFieldCell"; title = "(optional)"; ObjectID = "4oE-Fr-EDs"; */
+"4oE-Fr-EDs.title" = "(optional)";
+
+/* Class = "NSTextFieldCell"; title = "New Project"; ObjectID = "64p-oR-BLV"; */
+"64p-oR-BLV.title" = "New Project";
+
+/* Class = "NSTextFieldCell"; title = "Invite members to the project"; ObjectID = "68U-VQ-PJl"; */
+"68U-VQ-PJl.title" = "Invite members to the project";
+
+/* Class = "NSTextFieldCell"; title = "Description"; ObjectID = "Ahb-5B-D6M"; */
+"Ahb-5B-D6M.title" = "Description";
+
+/* Class = "NSTextFieldCell"; title = "(optional)"; ObjectID = "CqE-xm-43c"; */
+"CqE-xm-43c.title" = "(optional)";
+
+/* Class = "NSButtonCell"; title = "Create Project"; ObjectID = "Nrf-Vo-YeX"; */
+"Nrf-Vo-YeX.title" = "Create Project";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Provide a name for your project"; ObjectID = "U9A-7m-Guv"; */
+"U9A-7m-Guv.placeholderString" = "Provide a name for your project";
+
+/* Class = "NSTextFieldCell"; title = "*"; ObjectID = "UlN-2Q-cE6"; */
+"UlN-2Q-cE6.title" = "*";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "h2l-lh-gdF"; */
+"h2l-lh-gdF.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "Name of the project"; ObjectID = "jKu-M2-0tS"; */
+"jKu-M2-0tS.title" = "Name of the project";
+
+/* Class = "NSTextFieldCell"; title = "Invitation message"; ObjectID = "lDe-I3-ccT"; */
+"lDe-I3-ccT.title" = "Invitation message";
+
+/* Class = "NSTextFieldCell"; title = "*"; ObjectID = "oGW-ca-lgm"; */
+"oGW-ca-lgm.title" = "*";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Give a brief description about the project.."; ObjectID = "qMh-cz-ckl"; */
+"qMh-cz-ckl.placeholderString" = "Give a brief description about the project..";

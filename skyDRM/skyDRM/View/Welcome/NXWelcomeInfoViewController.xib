@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXWelcomeInfoViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="firstLabel" destination="jG9-cw-UKH" id="Ejh-BT-cry"/>
+                <outlet property="imageView" destination="Wf4-Yf-bf2" id="mfg-Dx-tPD"/>
+                <outlet property="introLabel" destination="BKj-DT-hLc" id="MDA-an-XMg"/>
+                <outlet property="secondLabel" destination="jN1-v9-15q" id="X2H-GL-pJf"/>
+                <outlet property="thirdLabel" destination="ztW-GP-Zpw" id="5Su-GJ-H3c"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="750" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jG9-cw-UKH">
+                    <rect key="frame" x="368" y="251" width="384" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Share files securely using" id="myK-cL-m7h">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ztW-GP-Zpw">
+                    <rect key="frame" x="368" y="203" width="384" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="with anyone, anywhere!" id="cbX-Tv-GKZ">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wf4-Yf-bf2">
+                    <rect key="frame" x="200" y="125" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="XSO-pO-ztS"/>
+                        <constraint firstAttribute="width" constant="150" id="pIb-xL-a5e"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="welcome_share" id="0xv-8L-9HP"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jN1-v9-15q">
+                    <rect key="frame" x="368" y="225" width="384" height="23"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="digital rights" id="WQk-tk-mv0">
+                        <font key="font" size="16" name="CourierNewPS-BoldItalicMT"/>
+                        <color key="textColor" red="0.43030044439999998" green="0.71523720030000004" blue="0.33786523340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="BKj-DT-hLc">
+                    <rect key="frame" x="368" y="118" width="347" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="6Wc-wb-LR6"/>
+                        <constraint firstAttribute="width" constant="343" id="gSV-RA-jpm"/>
+                    </constraints>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Your file is always persistently protected regardless of where it goes an who has it." id="sWn-m0-ie1">
+                        <font key="font" metaFont="systemMedium" size="13"/>
+                        <color key="textColor" name="knobColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ztW-GP-Zpw" firstAttribute="trailing" secondItem="jG9-cw-UKH" secondAttribute="trailing" id="8L4-K8-ZKO"/>
+                <constraint firstAttribute="trailing" secondItem="jG9-cw-UKH" secondAttribute="trailing" id="9eH-yR-QOT"/>
+                <constraint firstItem="jG9-cw-UKH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="30" id="ArN-3X-hEh"/>
+                <constraint firstItem="BKj-DT-hLc" firstAttribute="top" secondItem="ztW-GP-Zpw" secondAttribute="bottom" constant="30" id="QxG-Df-8Tc"/>
+                <constraint firstItem="ztW-GP-Zpw" firstAttribute="top" secondItem="jN1-v9-15q" secondAttribute="bottom" constant="3" id="YLU-kK-Wf7"/>
+                <constraint firstItem="BKj-DT-hLc" firstAttribute="leading" secondItem="jG9-cw-UKH" secondAttribute="leading" id="cs0-co-l8V"/>
+                <constraint firstItem="jG9-cw-UKH" firstAttribute="leading" secondItem="Wf4-Yf-bf2" secondAttribute="trailing" constant="20" id="dcn-vE-6PU"/>
+                <constraint firstItem="jN1-v9-15q" firstAttribute="leading" secondItem="jG9-cw-UKH" secondAttribute="leading" id="hHh-RV-hh1"/>
+                <constraint firstItem="Wf4-Yf-bf2" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="25" id="oqY-Kl-sf3"/>
+                <constraint firstItem="ztW-GP-Zpw" firstAttribute="leading" secondItem="jG9-cw-UKH" secondAttribute="leading" id="ppA-Px-lKe"/>
+                <constraint firstItem="jN1-v9-15q" firstAttribute="top" secondItem="jG9-cw-UKH" secondAttribute="bottom" constant="3" id="ukF-fP-vJN"/>
+                <constraint firstItem="jN1-v9-15q" firstAttribute="trailing" secondItem="jG9-cw-UKH" secondAttribute="trailing" id="zkV-g9-XER"/>
+                <constraint firstItem="Wf4-Yf-bf2" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="200" id="zyY-wg-r6R"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="welcome_share" width="234" height="234"/>
+    </resources>
+</document>

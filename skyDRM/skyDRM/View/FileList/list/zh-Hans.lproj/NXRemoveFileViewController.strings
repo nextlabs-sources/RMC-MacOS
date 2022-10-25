@@ -1,0 +1,18 @@
+
+/* Class = "NSButtonCell"; title = "Delete"; ObjectID = "Nfb-lh-91L"; */
+"Nfb-lh-91L.title" = "Delete";
+
+/* Class = "NSTextFieldCell"; title = "Size:"; ObjectID = "QfQ-HF-dmM"; */
+"QfQ-HF-dmM.title" = "Size:";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "hhF-Lw-uYA"; */
+"hhF-Lw-uYA.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "Are you sure you want to Remove this file from SkyDRM Local?"; ObjectID = "pvu-bd-ARt"; */
+"pvu-bd-ARt.title" = "Are you sure you want to Remove this file from SkyDRM Local?";
+
+/* Class = "NSTextFieldCell"; title = "Date modified:"; ObjectID = "y2l-S3-phC"; */
+"y2l-S3-phC.title" = "Date modified:";
+
+/* Class = "NSTextFieldCell"; title = "Name"; ObjectID = "yU3-FN-dyJ"; */
+"yU3-FN-dyJ.title" = "Name";

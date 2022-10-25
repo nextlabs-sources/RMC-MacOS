@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXLocalFileInfoActionViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="protectBtn" destination="aCx-ME-Mbg" id="guc-dX-cVG"/>
+                <outlet property="shareBtn" destination="qVN-CQ-0Rs" id="alF-vX-hrm"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mS0-eT-gNv">
+                    <rect key="frame" x="166" y="120" width="148" height="32"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-ME-Mbg">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="TRM-BI-HtT"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="Protect" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Bn0-aN-XBM">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system" size="15"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="protectClick:" target="-2" id="kmg-u0-Sab"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qVN-CQ-0Rs">
+                            <rect key="frame" x="78" y="0.0" width="70" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="2Rd-E9-s3m"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="Share" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="6ne-xD-GUM">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system" size="15"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="shareClick:" target="-2" id="7Ca-ig-ZPv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mS0-eT-gNv" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="4Ez-RI-n0p"/>
+                <constraint firstItem="mS0-eT-gNv" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="Vh1-vg-DUQ"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

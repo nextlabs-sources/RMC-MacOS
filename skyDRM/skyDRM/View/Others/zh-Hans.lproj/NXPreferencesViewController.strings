@@ -1,0 +1,30 @@
+
+/* Class = "NSTextFieldCell"; title = "Preferences"; ObjectID = "1hp-DP-2nd"; */
+"1hp-DP-2nd.title" = "偏好";
+
+/* Class = "NSTextFieldCell"; title = "at"; ObjectID = "Bus-zf-sOz"; */
+"Bus-zf-sOz.title" = "在";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "EuF-bP-FP6"; */
+"EuF-bP-FP6.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Set the schedule for automatic upload"; ObjectID = "WMY-uY-sxX"; */
+"WMY-uY-sxX.title" = "设置自动上传时间表";
+
+/* Class = "NSButtonCell"; title = "Leave a local offline copy after uploading new protected file"; ObjectID = "YUV-7r-UCM"; */
+"YUV-7r-UCM.title" = "保留本地文件拷贝";
+
+/* Class = "NSTextFieldCell"; title = "Frequency and Time"; ObjectID = "dYg-JX-l9P"; */
+"dYg-JX-l9P.title" = "频率与时间";
+
+/* Class = "NSButtonCell"; title = "Enable automatic upload"; ObjectID = "g43-LL-nIc"; */
+"g43-LL-nIc.title" = "自动上传";
+
+/* Class = "NSButtonCell"; title = "Start SkyDRM on windows login"; ObjectID = "hvk-qd-ejA"; */
+"hvk-qd-ejA.title" = "系统启动自动运行程序";
+
+/* Class = "NSTextFieldCell"; title = "Preference settings for SkyDRM local mode"; ObjectID = "qmo-oC-YQy"; */
+"qmo-oC-YQy.title" = "偏好设置";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "xd6-gk-LJS"; */
+"xd6-gk-LJS.title" = "保存";

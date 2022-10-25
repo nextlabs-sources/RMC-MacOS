@@ -1,0 +1,9 @@
+
+/* Class = "NSTextFieldCell"; title = "You dont't seem to have an active internet connection. Please check your connection and try again."; ObjectID = "JX6-lR-fDR"; */
+"JX6-lR-fDR.title" = "You dont't seem to have an active internet connection. Please check your connection and try again.";
+
+/* Class = "NSButtonCell"; title = "Close"; ObjectID = "Xgc-EM-3qQ"; */
+"Xgc-EM-3qQ.title" = "Close";
+
+/* Class = "NSTextFieldCell"; title = "Check your connection!!!"; ObjectID = "loR-Cv-bkb"; */
+"loR-Cv-bkb.title" = "Check your connection!!!";

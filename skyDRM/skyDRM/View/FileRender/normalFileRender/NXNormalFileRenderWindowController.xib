@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXNormalFileRenderWindowController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="printItem" destination="kme-Mg-yho" id="dLJ-rQ-f03"/>
+                <outlet property="propertyItem" destination="qmY-gI-qXP" id="w1N-Sj-1lX"/>
+                <outlet property="shareItem" destination="ldN-n7-PBm" id="Tj9-us-i1b"/>
+                <outlet property="targetVC" destination="Izg-fe-wcA" id="Dcg-Ve-ozV"/>
+                <outlet property="toolbar" destination="sF0-cu-w9a" id="Weu-mR-A64"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" tabbingMode="disallowed" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="824" height="481"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <value key="minSize" type="size" width="500" height="481"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="824" height="481"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="8A0BD8D4-623B-4172-B20D-B72A81E21649" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="sF0-cu-w9a">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="JmG-wG-aU8"/>
+                    <toolbarItem implicitItemIdentifier="BDD19F95-AB63-4E86-B188-3A67BD094BB1" label="" paletteLabel="" image="printmenu" selectable="YES" id="kme-Mg-yho">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="ocr-Bf-TgD">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="printmenu" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="qfy-gD-itl">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onPrintClick:" target="-2" id="a48-sX-Qkz"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="3EA10117-95E2-4FAC-BEBE-03174604803E" label="" paletteLabel="" image="shareinmenu" selectable="YES" id="ldN-n7-PBm">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="amJ-8e-h6o">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="shareinmenu" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="BtA-JC-9zc">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onShareClick:" target="-2" id="7fB-Vw-e5M"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="CFCD5AF2-DB1A-4FF6-8A61-0C22A2AE8ADE" label="" paletteLabel="" image="fileinfomenu" selectable="YES" id="qmY-gI-qXP">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="32"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="Lgc-Ks-5IE">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="fileinfomenu" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="ERI-Zc-4ua">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onPropertyClick:" target="-2" id="ZcN-4D-UyX"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="JmG-wG-aU8"/>
+                    <toolbarItem reference="kme-Mg-yho"/>
+                    <toolbarItem reference="ldN-n7-PBm"/>
+                    <toolbarItem reference="qmY-gI-qXP"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-113" y="244"/>
+        </window>
+        <viewController id="Izg-fe-wcA">
+            <connections>
+                <outlet property="view" destination="se5-gp-TjO" id="CwJ-e8-gnC"/>
+            </connections>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="fileinfomenu" width="24" height="21"/>
+        <image name="printmenu" width="24" height="25"/>
+        <image name="shareinmenu" width="24" height="25"/>
+    </resources>
+</document>

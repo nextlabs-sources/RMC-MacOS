@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="disconnectRepoView" id="c22-O7-iKe" customClass="NXDisconnectRepoView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rbr-38-Wog">
+                    <rect key="frame" x="132" y="101" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="bR7-E6-Uql"/>
+                        <constraint firstAttribute="width" constant="80" id="f7k-aA-2PK"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="sUl-nw-mg2"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7WE-4l-7HD" userLabel="AliasLabel">
+                    <rect key="frame" x="36" y="70" width="200" height="19"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="tLT-a8-oMZ">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I9g-Mg-O7X" userLabel="AccountLabel">
+                    <rect key="frame" x="250" y="164" width="37" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="Label" id="NNB-BW-9QD">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W8D-xE-yJl" userLabel="TypeLabel">
+                    <rect key="frame" x="250" y="137" width="37" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="QNn-d6-EV1">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wdm-M8-MUb">
+                    <rect key="frame" x="80" y="221" width="203" height="27"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Manage Repository" id="dRO-nb-Cxt">
+                        <font key="font" metaFont="systemSemibold" size="22"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FfP-XE-2Np">
+                    <rect key="frame" x="40" y="218" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="iwI-B9-BNz"/>
+                        <constraint firstAttribute="height" constant="32" id="mqM-Kc-gEC"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="back" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="smX-iP-ua4">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onGoback:" target="c22-O7-iKe" id="suz-z9-uzn"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6p4-IT-CJT" userLabel="DisconnectButton">
+                    <rect key="frame" x="252" y="70" width="150" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="R1Z-PQ-fDU"/>
+                        <constraint firstAttribute="width" constant="150" id="dFt-6f-g3C"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="afY-YE-fBV">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="20"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onDisconnect:" target="c22-O7-iKe" id="5MU-0G-mEf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Rbr-38-Wog" firstAttribute="leading" secondItem="Wdm-M8-MUb" secondAttribute="leading" constant="50" id="5RA-iF-MGN"/>
+                <constraint firstItem="FfP-XE-2Np" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="40" id="Sa1-oa-W4L"/>
+                <constraint firstItem="6p4-IT-CJT" firstAttribute="leading" secondItem="7WE-4l-7HD" secondAttribute="trailing" constant="18" id="T3h-ZH-HDK"/>
+                <constraint firstItem="7WE-4l-7HD" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="38" id="Wrf-qC-fbq"/>
+                <constraint firstItem="W8D-xE-yJl" firstAttribute="top" secondItem="I9g-Mg-O7X" secondAttribute="bottom" constant="10" id="ZaO-Oo-Wkg"/>
+                <constraint firstItem="W8D-xE-yJl" firstAttribute="leading" secondItem="I9g-Mg-O7X" secondAttribute="leading" id="cdN-Z0-4eS"/>
+                <constraint firstItem="6p4-IT-CJT" firstAttribute="leading" secondItem="W8D-xE-yJl" secondAttribute="leading" id="i7h-fx-9so"/>
+                <constraint firstItem="6p4-IT-CJT" firstAttribute="bottom" secondItem="7WE-4l-7HD" secondAttribute="bottom" id="ihf-s1-kOF"/>
+                <constraint firstItem="I9g-Mg-O7X" firstAttribute="top" secondItem="Rbr-38-Wog" secondAttribute="top" id="lgG-qP-N7U"/>
+                <constraint firstAttribute="bottom" secondItem="7WE-4l-7HD" secondAttribute="bottom" constant="70" id="mPF-a7-fQl"/>
+                <constraint firstItem="Rbr-38-Wog" firstAttribute="top" secondItem="Wdm-M8-MUb" secondAttribute="bottom" constant="40" id="nBo-l5-vJ2"/>
+                <constraint firstItem="Wdm-M8-MUb" firstAttribute="leading" secondItem="FfP-XE-2Np" secondAttribute="trailing" constant="10" id="nQk-FB-xUK"/>
+                <constraint firstItem="I9g-Mg-O7X" firstAttribute="leading" secondItem="Rbr-38-Wog" secondAttribute="trailing" constant="40" id="puB-cr-nvi"/>
+                <constraint firstItem="FfP-XE-2Np" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="50" id="qGy-mb-0tT"/>
+                <constraint firstItem="Wdm-M8-MUb" firstAttribute="centerY" secondItem="FfP-XE-2Np" secondAttribute="centerY" id="qRo-0I-ouM"/>
+            </constraints>
+            <connections>
+                <outlet property="accountLabel" destination="I9g-Mg-O7X" id="M5a-Qo-JTk"/>
+                <outlet property="aliasLabel" destination="7WE-4l-7HD" id="9Ng-Iz-JGf"/>
+                <outlet property="disconnectBtn" destination="6p4-IT-CJT" id="oAn-mm-iNC"/>
+                <outlet property="image" destination="Rbr-38-Wog" id="wVI-S3-rtw"/>
+                <outlet property="titleLabel" destination="Wdm-M8-MUb" id="bsc-05-b0f"/>
+                <outlet property="typeLabel" destination="W8D-xE-yJl" id="Dgf-iJ-H2s"/>
+            </connections>
+        </customView>
+    </objects>
+    <resources>
+        <image name="back" width="52" height="52"/>
+    </resources>
+</document>

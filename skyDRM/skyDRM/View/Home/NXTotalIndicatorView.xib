@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="totalIndicatorView" id="c22-O7-iKe" customClass="NXTotalIndicatorView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gU7-cx-Aei">
+                    <rect key="frame" x="99" y="93" width="112" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MySpace Storage" id="Yor-up-y3y">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="l1I-QR-a5g" userLabel="UsedLabel">
+                    <rect key="frame" x="23" y="36" width="4" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="1zf-wt-gWR">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hai-8B-zwy">
+                    <rect key="frame" x="23" y="63" width="264" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="gGS-GG-skN"/>
+                        <constraint firstAttribute="height" constant="10" id="t8c-tW-0HW"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="XGT-LI-QcD">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rft-Ku-VOg">
+                    <rect key="frame" x="283" y="36" width="4" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="lIN-vT-qYA">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Hai-8B-zwy" firstAttribute="centerX" secondItem="gU7-cx-Aei" secondAttribute="centerX" id="0QP-sg-vjo"/>
+                <constraint firstItem="gU7-cx-Aei" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="URx-Rs-ZNN"/>
+                <constraint firstItem="Hai-8B-zwy" firstAttribute="top" secondItem="gU7-cx-Aei" secondAttribute="bottom" constant="20" id="Y6V-Ie-hDe"/>
+                <constraint firstItem="l1I-QR-a5g" firstAttribute="top" secondItem="gU7-cx-Aei" secondAttribute="bottom" constant="40" id="cx9-uu-7vo"/>
+                <constraint firstItem="gU7-cx-Aei" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="15" id="d6K-Wh-CPb"/>
+                <constraint firstItem="Rft-Ku-VOg" firstAttribute="top" secondItem="l1I-QR-a5g" secondAttribute="top" id="ljL-Bh-8vD"/>
+                <constraint firstItem="l1I-QR-a5g" firstAttribute="leading" secondItem="Hai-8B-zwy" secondAttribute="leading" id="mmJ-JC-Rrs"/>
+                <constraint firstItem="Rft-Ku-VOg" firstAttribute="trailing" secondItem="Hai-8B-zwy" secondAttribute="trailing" id="pco-KX-QVW"/>
+                <constraint firstItem="Rft-Ku-VOg" firstAttribute="bottom" secondItem="l1I-QR-a5g" secondAttribute="bottom" id="wkQ-PP-mAv"/>
+            </constraints>
+            <connections>
+                <outlet property="freeLabel" destination="Rft-Ku-VOg" id="9xs-Tg-ifh"/>
+                <outlet property="indicatorRangeLabel" destination="Hai-8B-zwy" id="ZxB-xm-OWn"/>
+                <outlet property="storageLabel" destination="gU7-cx-Aei" id="yLU-qs-HJj"/>
+                <outlet property="usedLabel" destination="l1I-QR-a5g" id="4nh-Su-2rR"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

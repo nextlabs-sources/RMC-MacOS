@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="NXSpecificProjectHomeView" id="c22-O7-iKe" customClass="NXSpecificProjectHomeView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1081" height="856"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FgM-wd-Hrb">
+                    <rect key="frame" x="52" y="55" width="977" height="773"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="eat-HC-w3R">
+                    <rect key="frame" x="574" y="80" width="407" height="576"/>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="CuN-4v-A1S">
+                    <rect key="frame" x="100" y="684" width="881" height="122"/>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="xFp-M0-w5L">
+                    <rect key="frame" x="100" y="80" width="407" height="576"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eat-HC-w3R" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="200" id="1Ge-Y9-gi8"/>
+                <constraint firstItem="CuN-4v-A1S" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="50" id="2Fx-Zs-cSQ"/>
+                <constraint firstItem="xFp-M0-w5L" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="200" id="5Df-6T-bck"/>
+                <constraint firstItem="eat-HC-w3R" firstAttribute="leading" secondItem="xFp-M0-w5L" secondAttribute="trailing" constant="67" id="ACU-JG-9qs"/>
+                <constraint firstItem="eat-HC-w3R" firstAttribute="width" secondItem="xFp-M0-w5L" secondAttribute="width" id="EjG-zd-TdK"/>
+                <constraint firstAttribute="bottom" secondItem="xFp-M0-w5L" secondAttribute="bottom" constant="80" id="SVw-TQ-9l2"/>
+                <constraint firstItem="xFp-M0-w5L" firstAttribute="top" secondItem="CuN-4v-A1S" secondAttribute="bottom" constant="28" id="jUa-GJ-OmA"/>
+                <constraint firstItem="CuN-4v-A1S" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="100" id="pag-T6-FI7"/>
+                <constraint firstItem="xFp-M0-w5L" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="100" id="r0w-TW-2ol"/>
+                <constraint firstAttribute="trailing" secondItem="CuN-4v-A1S" secondAttribute="trailing" constant="100" id="rw9-nc-Do5"/>
+                <constraint firstAttribute="trailing" secondItem="eat-HC-w3R" secondAttribute="trailing" constant="100" id="vse-YI-PQ4"/>
+                <constraint firstAttribute="bottom" secondItem="eat-HC-w3R" secondAttribute="bottom" constant="80" id="w03-YL-txa"/>
+            </constraints>
+            <connections>
+                <outlet property="border" destination="FgM-wd-Hrb" id="w81-Rc-h9h"/>
+                <outlet property="descriptionView" destination="CuN-4v-A1S" id="ab8-Qp-hqB"/>
+                <outlet property="peopleView" destination="eat-HC-w3R" id="FdC-0o-xpv"/>
+                <outlet property="recentFilesView" destination="xFp-M0-w5L" id="OGp-Bv-AWr"/>
+            </connections>
+            <point key="canvasLocation" x="-123.5" y="526"/>
+        </customView>
+    </objects>
+</document>

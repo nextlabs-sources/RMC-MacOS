@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="fileShareCommentsView" id="c22-O7-iKe" customClass="NXFileShareCommentsView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="618" height="272"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="Vyi-Y4-7Jl">
+                    <rect key="frame" x="6" y="240" width="84" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Comment" id="7yU-pY-8FD">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="l9m-H4-p0g">
+                    <rect key="frame" x="89" y="240" width="101" height="23"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="(optional)" id="VBw-YT-mE4">
+                        <font key="font" size="16" name="CourierNewPS-ItalicMT"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="4xW-AZ-JLd">
+                    <rect key="frame" x="8" y="5" width="600" height="227"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Vyi-Y4-7Jl" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="8" id="IVV-tW-uMx"/>
+                <constraint firstAttribute="bottom" secondItem="4xW-AZ-JLd" secondAttribute="bottom" constant="5" id="MlZ-Fg-IhU"/>
+                <constraint firstItem="Vyi-Y4-7Jl" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="10" id="Pqe-kc-lnF"/>
+                <constraint firstItem="4xW-AZ-JLd" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="8" id="b8R-HG-cUr"/>
+                <constraint firstAttribute="trailing" secondItem="4xW-AZ-JLd" secondAttribute="trailing" constant="10" id="eDX-qm-Srx"/>
+                <constraint firstItem="l9m-H4-p0g" firstAttribute="centerY" secondItem="Vyi-Y4-7Jl" secondAttribute="centerY" id="pb7-2W-2VK"/>
+                <constraint firstItem="4xW-AZ-JLd" firstAttribute="top" secondItem="Vyi-Y4-7Jl" secondAttribute="bottom" constant="8" id="prT-LV-FOw"/>
+                <constraint firstItem="l9m-H4-p0g" firstAttribute="leading" secondItem="Vyi-Y4-7Jl" secondAttribute="trailing" constant="3" id="uve-PJ-gRX"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="4xW-AZ-JLd" id="JA1-hk-KWl"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

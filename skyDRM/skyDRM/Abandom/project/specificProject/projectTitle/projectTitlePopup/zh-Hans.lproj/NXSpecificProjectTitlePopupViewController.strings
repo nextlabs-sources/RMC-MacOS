@@ -1,0 +1,9 @@
+
+/* Class = "NSButtonCell"; title = "Close"; ObjectID = "MEC-Rn-x4w"; */
+"MEC-Rn-x4w.title" = "关闭";
+
+/* Class = "NSTextFieldCell"; title = "Switch to other projects"; ObjectID = "jcc-xL-aIy"; */
+"jcc-xL-aIy.title" = "切换到其他工程";
+
+/* Class = "NSTextFieldCell"; title = "There are no projects"; ObjectID = "wfn-D7-DXo"; */
+"wfn-D7-DXo.title" = "当前无工程";

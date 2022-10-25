@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXResultTagViewItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="labelsLabel" destination="Ojp-mZ-5Bo" id="n6x-CD-6Ts"/>
+                <outlet property="tagLabel" destination="Vvs-ii-VOM" id="csb-b9-h38"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="NXResultTagViewItem" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="640" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-ii-VOM">
+                    <rect key="frame" x="6" y="3" width="33" height="19"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="Itar:" id="lva-hi-TSY">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="252" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ojp-mZ-5Bo">
+                    <rect key="frame" x="42" y="4" width="527" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="523" id="vT4-VS-BFM"/>
+                    </constraints>
+                    <textFieldCell key="cell" truncatesLastVisibleLine="YES" enabled="NO" alignment="left" title="Label" id="JZ6-Bg-Qyq">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" red="0.28231829404830933" green="0.28237283229827881" blue="0.28231483697891235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Ojp-mZ-5Bo" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="7" id="Kkc-7V-nfV"/>
+                <constraint firstItem="Vvs-ii-VOM" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="Mo0-bf-ZCc"/>
+                <constraint firstItem="Vvs-ii-VOM" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="7" id="ThQ-wY-inq"/>
+                <constraint firstItem="Ojp-mZ-5Bo" firstAttribute="leading" secondItem="Vvs-ii-VOM" secondAttribute="trailing" constant="7" id="UpP-tB-D8T"/>
+                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Ojp-mZ-5Bo" secondAttribute="trailing" constant="556" id="VUf-73-mXa"/>
+                <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Ojp-mZ-5Bo" secondAttribute="bottom" constant="6" id="c2t-Y9-vWH"/>
+            </constraints>
+            <point key="canvasLocation" x="-3" y="153"/>
+        </customView>
+    </objects>
+</document>

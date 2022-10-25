@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXExpiryEditVC" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="absoluteRadio" destination="2u4-lZ-zBX" id="NxI-hX-giI"/>
+                <outlet property="cancelBtn" destination="6Uh-ij-fkh" id="DYq-tQ-vHx"/>
+                <outlet property="contentView" destination="NHS-gO-lL8" id="HrQ-Ck-Unm"/>
+                <outlet property="neverRadio" destination="Od2-pa-JIH" id="wN2-Tg-Qzu"/>
+                <outlet property="rangeRadio" destination="Lnz-bt-pGi" id="KrV-4M-jIH"/>
+                <outlet property="relativeRadio" destination="57L-1s-7RJ" id="U0J-Xw-5We"/>
+                <outlet property="selectBtn" destination="QjK-DM-rx0" id="Bh6-Se-7cN"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="650" height="360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y0S-Z0-xXN">
+                    <rect key="frame" x="231" y="15" width="188" height="30"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Uh-ij-fkh">
+                            <rect key="frame" x="-2" y="-3" width="94" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="6Uh-ij-fkh" secondAttribute="height" multiplier="3:1" id="aLl-8Y-iMw"/>
+                                <constraint firstAttribute="height" constant="30" id="w7N-rC-gLm"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="Cancel" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Di1-1J-BNL">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onCancel:" target="-2" id="RaJ-wq-c3A"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QjK-DM-rx0">
+                            <rect key="frame" x="98" y="0.0" width="90" height="30"/>
+                            <buttonCell key="cell" type="bevel" title="Select" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="NDM-Ov-yNy">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onSelecte:" target="-2" id="4FR-D7-KJL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="QjK-DM-rx0" firstAttribute="height" secondItem="6Uh-ij-fkh" secondAttribute="height" id="Qj6-Wi-lxe"/>
+                        <constraint firstItem="QjK-DM-rx0" firstAttribute="width" secondItem="6Uh-ij-fkh" secondAttribute="width" id="aDk-Nx-xr6"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <button tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="Od2-pa-JIH">
+                    <rect key="frame" x="59" y="308" width="99" height="18"/>
+                    <buttonCell key="cell" type="radio" title="Never expire" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="Bjt-in-fdD">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onRadioClick:" target="-2" id="Kp2-ZC-Rz4"/>
+                    </connections>
+                </button>
+                <button tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="57L-1s-7RJ">
+                    <rect key="frame" x="175" y="308" width="70" height="18"/>
+                    <buttonCell key="cell" type="radio" title="Relative" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="vZH-SH-gRm">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onRadioClick:" target="-2" id="CTs-rT-fB4"/>
+                    </connections>
+                </button>
+                <button tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="2u4-lZ-zBX">
+                    <rect key="frame" x="262" y="308" width="107" height="18"/>
+                    <buttonCell key="cell" type="radio" title="Absolute date" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="lZR-CH-7fD">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onRadioClick:" target="-2" id="T1s-hX-OAa"/>
+                    </connections>
+                </button>
+                <button tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="Lnz-bt-pGi">
+                    <rect key="frame" x="386" y="308" width="89" height="18"/>
+                    <buttonCell key="cell" type="radio" title="Date range" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="XhU-rK-gdq">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onRadioClick:" target="-2" id="Rfb-lu-74q"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="NHS-gO-lL8">
+                    <rect key="frame" x="60" y="53" width="590" height="236"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="236" id="kG1-Zz-r9j"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Od2-pa-JIH" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="60" id="6qk-iw-GyP"/>
+                <constraint firstItem="NHS-gO-lL8" firstAttribute="top" secondItem="Od2-pa-JIH" secondAttribute="bottom" constant="20" id="87j-mO-tEx"/>
+                <constraint firstItem="Y0S-Z0-xXN" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="A0g-xl-yAq"/>
+                <constraint firstItem="Lnz-bt-pGi" firstAttribute="centerY" secondItem="2u4-lZ-zBX" secondAttribute="centerY" id="Fza-Mf-paB"/>
+                <constraint firstItem="57L-1s-7RJ" firstAttribute="leading" secondItem="Od2-pa-JIH" secondAttribute="trailing" constant="20" id="NjH-Qb-IJk"/>
+                <constraint firstItem="57L-1s-7RJ" firstAttribute="centerY" secondItem="Od2-pa-JIH" secondAttribute="centerY" id="aeg-5m-e8O"/>
+                <constraint firstAttribute="bottom" secondItem="Y0S-Z0-xXN" secondAttribute="bottom" constant="15" id="amV-FE-Rih"/>
+                <constraint firstItem="NHS-gO-lL8" firstAttribute="leading" secondItem="Od2-pa-JIH" secondAttribute="leading" id="bNe-Wq-w0e"/>
+                <constraint firstItem="Od2-pa-JIH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="35" id="fPm-bR-8qR"/>
+                <constraint firstItem="2u4-lZ-zBX" firstAttribute="centerY" secondItem="57L-1s-7RJ" secondAttribute="centerY" id="gaf-pn-0Gd"/>
+                <constraint firstAttribute="trailing" secondItem="NHS-gO-lL8" secondAttribute="trailing" id="nhm-6G-bH9"/>
+                <constraint firstItem="Lnz-bt-pGi" firstAttribute="leading" secondItem="2u4-lZ-zBX" secondAttribute="trailing" constant="20" id="tIN-bv-ak0"/>
+                <constraint firstItem="2u4-lZ-zBX" firstAttribute="leading" secondItem="57L-1s-7RJ" secondAttribute="trailing" constant="20" id="xpK-LZ-sZr"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="accountLogoutView" id="c22-O7-iKe" customClass="NXAccountLogoutView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EIS-ud-v1R">
+                    <rect key="frame" x="198" y="60" width="154" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="nMM-Ej-huE"/>
+                        <constraint firstAttribute="width" constant="154" id="sMX-FP-pFU"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Log out" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="zxd-JF-Mge">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="20"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onLogout:" target="c22-O7-iKe" id="D4w-Oy-eVr"/>
+                        <outlet property="nextKeyView" destination="HMo-yB-jNi" id="kaQ-1z-BMv"/>
+                    </connections>
+                </button>
+                <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="15" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ueI-FQ-a12">
+                    <rect key="frame" x="114" y="224" width="323" height="44"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HMo-yB-jNi">
+                            <rect key="frame" x="-2" y="-3" width="158" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="154" id="5We-y1-doL"/>
+                                <constraint firstAttribute="height" constant="44" id="r16-m3-oo3"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="Change Password" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sWU-Ys-T4r">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="14"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onChangePassword:" target="c22-O7-iKe" id="bTx-SU-JOn"/>
+                                <outlet property="nextKeyView" destination="yU1-fG-fY6" id="Anh-Na-QMh"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yU1-fG-fY6">
+                            <rect key="frame" x="167" y="-3" width="158" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="154" id="6TX-Lb-zsE"/>
+                                <constraint firstAttribute="height" constant="44" id="tYb-eM-Nk1"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="Manage Profile" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M1B-cF-fUS">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="14"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onManageProfile:" target="c22-O7-iKe" id="Td3-uo-0CV"/>
+                                <outlet property="nextKeyView" destination="EIS-ud-v1R" id="SEg-Le-6Gj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="323" id="51D-Yk-lyk"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DHm-ky-3xu" userLabel="EmailLabel">
+                    <rect key="frame" x="273" y="278" width="4" height="24"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="90x-xg-0Sr">
+                        <font key="font" metaFont="system" size="20"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fxc-z7-B0g" userLabel="Change Photo Button">
+                    <rect key="frame" x="273" y="352" width="4" height="15"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="bhg-CZ-xxP">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="14"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onChangePhoto:" target="c22-O7-iKe" id="CPp-4k-UYP"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uqp-4G-1oL">
+                    <rect key="frame" x="480" y="530" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Mg6-O6-IyL"/>
+                        <constraint firstAttribute="height" constant="20" id="Xp4-7F-qEu"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="Close" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="aFG-Ae-Yo1">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onClose:" target="c22-O7-iKe" id="uJH-U5-Ykk"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="uOl-ra-iCY" customClass="NXCircleText" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="215" y="383" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="jZ9-pV-djE"/>
+                        <constraint firstAttribute="width" secondItem="uOl-ra-iCY" secondAttribute="height" id="wop-Nw-W9y"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="uOl-ra-iCY" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="2mR-MM-Emq"/>
+                <constraint firstItem="DHm-ky-3xu" firstAttribute="top" secondItem="fxc-z7-B0g" secondAttribute="bottom" constant="50" id="5fo-rf-RDc"/>
+                <constraint firstAttribute="bottom" secondItem="EIS-ud-v1R" secondAttribute="bottom" constant="60" id="J4J-Hr-ZUY"/>
+                <constraint firstItem="ueI-FQ-a12" firstAttribute="centerX" secondItem="DHm-ky-3xu" secondAttribute="centerX" id="JWm-hC-ASV"/>
+                <constraint firstItem="EIS-ud-v1R" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="P30-XD-VP5"/>
+                <constraint firstItem="DHm-ky-3xu" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Rv8-WR-8Lg"/>
+                <constraint firstItem="uqp-4G-1oL" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="50" id="Th0-9W-0O5"/>
+                <constraint firstItem="EIS-ud-v1R" firstAttribute="top" secondItem="ueI-FQ-a12" secondAttribute="bottom" constant="120" id="WHD-wD-pQI"/>
+                <constraint firstAttribute="trailing" secondItem="uqp-4G-1oL" secondAttribute="trailing" constant="50" id="Zii-Lj-MOq"/>
+                <constraint firstItem="fxc-z7-B0g" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="baB-xL-6Y2"/>
+                <constraint firstItem="fxc-z7-B0g" firstAttribute="top" secondItem="uOl-ra-iCY" secondAttribute="bottom" constant="16" id="dSx-zU-Aai"/>
+                <constraint firstItem="ueI-FQ-a12" firstAttribute="top" secondItem="DHm-ky-3xu" secondAttribute="bottom" constant="10" id="nKh-Io-BSG"/>
+            </constraints>
+            <connections>
+                <outlet property="avaterView" destination="uOl-ra-iCY" id="QUj-YP-x4G"/>
+                <outlet property="btnStackView" destination="ueI-FQ-a12" id="TDC-Su-E2b"/>
+                <outlet property="changePhotoBtn" destination="fxc-z7-B0g" id="fl6-Ru-LLh"/>
+                <outlet property="changePwdBtn" destination="HMo-yB-jNi" id="LSz-tD-mmC"/>
+                <outlet property="emailLabel" destination="DHm-ky-3xu" id="hQA-2c-KRe"/>
+                <outlet property="logoutBtn" destination="EIS-ud-v1R" id="VG8-19-vwz"/>
+                <outlet property="manageBtn" destination="yU1-fG-fY6" id="a9P-lh-HCZ"/>
+            </connections>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Close" width="32" height="33"/>
+    </resources>
+</document>

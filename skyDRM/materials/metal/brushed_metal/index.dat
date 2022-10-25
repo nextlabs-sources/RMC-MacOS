@@ -1,0 +1,13 @@
+
+CHANNEL: SHADER
+SOURCE: brushed_metal.hlsl
+MULTITEXTURE: off
+PARAMETERIZATION_SOURCE: uv
+TWEAKABLES: detail_repeat, ior, base_color, roughness, mirror, anisotropy_power, anisotropy_weight, fresnel_power
+
+CHANNEL: ENVIRONMENT
+SOURCE: environment2
+
+CHANNEL: TEXTURE1
+SOURCE: heightfield.png
+HEIGHTFIELD: 0.5

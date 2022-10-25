@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="mySpaceIndicatorView" id="c22-O7-iKe" customClass="NXMySpaceIndicatorView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="760" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="UWu-Rs-u1W">
+                    <rect key="frame" x="320" y="0.0" width="215" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="215" id="tlR-gN-2BR"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="eVu-xN-BKO">
+                    <rect key="frame" x="545" y="0.0" width="215" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="215" id="RQb-Dm-6p3"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="g93-ZK-KhJ">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="310" id="UUk-Vf-S1n"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="g93-ZK-KhJ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="0bd-Ws-Kte"/>
+                <constraint firstItem="eVu-xN-BKO" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="40S-zM-T5p"/>
+                <constraint firstAttribute="bottom" secondItem="eVu-xN-BKO" secondAttribute="bottom" id="6aj-rs-1JX"/>
+                <constraint firstItem="g93-ZK-KhJ" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="82P-ju-3IB"/>
+                <constraint firstItem="UWu-Rs-u1W" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="NSn-L3-CZr"/>
+                <constraint firstAttribute="bottom" secondItem="UWu-Rs-u1W" secondAttribute="bottom" id="d28-UP-SFB"/>
+                <constraint firstAttribute="bottom" secondItem="g93-ZK-KhJ" secondAttribute="bottom" id="eqM-I3-lfa"/>
+                <constraint firstAttribute="trailing" secondItem="eVu-xN-BKO" secondAttribute="trailing" id="hMR-v1-xOE"/>
+                <constraint firstItem="UWu-Rs-u1W" firstAttribute="leading" secondItem="g93-ZK-KhJ" secondAttribute="trailing" constant="10" id="nir-Ys-g57"/>
+            </constraints>
+            <connections>
+                <outlet property="leftView" destination="g93-ZK-KhJ" id="aaR-Wa-y8B"/>
+                <outlet property="midView" destination="UWu-Rs-u1W" id="HVz-RY-x1j"/>
+                <outlet property="rightView" destination="eVu-xN-BKO" id="pHw-kz-g1a"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="246.5"/>
+        </customView>
+    </objects>
+</document>

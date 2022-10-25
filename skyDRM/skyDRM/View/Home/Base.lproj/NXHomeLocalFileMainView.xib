@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="homeLocalFileMainView" id="c22-O7-iKe" customClass="NXHomeLocalFileMainView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="960" height="700"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="yZX-pZ-5Ay">
+                    <rect key="frame" x="50" y="160" width="860" height="440"/>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jYr-bE-Oa6">
+                    <rect key="frame" x="48" y="648" width="80" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Local File" id="X0K-e3-WLV">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-c5-mSu">
+                    <rect key="frame" x="890" y="660" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="EoZ-aX-akd"/>
+                        <constraint firstAttribute="height" constant="20" id="QNl-QU-sfz"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="Close" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="CUh-L5-b9b">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onCloseImage:" target="c22-O7-iKe" id="yC2-uj-CYp"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sqQ-1O-BE3">
+                    <rect key="frame" x="578" y="87" width="164" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="Q33-18-sOo"/>
+                        <constraint firstAttribute="height" constant="40" id="X9K-r1-x0E"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Protect" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UbY-oy-YBc">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onProtect:" target="c22-O7-iKe" id="XSP-Ac-KWv"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rir-sR-Wbu">
+                    <rect key="frame" x="748" y="87" width="164" height="45"/>
+                    <buttonCell key="cell" type="bevel" title="Share" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="n8k-vW-vZM">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onShare:" target="c22-O7-iKe" id="9Qk-vZ-2pf"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1kz-R1-f3G">
+                    <rect key="frame" x="48" y="130" width="864" height="30"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="K0H-41-wIk">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jYr-bE-Oa6" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="50" id="0D9-Xa-1VO"/>
+                <constraint firstItem="1kz-R1-f3G" firstAttribute="leading" secondItem="yZX-pZ-5Ay" secondAttribute="leading" id="0Y6-dD-ez6"/>
+                <constraint firstItem="1kz-R1-f3G" firstAttribute="trailing" secondItem="yZX-pZ-5Ay" secondAttribute="trailing" id="1jd-1E-2cL"/>
+                <constraint firstItem="jYr-bE-Oa6" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="30" id="26b-Y2-ZzL"/>
+                <constraint firstItem="sqQ-1O-BE3" firstAttribute="top" secondItem="yZX-pZ-5Ay" secondAttribute="bottom" constant="30" id="4aE-lo-wDB"/>
+                <constraint firstItem="sqQ-1O-BE3" firstAttribute="top" secondItem="1kz-R1-f3G" secondAttribute="bottom" id="4we-dG-Dbd"/>
+                <constraint firstItem="rir-sR-Wbu" firstAttribute="width" secondItem="sqQ-1O-BE3" secondAttribute="width" id="9gM-0H-nOf"/>
+                <constraint firstItem="rir-sR-Wbu" firstAttribute="leading" secondItem="sqQ-1O-BE3" secondAttribute="trailing" constant="10" id="HUF-eu-dbW"/>
+                <constraint firstItem="rir-sR-Wbu" firstAttribute="trailing" secondItem="yZX-pZ-5Ay" secondAttribute="trailing" id="Kvr-yG-6w9"/>
+                <constraint firstItem="yZX-pZ-5Ay" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="50" id="NUb-So-O9Z"/>
+                <constraint firstItem="ec7-c5-mSu" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" id="RbH-ne-Tf3"/>
+                <constraint firstAttribute="bottom" secondItem="yZX-pZ-5Ay" secondAttribute="bottom" constant="160" id="SJY-6N-5dP"/>
+                <constraint firstAttribute="trailing" secondItem="ec7-c5-mSu" secondAttribute="trailing" constant="50" id="U2d-Ji-mVk"/>
+                <constraint firstItem="1kz-R1-f3G" firstAttribute="top" secondItem="yZX-pZ-5Ay" secondAttribute="bottom" id="cbp-F8-bZt"/>
+                <constraint firstItem="yZX-pZ-5Ay" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="100" id="fp4-SL-dbS"/>
+                <constraint firstItem="rir-sR-Wbu" firstAttribute="top" secondItem="sqQ-1O-BE3" secondAttribute="top" id="kK6-nq-bM7"/>
+                <constraint firstAttribute="trailing" secondItem="yZX-pZ-5Ay" secondAttribute="trailing" constant="50" id="xBd-fT-vIr"/>
+                <constraint firstItem="rir-sR-Wbu" firstAttribute="height" secondItem="sqQ-1O-BE3" secondAttribute="height" id="zyC-RT-llm"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="yZX-pZ-5Ay" id="UIl-sM-5bw"/>
+                <outlet property="protectBtn" destination="sqQ-1O-BE3" id="oQZ-f2-g98"/>
+                <outlet property="shareBtn" destination="rir-sR-Wbu" id="L2V-qh-GnC"/>
+                <outlet property="warningLabel" destination="1kz-R1-f3G" id="J2D-9S-Yxm"/>
+            </connections>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Close" width="32" height="33"/>
+    </resources>
+</document>

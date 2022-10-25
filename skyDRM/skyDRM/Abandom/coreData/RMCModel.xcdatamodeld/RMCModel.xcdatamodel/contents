@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BoundService" representedClassName="BoundService" syncable="YES" codeGenerationType="class">
+        <attribute name="repo_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_account" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_account_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_account_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_alias" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_is_authed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="service_is_selected" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="service_type" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="file" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FileBase" inverseName="boundService" inverseEntity="FileBase" syncable="YES"/>
+    </entity>
+    <entity name="FavOrOffFile" representedClassName="FavOrOffFile" syncable="YES" codeGenerationType="class">
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isOffline" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pathDisplay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pathId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repoId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FileBase" representedClassName="FileBase" syncable="YES" codeGenerationType="class">
+        <attribute name="converted_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ext_attr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file_local_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file_size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="full_cloud_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="full_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_favorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="is_file" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="is_offline" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_modified_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="local_lastModifiedDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="boundService" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BoundService" inverseName="file" inverseEntity="BoundService" syncable="YES"/>
+        <relationship name="parentFile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FileBase" inverseName="subFile" inverseEntity="FileBase" syncable="YES"/>
+        <relationship name="subFile" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FileBase" inverseName="parentFile" inverseEntity="FileBase" syncable="YES"/>
+    </entity>
+    <entity name="MyVaultFile" representedClassName="MyVaultFile" parentEntity="FileBase" syncable="YES" codeGenerationType="class">
+        <attribute name="is_Deleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isRevoked" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isShared" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sharedOn" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sharedWith" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceFilePathDisplay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceFilePathId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceRepoId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceRepoName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceRepoType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Project" representedClassName="Project" syncable="YES" codeGenerationType="class">
+        <attribute name="accountType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ext_attr" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="invitationMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownedByMe" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="projectDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalFiles" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalMembers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="trialEndTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="file" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectFile" inverseName="project" inverseEntity="ProjectFile" syncable="YES"/>
+        <relationship name="invitation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectInvitation" inverseName="project" inverseEntity="ProjectInvitation" syncable="YES"/>
+        <relationship name="member" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectMember" inverseName="project" inverseEntity="ProjectMember" syncable="YES"/>
+    </entity>
+    <entity name="ProjectFile" representedClassName="ProjectFile" syncable="YES" codeGenerationType="class">
+        <attribute name="converted_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="duid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ext_attr" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="fileId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFolder" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isNXL" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isOwner" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastModified" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="local_lastModified" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="local_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="pathDisplay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pathId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rights" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="parentFile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectFile" inverseName="subFile" inverseEntity="ProjectFile" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="file" inverseEntity="Project" syncable="YES"/>
+        <relationship name="subFile" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectFile" inverseName="parentFile" inverseEntity="ProjectFile" syncable="YES"/>
+    </entity>
+    <entity name="ProjectInvitation" representedClassName="ProjectInvitation" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="invitationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="invitationMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inviteeEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inviterDisplayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inviterEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inviteTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="invitation" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="ProjectMember" representedClassName="ProjectMember" syncable="YES" codeGenerationType="class">
+        <attribute name="avatarBase64" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inviterDisplayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inviterEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="member" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="SharedWithMeFile" representedClassName="SharedWithMeFile" parentEntity="FileBase" syncable="YES" codeGenerationType="class">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rights" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="sharedBy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharedLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="WillUploadFile" representedClassName="WillUploadFile" parentEntity="FileBase" syncable="YES" codeGenerationType="class">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="willProtect" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="willShare" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="willSharedWith" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BoundService" positionX="-1701" positionY="2574" width="128" height="193"/>
+        <element name="FavOrOffFile" positionX="-1584" positionY="2961" width="128" height="135"/>
+        <element name="FileBase" positionX="-1467" positionY="2565" width="128" height="270"/>
+        <element name="MyVaultFile" positionX="-1289" positionY="2666" width="128" height="193"/>
+        <element name="Project" positionX="-1485" positionY="2727" width="128" height="300"/>
+        <element name="ProjectFile" positionX="-1494" positionY="2718" width="128" height="345"/>
+        <element name="ProjectInvitation" positionX="-1485" positionY="2727" width="128" height="165"/>
+        <element name="ProjectMember" positionX="-1494" positionY="2718" width="128" height="165"/>
+        <element name="SharedWithMeFile" positionX="-1494" positionY="2718" width="128" height="180"/>
+        <element name="WillUploadFile" positionX="-1494" positionY="2718" width="128" height="120"/>
+    </elements>
+</model>

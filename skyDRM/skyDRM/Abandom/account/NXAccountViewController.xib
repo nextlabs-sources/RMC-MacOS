@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXAccountViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="q15-j6-aab" id="Xsx-Sz-MND"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="q15-j6-aab">
+                    <rect key="frame" x="0.0" y="0.0" width="550" height="600"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="q15-j6-aab" secondAttribute="trailing" id="F2z-lb-rXH"/>
+                <constraint firstItem="q15-j6-aab" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Iwr-2c-EMr"/>
+                <constraint firstItem="q15-j6-aab" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="msD-mO-9Hk"/>
+                <constraint firstAttribute="bottom" secondItem="q15-j6-aab" secondAttribute="bottom" id="yNH-3t-lAn"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

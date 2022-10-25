@@ -1,0 +1,12 @@
+
+/* Class = "NSButtonCell"; title = "Proceed"; ObjectID = "3Sm-KR-i8B"; */
+"3Sm-KR-i8B.title" = "进行";
+
+/* Class = "NSTextFieldCell"; title = "Choose a file from your local drive or from any connected repository"; ObjectID = "4be-sL-bay"; */
+"4be-sL-bay.title" = "从本地或者仓库中选择一个文件";
+
+/* Class = "NSButtonCell"; title = "cancel"; ObjectID = "IPP-8O-nwd"; */
+"IPP-8O-nwd.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Protect"; ObjectID = "nps-mj-cKe"; */
+"nps-mj-cKe.title" = "保护";

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="networkStatusView" id="c22-O7-iKe" customClass="NXNetworkStatusView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="17"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <box misplaced="YES" boxType="custom" borderType="bezel" translatesAutoresizingMaskIntoConstraints="NO" id="U5O-AZ-95E">
+                    <rect key="frame" x="76" y="7" width="320" height="2"/>
+                    <view key="contentView" id="aee-BL-eAZ">
+                        <rect key="frame" x="1" y="1" width="318" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="buc-G0-I4J"/>
+                    </constraints>
+                    <color key="borderColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="du9-Ax-zbc">
+                    <rect key="frame" x="26" y="3" width="46" height="11"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="OFFLINE" id="ebJ-hS-1gU">
+                        <font key="font" metaFont="system" size="9"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box misplaced="YES" boxType="custom" borderType="bezel" translatesAutoresizingMaskIntoConstraints="NO" id="8ZW-gz-TkX" userLabel="Left Line">
+                    <rect key="frame" x="7" y="6" width="15" height="4"/>
+                    <view key="contentView" id="af6-7g-o5G">
+                        <rect key="frame" x="1" y="1" width="13" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="YJY-KF-LOE"/>
+                        <constraint firstAttribute="width" constant="15" id="dY5-j6-KeY"/>
+                    </constraints>
+                    <color key="borderColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="8ZW-gz-TkX" firstAttribute="top" secondItem="U5O-AZ-95E" secondAttribute="top" constant="-1" id="7bY-qV-YJM"/>
+                <constraint firstAttribute="trailing" secondItem="U5O-AZ-95E" secondAttribute="trailing" constant="4" id="FPP-FT-JfK"/>
+                <constraint firstItem="du9-Ax-zbc" firstAttribute="leading" secondItem="8ZW-gz-TkX" secondAttribute="trailing" constant="6" id="IK8-97-8XT"/>
+                <constraint firstItem="U5O-AZ-95E" firstAttribute="leading" secondItem="du9-Ax-zbc" secondAttribute="trailing" constant="6" id="Puy-yZ-DTM"/>
+                <constraint firstItem="U5O-AZ-95E" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="bE5-eY-Wxd"/>
+                <constraint firstItem="du9-Ax-zbc" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="faH-1R-MgM"/>
+                <constraint firstItem="8ZW-gz-TkX" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="7" id="mKn-dX-GAs"/>
+            </constraints>
+            <connections>
+                <outlet property="leftLine" destination="8ZW-gz-TkX" id="AVO-MK-2Pq"/>
+                <outlet property="rightLine" destination="U5O-AZ-95E" id="aJt-HW-mIR"/>
+                <outlet property="statusLabel" destination="du9-Ax-zbc" id="cJZ-6K-Qfj"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="196.5"/>
+        </customView>
+    </objects>
+</document>

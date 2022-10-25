@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXRemoveFileViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="x1j-Fv-ENP" id="wz6-3N-eIu"/>
+                <outlet property="deleteBtn" destination="yEC-H0-rxs" id="4am-me-3S0"/>
+                <outlet property="modifiedLabel" destination="g8Q-yv-rh1" id="s4C-wd-sqd"/>
+                <outlet property="nameLabel" destination="XPg-6p-Oze" id="z7F-aN-gRL"/>
+                <outlet property="sizeLabel" destination="l0Y-cP-0Kr" id="F0Z-pS-dmm"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="HAq-BJ-W6K">
+                    <rect key="frame" x="48" y="170" width="364" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="PAc-K7-7yO"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="Are you sure you want to Remove this file from SkyDRM Local?" id="pvu-bd-ARt">
+                        <font key="font" metaFont="system" size="17"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-6p-Oze">
+                    <rect key="frame" x="48" y="136" width="414" height="19"/>
+                    <textFieldCell key="cell" controlSize="mini" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="Name" id="yU3-FN-dyJ">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oXf-uX-Ox7">
+                    <rect key="frame" x="48" y="111" width="34" height="17"/>
+                    <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Size:" id="QfQ-HF-dmM">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SLx-UR-InQ">
+                    <rect key="frame" x="48" y="86" width="93" height="17"/>
+                    <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Date modified:" id="y2l-S3-phC">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="l0Y-cP-0Kr">
+                    <rect key="frame" x="81" y="111" width="4" height="17"/>
+                    <textFieldCell key="cell" controlSize="mini" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" id="KzI-Jn-rni">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g8Q-yv-rh1">
+                    <rect key="frame" x="140" y="86" width="4" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" id="Rhr-gY-jQU">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="9" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBZ-1u-Ocr">
+                    <rect key="frame" x="76" y="25" width="309" height="44"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="x1j-Fv-ENP">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="JK3-YM-ztH"/>
+                                <constraint firstAttribute="height" constant="44" id="fII-de-b3P"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="Cancel" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="hhF-Lw-uYA">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onCancel:" target="-2" id="aDd-lk-p6X"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yEC-H0-rxs">
+                            <rect key="frame" x="159" y="0.0" width="150" height="44"/>
+                            <buttonCell key="cell" type="bevel" title="Delete" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Nfb-lh-91L">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onDelete:" target="-2" id="icc-KQ-1xs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="yEC-H0-rxs" firstAttribute="width" secondItem="x1j-Fv-ENP" secondAttribute="width" id="Osq-9e-skY"/>
+                        <constraint firstItem="yEC-H0-rxs" firstAttribute="height" secondItem="x1j-Fv-ENP" secondAttribute="height" id="Vcj-Nm-0sk"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="SLx-UR-InQ" firstAttribute="leading" secondItem="oXf-uX-Ox7" secondAttribute="leading" id="2wQ-cL-wvJ"/>
+                <constraint firstItem="XPg-6p-Oze" firstAttribute="top" secondItem="HAq-BJ-W6K" secondAttribute="bottom" constant="15" id="6eh-ju-OaP"/>
+                <constraint firstItem="oXf-uX-Ox7" firstAttribute="leading" secondItem="XPg-6p-Oze" secondAttribute="leading" id="GWD-w4-MJo"/>
+                <constraint firstItem="l0Y-cP-0Kr" firstAttribute="leading" secondItem="oXf-uX-Ox7" secondAttribute="trailing" constant="3" id="JqB-Lu-CVY"/>
+                <constraint firstAttribute="trailing" secondItem="HAq-BJ-W6K" secondAttribute="trailing" constant="50" id="Krk-cZ-6eM"/>
+                <constraint firstItem="oXf-uX-Ox7" firstAttribute="top" secondItem="XPg-6p-Oze" secondAttribute="bottom" constant="8" id="Ndl-az-qBv"/>
+                <constraint firstItem="g8Q-yv-rh1" firstAttribute="centerY" secondItem="SLx-UR-InQ" secondAttribute="centerY" id="WCg-ND-9GE"/>
+                <constraint firstItem="HAq-BJ-W6K" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="30" id="abC-fV-6Jk"/>
+                <constraint firstItem="g8Q-yv-rh1" firstAttribute="leading" secondItem="SLx-UR-InQ" secondAttribute="trailing" constant="3" id="cQ1-Mf-B8k"/>
+                <constraint firstItem="l0Y-cP-0Kr" firstAttribute="centerY" secondItem="oXf-uX-Ox7" secondAttribute="centerY" id="cQ3-RR-DYB"/>
+                <constraint firstAttribute="trailing" secondItem="XPg-6p-Oze" secondAttribute="trailing" id="eq4-8O-HS8"/>
+                <constraint firstItem="SLx-UR-InQ" firstAttribute="top" secondItem="oXf-uX-Ox7" secondAttribute="bottom" constant="8" id="pI5-44-MDM"/>
+                <constraint firstItem="XPg-6p-Oze" firstAttribute="leading" secondItem="HAq-BJ-W6K" secondAttribute="leading" id="tOk-dK-UgX"/>
+                <constraint firstItem="fBZ-1u-Ocr" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="uDA-u7-0nq"/>
+                <constraint firstItem="HAq-BJ-W6K" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="50" id="v70-5C-VGj"/>
+                <constraint firstAttribute="bottom" secondItem="fBZ-1u-Ocr" secondAttribute="bottom" constant="25" id="zTn-jP-0hK"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

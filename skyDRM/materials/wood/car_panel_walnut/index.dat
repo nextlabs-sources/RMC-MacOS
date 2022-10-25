@@ -1,0 +1,15 @@
+
+CHANNEL: SHADER
+SOURCE: car_panel_walnut.hlsl
+MULTITEXTURE: off
+PARAMETERIZATION_SOURCE: uv
+TWEAKABLES: color_repeat, gloss_f0, highlight_tint_weight, roughness, fresnel_power
+
+CHANNEL: ENVIRONMENT
+SOURCE: environment1
+
+CHANNEL: TEXTURE1
+SOURCE: diffuse
+OPTIONS: tiling=mirror
+
+

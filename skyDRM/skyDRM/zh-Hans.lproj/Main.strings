@@ -1,0 +1,270 @@
+
+/* Class = "NSMenuItem"; title = "MyDrive"; ObjectID = "0y9-wa-Lrd"; */
+"0y9-wa-Lrd.title" = "MyDrive";
+
+/* Class = "NSMenu"; title = "Repositories"; ObjectID = "1Mh-se-pJr"; */
+"1Mh-se-pJr.title" = "Repositories";
+
+/* Class = "NSButtonCell"; title = "Browser"; ObjectID = "1qb-kh-zAV"; */
+"1qb-kh-zAV.title" = "Browser";
+
+/* Class = "NSMenuItem"; title = "Invite Members"; ObjectID = "3cx-L7-8BZ"; */
+"3cx-L7-8BZ.title" = "邀请成员";
+
+/* Class = "NSTextFieldCell"; title = "monitor"; ObjectID = "4gC-V0-z56"; */
+"4gC-V0-z56.title" = "监视";
+
+/* Class = "NSTextFieldCell"; title = "Don't have an account?"; ObjectID = "4ga-vI-ywA"; */
+"4ga-vI-ywA.title" = "没有账号?";
+
+/* Class = "NSMenu"; title = "View"; ObjectID = "6gV-f7-0g3"; */
+"6gV-f7-0g3.title" = "查看";
+
+/* Class = "NSTextFieldCell"; title = "Work securely in a team without worrying"; ObjectID = "6ol-mg-ZhB"; */
+"6ol-mg-ZhB.title" = "Work securely in a team without worrying";
+
+/* Class = "NSMenuItem"; title = "Add File"; ObjectID = "86Z-ID-VWd"; */
+"86Z-ID-VWd.title" = "添加文件";
+
+/* Class = "NSMenuItem"; title = "Start Upload"; ObjectID = "8Wf-ff-NyM"; */
+"8Wf-ff-NyM.title" = "开始上传";
+
+/* Class = "NSMenuItem"; title = "About SkyDRM"; ObjectID = "9DQ-Oi-W3m"; */
+"9DQ-Oi-W3m.title" = "关于SkyDRM";
+
+/* Class = "NSTextFieldCell"; title = "share"; ObjectID = "9Sg-Nc-Lki"; */
+"9Sg-Nc-Lki.title" = "分享";
+
+/* Class = "NSMenu"; title = "SkyDRM"; ObjectID = "AUj-hA-bcL"; */
+"AUj-hA-bcL.title" = "SkyDRM";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "主页面";
+
+/* Class = "NSMenuItem"; title = "Report an issue"; ObjectID = "BeY-7k-xpQ"; */
+"BeY-7k-xpQ.title" = "报告错误";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "C2e-DW-6MX"; */
+"C2e-DW-6MX.title" = "Box";
+
+/* Class = "NSMenuItem"; title = "View File Info"; ObjectID = "DVo-aG-piG"; */
+"DVo-aG-piG.title" = "产看文件信息";
+
+/* Class = "NSMenuItem"; title = "Account"; ObjectID = "E8o-qk-GeO"; */
+"E8o-qk-GeO.title" = "账号";
+
+/* Class = "NSMenu"; title = "Sort By"; ObjectID = "EEj-Ec-r6z"; */
+"EEj-Ec-r6z.title" = "Sort By";
+
+/* Class = "NSTextFieldCell"; title = "Sign up"; ObjectID = "HnJ-S7-6hy"; */
+"HnJ-S7-6hy.title" = "注册";
+
+/* Class = "NSMenuItem"; title = "Protect a File"; ObjectID = "IAo-SY-fd9"; */
+"IAo-SY-fd9.title" = "保护文件";
+
+/* Class = "NSWindow"; title = "SkyDRM"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "SkyDRM";
+
+/* Class = "NSMenu"; title = "Manage"; ObjectID = "IxB-cv-lJC"; */
+"IxB-cv-lJC.title" = "管理";
+
+/* Class = "NSButtonCell"; title = "Print"; ObjectID = "IxG-pd-Bmp"; */
+"IxG-pd-Bmp.title" = "打印";
+
+/* Class = "NSTextFieldCell"; title = "Protect using Digital Rights:"; ObjectID = "JEG-Hq-rw4"; */
+"JEG-Hq-rw4.title" = "Protect using Digital Rights:";
+
+/* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "JjY-Hu-dVy"; */
+"JjY-Hu-dVy.title" = "全屏模式";
+
+/* Class = "NSMenuItem"; title = "Local File"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "本地文件";
+
+/* Class = "NSMenuItem"; title = "SkyDRM"; ObjectID = "LgX-Rn-d1M"; */
+"LgX-Rn-d1M.title" = "SkyDRM";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "MtJ-od-UBp"; */
+"MtJ-od-UBp.title" = "帮助";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "N3y-jQ-5eQ"; */
+"N3y-jQ-5eQ.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Usage"; ObjectID = "OGc-Jl-u0L"; */
+"OGc-Jl-u0L.title" = "Usage";
+
+/* Class = "NSMenuItem"; title = "Search"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "搜索";
+
+/* Class = "NSButtonCell"; title = "Log in"; ObjectID = "P0V-ET-IAN"; */
+"P0V-ET-IAN.title" = "登录";
+
+/* Class = "NSMenuItem"; title = "Refresh Screen"; ObjectID = "Q9q-Qx-esC"; */
+"Q9q-Qx-esC.title" = "Refresh Screen";
+
+/* Class = "NSMenuItem"; title = "MyVault"; ObjectID = "QeU-Mp-rbG"; */
+"QeU-Mp-rbG.title" = "MyVault";
+
+/* Class = "NSMenuItem"; title = "Add a Repository"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Add a Repository";
+
+/* Class = "NSMenuItem"; title = "Repositories"; ObjectID = "Svw-Jj-NZ3"; */
+"Svw-Jj-NZ3.title" = "Repositories";
+
+/* Class = "NSMenuItem"; title = "Manage Invitations"; ObjectID = "UaU-mr-U97"; */
+"UaU-mr-U97.title" = "Manage Invitations";
+
+/* Class = "NSButtonCell"; title = "Create a project"; ObjectID = "Uv8-Jj-qqn"; */
+"Uv8-Jj-qqn.title" = "Create a project";
+
+/* Class = "NSViewController"; title = "Upload File"; ObjectID = "V2G-V7-kWr"; */
+"V2G-V7-kWr.title" = "上传文件";
+
+/* Class = "NSMenuItem"; title = "Quit SkyDRM"; ObjectID = "VqG-AD-pgF"; */
+"VqG-AD-pgF.title" = "Quit SkyDRM";
+
+/* Class = "NSMenuItem"; title = "Next"; ObjectID = "VwI-TS-vir"; */
+"VwI-TS-vir.title" = "Next";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "W3K-ME-2Ps"; */
+"W3K-ME-2Ps.title" = "取消";
+
+/* Class = "NSMenuItem"; title = "Stop Upload"; ObjectID = "WYV-GV-xiZ"; */
+"WYV-GV-xiZ.title" = "停止上传";
+
+/* Class = "NSMenuItem"; title = "Open File"; ObjectID = "Was-JA-tGl"; */
+"Was-JA-tGl.title" = "打开文件";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "WeZ-EK-qo8"; */
+"WeZ-EK-qo8.title" = "Minimize";
+
+/* Class = "NSButtonCell"; title = "Upload"; ObjectID = "XK8-8L-Cie"; */
+"XK8-8L-Cie.title" = "上传";
+
+/* Class = "NSTextFieldCell"; title = "Content:"; ObjectID = "XmH-f2-kHp"; */
+"XmH-f2-kHp.title" = "Content:";
+
+/* Class = "NSMenuItem"; title = "Project"; ObjectID = "Xpc-I1-mhW"; */
+"Xpc-I1-mhW.title" = "Project";
+
+/* Class = "NSMenuItem"; title = "Protect & Share"; ObjectID = "YAg-de-PsR"; */
+"YAg-de-PsR.title" = "Protect & Share";
+
+/* Class = "NSMenuItem"; title = "Manage"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Manage";
+
+/* Class = "NSTextFieldCell"; title = "Protect,"; ObjectID = "aZ5-HT-nM0"; */
+"aZ5-HT-nM0.title" = "保护,";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu"; */
+"bib-Uj-vzu.title" = "File";
+
+/* Class = "NSButtonCell"; title = "Share"; ObjectID = "cdF-r2-Rnv"; */
+"cdF-r2-Rnv.title" = "Share";
+
+/* Class = "NSTextFieldCell"; title = "Effect:"; ObjectID = "d7i-Jl-WAZ"; */
+"d7i-Jl-WAZ.title" = "Effect:";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "File";
+
+/* Class = "NSMenuItem"; title = "Check for Update"; ObjectID = "e8u-Nq-XYF"; */
+"e8u-Nq-XYF.title" = "Check for Update";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "e9v-jv-On0"; */
+"e9v-jv-On0.title" = "View";
+
+/* Class = "NSMenuItem"; title = "Go to"; ObjectID = "eQG-50-X4A"; */
+"eQG-50-X4A.title" = "Go to";
+
+/* Class = "NSTextFieldCell"; title = "File chosen: "; ObjectID = "f9I-cb-bWz"; */
+"f9I-cb-bWz.title" = "File chosen: ";
+
+/* Class = "NSMenuItem"; title = "Date Modified"; ObjectID = "fHR-oA-6vI"; */
+"fHR-oA-6vI.title" = "Date Modified";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "gFS-kW-g8v"; */
+"gFS-kW-g8v.title" = "Help";
+
+/* Class = "NSTextFieldCell"; title = "your documents securely anywhere."; ObjectID = "gwG-6j-k8b"; */
+"gwG-6j-k8b.title" = "您的文档在任何地方都是安全的.";
+
+/* Class = "NSMenuItem"; title = "Previous"; ObjectID = "hwB-fi-byq"; */
+"hwB-fi-byq.title" = "Previous";
+
+/* Class = "NSMenuItem"; title = "Sort By"; ObjectID = "hwX-va-zva"; */
+"hwX-va-zva.title" = "Sort By";
+
+/* Class = "NSTextFieldCell"; title = "and"; ObjectID = "iLN-AZ-iRN"; */
+"iLN-AZ-iRN.title" = "和";
+
+/* Class = "NSMenuItem"; title = "File Size"; ObjectID = "iRV-Lh-JzW"; */
+"iRV-Lh-JzW.title" = "File Size";
+
+/* Class = "NSButtonCell"; title = "View"; ObjectID = "icE-rl-ohg"; */
+"icE-rl-ohg.title" = "View";
+
+/* Class = "NSTextFieldCell"; title = "about leakage of intellectual property and trade secret."; ObjectID = "ixa-M6-sxz"; */
+"ixa-M6-sxz.title" = "about leakage of intellectual property and trade secret.";
+
+/* Class = "NSMenuItem"; title = "Create a Project"; ObjectID = "jwq-nD-nHG"; */
+"jwq-nD-nHG.title" = "Create a Project";
+
+/* Class = "NSTextFieldCell"; title = "Collaboration:"; ObjectID = "kcb-qC-B7F"; */
+"kcb-qC-B7F.title" = "Collaboration:";
+
+/* Class = "NSMenuItem"; title = "Profile"; ObjectID = "ky8-tG-W1z"; */
+"ky8-tG-W1z.title" = "Profile";
+
+/* Class = "NSButtonCell"; title = "Upload without protection"; ObjectID = "lqh-BZ-cAr"; */
+"lqh-BZ-cAr.title" = "Upload without protection";
+
+/* Class = "NSMenuItem"; title = "File Name"; ObjectID = "mjf-Gt-1vZ"; */
+"mjf-Gt-1vZ.title" = "File Name";
+
+/* Class = "NSButtonCell"; title = "Watermark"; ObjectID = "my9-0e-yie"; */
+"my9-0e-yie.title" = "Watermark";
+
+/* Class = "NSButtonCell"; title = "Download"; ObjectID = "nzf-qf-QJ3"; */
+"nzf-qf-QJ3.title" = "Download";
+
+/* Class = "NSMenu"; title = "Project"; ObjectID = "oPF-AL-LZt"; */
+"oPF-AL-LZt.title" = "Project";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "pN7-rA-HTW"; */
+"pN7-rA-HTW.title" = "Zoom";
+
+/* Class = "NSMenuItem"; title = "Activity Log"; ObjectID = "pxx-59-PXV"; */
+"pxx-59-PXV.title" = "Activity Log";
+
+/* Class = "NSMenuItem"; title = "Log Out"; ObjectID = "qIS-W8-SiK"; */
+"qIS-W8-SiK.title" = "Log Out";
+
+/* Class = "NSMenuItem"; title = "Getting Started"; ObjectID = "qeV-Vb-MgA"; */
+"qeV-Vb-MgA.title" = "Getting Started";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "rol-wR-hGf"; */
+"rol-wR-hGf.title" = "Bring All to Front";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "s5w-HH-ANw"; */
+"s5w-HH-ANw.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Remove File"; ObjectID = "tXI-mr-wws"; */
+"tXI-mr-wws.title" = "Remove File";
+
+/* Class = "NSMenuItem"; title = "Go to Home"; ObjectID = "uHp-iy-lfM"; */
+"uHp-iy-lfM.title" = "进入主页";
+
+/* Class = "NSTextFieldCell"; title = "file name"; ObjectID = "uYR-Mi-qQw"; */
+"uYR-Mi-qQw.title" = "文件名";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "vO3-oG-lPb"; */
+"vO3-oG-lPb.title" = "帮助";
+
+/* Class = "NSButtonCell"; title = "Upload"; ObjectID = "wSF-jp-7h4"; */
+"wSF-jp-7h4.title" = "Upload";
+
+/* Class = "NSMenu"; title = "Go to"; ObjectID = "wzD-RS-sMG"; */
+"wzD-RS-sMG.title" = "Go to";
+
+/* Class = "NSMenuItem"; title = "System Preferences"; ObjectID = "xP3-KQ-T58"; */
+"xP3-KQ-T58.title" = "System Preferences";

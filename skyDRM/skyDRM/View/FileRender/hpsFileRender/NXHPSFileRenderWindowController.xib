@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXHPSFileRenderWindowController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="printItem" destination="Uu9-xa-eg7" id="Diu-qL-ZKE"/>
+                <outlet property="propertyItem" destination="kdy-EM-CPq" id="dVy-Iv-m3Y"/>
+                <outlet property="shareItem" destination="Bt3-Vv-9gc" id="cJI-Ny-b4W"/>
+                <outlet property="targetVC" destination="RjI-Xr-q4d" id="08V-6S-lgD"/>
+                <outlet property="toolbar" destination="7lc-jR-S8n" id="1oY-9n-L3b"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="O9A-k3-rqy"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" tabbingMode="disallowed" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="913" y="473" width="1125" height="525"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <value key="minSize" type="size" width="500" height="525"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ" customClass="SprocketsView">
+                <rect key="frame" x="0.0" y="0.0" width="1125" height="525"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="22633EC7-7F43-4222-97CD-67BC732641DE" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="7lc-jR-S8n">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="2EDC3758-105F-42BA-A244-041285F4F47A" label="" paletteLabel="" image="IconOrbit" id="0lh-1X-AVW">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="UgZ-bh-f27">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="IconOrbit" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UAF-gS-EQu">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="toolTip" value="Orbit"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="orbitButtonClicked:" target="EiT-Mj-1SZ" id="q2p-0T-rEE"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="4EAD192E-09A4-4F8C-B405-5967C0290838" label="" paletteLabel="" image="IconPan" id="ibj-Pu-DLT">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="37"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="vDu-hj-s5P">
+                            <rect key="frame" x="0.0" y="14" width="39" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="IconPan" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="U1U-4z-QQF">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="toolTip" value="Pan"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="panButtonClicked:" target="EiT-Mj-1SZ" id="jh0-wP-4lR"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="7218BEF1-9C2C-40E6-A42D-4F406743C004" label="" paletteLabel="" image="IconFly" id="otJ-J7-hJK">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="vEx-OK-bPN">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="IconFly" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pje-zk-YdF">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="toolTip" value="Fly"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="flyButtonClicked:" target="EiT-Mj-1SZ" id="Lz1-du-X49"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="6FD22019-AE16-4FCE-900D-94A89CF5837D" label="" paletteLabel="" image="IconZoomArea" id="c35-8u-DaR">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="Rcx-WF-Nhr">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="IconZoomArea" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="k8Q-5E-n0h">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="toolTip" value="Zoom Area"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="zoomAreaButtonClicked:" target="EiT-Mj-1SZ" id="Yma-RA-Aq2"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="0261B80E-2058-4957-A410-FF1525BB89DF" label="" paletteLabel="" image="IconZoomFit" id="geM-Pn-lh0">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="yGB-Lj-7kp">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="IconZoomFit" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="L4h-YX-5TU">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="toolTip" value="Zoom Fit"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="zoomFitButtonClicked:" target="EiT-Mj-1SZ" id="h2l-Zi-cFP"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="BB86958E-2AA8-4E1A-A644-A720FFD8BE9B" label="" paletteLabel="" image="IconSelectPoint" id="ETG-QI-5ha">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="QLL-3C-BdT">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="IconSelectPoint" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="a1I-pZ-gH2">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="toolTip" value="Point"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="pointButtonClicked:" target="EiT-Mj-1SZ" id="5kI-nl-x3W"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="D7F4F869-2CDE-417F-A3BB-07A5DAB7548C" label="" paletteLabel="" image="IconSelectArea" id="ygz-JO-m2g">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="GLJ-8v-pce">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="IconSelectArea" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P5J-VK-LYw">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="toolTip" value="Area"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="areaButtonClicked:" target="EiT-Mj-1SZ" id="Ns2-5m-jWK"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="1A1F2A1B-AB81-442D-B21B-86A043357397" label="" paletteLabel="" image="shareinmenu" selectable="YES" id="Bt3-Vv-9gc">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="9bf-3o-TY9">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="shareinmenu" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="yBs-Tb-SvJ">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <connections>
+                            <action selector="onShareClick:" target="-2" id="bfL-9E-4CY"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="559C604F-16F2-4451-92A0-A86559E79BB6" label="" paletteLabel="" image="printmenu" selectable="YES" id="Uu9-xa-eg7">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="TeP-bH-lMN">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="printmenu" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="YhK-ZW-Ccb">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="skyDrmPrint"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onPrintClick:" target="-2" id="0r7-1g-MbH"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="C23B8421-2F64-4462-8337-BEC2D20CA3B5" label="" paletteLabel="" image="fileinfomenu" selectable="YES" id="kdy-EM-CPq">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="39" height="38"/>
+                        <size key="maxSize" width="39" height="38"/>
+                        <button key="view" verticalHuggingPriority="750" id="Chm-Mc-xNq">
+                            <rect key="frame" x="0.0" y="14" width="39" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="fileinfomenu" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="JN3-8u-2kX">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <connections>
+                            <action selector="onFileInfoClick:" target="-2" id="UKQ-g7-CWv"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="Xz5-4w-q8Q"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="Xz5-4w-q8Q"/>
+                    <toolbarItem reference="0lh-1X-AVW"/>
+                    <toolbarItem reference="ibj-Pu-DLT"/>
+                    <toolbarItem reference="otJ-J7-hJK"/>
+                    <toolbarItem reference="c35-8u-DaR"/>
+                    <toolbarItem reference="geM-Pn-lh0"/>
+                    <toolbarItem reference="ETG-QI-5ha"/>
+                    <toolbarItem reference="ygz-JO-m2g"/>
+                    <toolbarItem reference="Xz5-4w-q8Q"/>
+                    <toolbarItem reference="Uu9-xa-eg7"/>
+                    <toolbarItem reference="Bt3-Vv-9gc"/>
+                    <toolbarItem reference="kdy-EM-CPq"/>
+                </defaultToolbarItems>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="skydrmuuid"/>
+                </userDefinedRuntimeAttributes>
+            </toolbar>
+            <point key="canvasLocation" x="603" y="-541"/>
+        </window>
+        <viewController id="RjI-Xr-q4d">
+            <connections>
+                <outlet property="view" destination="EiT-Mj-1SZ" id="8KK-Ss-rk6"/>
+            </connections>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="IconFly" width="128" height="128"/>
+        <image name="IconOrbit" width="32" height="32"/>
+        <image name="IconPan" width="32" height="32"/>
+        <image name="IconSelectArea" width="32" height="32"/>
+        <image name="IconSelectPoint" width="32" height="32"/>
+        <image name="IconZoomArea" width="32" height="32"/>
+        <image name="IconZoomFit" width="32" height="32"/>
+        <image name="fileinfomenu" width="24" height="21"/>
+        <image name="printmenu" width="24" height="25"/>
+        <image name="shareinmenu" width="24" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,30 @@
+
+/* Class = "NSTextFieldCell"; title = "*"; ObjectID = "4S1-J9-Lao"; */
+"4S1-J9-Lao.title" = "*";
+
+/* Class = "NSTextFieldCell"; title = "(optional)"; ObjectID = "79J-Mn-mGc"; */
+"79J-Mn-mGc.title" = "(可选)";
+
+/* Class = "NSTextFieldCell"; title = "*"; ObjectID = "8wY-wl-zoe"; */
+"8wY-wl-zoe.title" = "*";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Provide a name for your project"; ObjectID = "LTN-vX-7fb"; */
+"LTN-vX-7fb.placeholderString" = "为你的工程取一个名字";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "QVm-l2-pEr"; */
+"QVm-l2-pEr.title" = "保存";
+
+/* Class = "NSTextFieldCell"; title = "Default invitation message"; ObjectID = "RwB-t8-VUx"; */
+"RwB-t8-VUx.title" = "默认邀请信息";
+
+/* Class = "NSTextFieldCell"; title = "Description"; ObjectID = "bA8-OM-LyG"; */
+"bA8-OM-LyG.title" = "描述";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Give a brief description about the project.."; ObjectID = "cFm-Uz-7lF"; */
+"cFm-Uz-7lF.placeholderString" = "关于工程的简单描述";
+
+/* Class = "NSTextFieldCell"; title = "Name of the project"; ObjectID = "fWM-Ci-0mS"; */
+"fWM-Ci-0mS.title" = "工程名";
+
+/* Class = "NSTextFieldCell"; title = "Configuration"; ObjectID = "wmh-Oa-jf4"; */
+"wmh-Oa-jf4.title" = "工程配置";

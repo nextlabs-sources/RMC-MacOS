@@ -1,0 +1,684 @@
+/*
+ resource.strings
+ skyDRM
+ 
+ Created by Kevin on 2017/1/18.
+ Copyright © 2017年 nextlabs. All rights reserved.
+ */
+
+"STRING_ROOT" = "root";
+"APP_NAME" = "SkyDRM Desktop";
+
+"STRING_UPLOAD" = "Upload";
+"STRING_DOWNLOAD" = "Download";
+"STRING_NEWFOLDER" = "New Folder";
+"STRING_DELETE" = "Delete";
+
+"STRING_TOTALFILECOUNT" = "Total Files: ";
+
+"MAINNAV_HOME" = "Home";
+"MAINNAV_MYSPACE" = "MySpace";
+"MAINNAV_PROJECTS" = "Projects";
+
+"STRING_MYVAULT" = "MyVault";
+"STRING_SHAREWITHME" = "Shared with me";
+"STRING_OUTBOX" = "Outbox";
+"STRING_ALLOFFLINEFILES" = "All offline files";
+
+"REPO_STRING_ALLFILES" = "All Files";
+"REPO_STRING_FAVORITEFILES" = "Favorite Files";
+"REPO_STRING_OFFLINEFILES" = "Offline Files";
+"REPO_STRING_DELETEDFILES" = "Deleted Files";
+"REPO_STRING_SHAREDFILES" = "Shared Files";
+
+//Title Name
+"TITLE_LOGOUT" = "Logout";
+"TITLE_REMOVE_MEMBER_TIPS" = "Remove Member";
+"TITLE_PROJECT_MEMBER_DETAIL" = "Member Details";
+"TITLE_REVOKE_PENDING" = "Revoke Invitation";
+"TITLE_PENDING_INVITATION" = "Member Details";
+"TITLE_SHARE_FROM_CONTEXT" = "Share From Context";
+"TITLE_CHECK_PERMISSION" = "Check Permission";
+"TITLE_ENCRYPT_DECRYPT" = "Encrypt/Decrypt";
+"TITLE_SPECIFIC_PROJECT" = "Project";
+"TITLE_DELETE_FILE" = "Delete File";
+"TITLE_DELETE_FOLDER" = "Delete Folder";
+"TITLE_SkyDRM_Desktop" = "SkyDRM Desktop";
+"TITLE_SETURL_PAGE_URL" = "URL";
+"TITLE_SETURL_PAGE_ENTERURL" = "Enter URL";
+
+// login view
+"WELCOME_LOGIN" = "Login";
+"WELCOME_SIGNUP" = "Get Started";
+"SKYDRM_NEXT" = "NEXT";
+"WELCOME_ALREADY_TIP" = "Already have account?";
+"MODIFY_PASSWORD_SUCCESS_TIPS" = "Your password has been successfully updated. Please re-login with the new password.";
+"SKYDRM_Token_Expired_Tips" = "Your session has expired, please log in again.";
+"LOGIN_YOUR_COUNT" = "Sign in to your account";
+"LOGIN_PERSONAL_ACCOUNT" = "Personal account";
+"LOGIN_COMPANY_ACCOUNT" = "Company account";
+"LOGIN_REMEMBER_URL" = "Remember URL";
+"LOGIN_CHANGE_URL" = "You can change the url";
+"LOGIN_ENTER_URL" = "Enter URL";
+"LOGIN_URL" = "URL";
+
+
+
+//home view
+"HOME_TOPVIEW_INDICATORVIEW_STORAGE_LABEL" = "MySpace Storage";
+"HOME_TOPVIEW_WELCOME" = "Welcome";
+"HOME_TOPVIEW_CONNECTED_REPOSITORIES" = "Connected Repositories";
+"HOME_TOPVIEW_PROTECTFILEVIEW_NAME" = "Protect a File";
+"HOME_TOPVIEW_SHAREFILEVIEW_NAME" = "Share a File";
+"HOME_TOPVIEW_ADDREPROVIEW_NAME" = "Add a Repository";
+"HOME_TOPVIEW_INDICATORVIEW_USED" = "used";
+"HOME_TOPVIEW_INDICATORVIEW_FREE" = "free";
+"HOME_TOPVIEW_INDICATORVIEW_VIEW_FILES" = "View files";
+"HOME_TOPVIEW_INDICATORVIEW_VIEW_PROTECTED_FILES" = "View files";
+"HOME_TOPVIEW_GOTO_MYSPACE" = "Go to MySpace";
+"HOME_TOPVIEW_INDICATORVIEW_USED_PERCENTAGE" = "%@ of %@ used";
+"HOME_TOPVIEW_INDICATORVIEW_USED" = "%@ used";
+"HOME_TOPVIEW_INDICATORVIEW_FREE" = "%@ free";
+"HOME_TOPVIEW_NO_REPOSITORIES_TIP" = "No repository connected";
+"HOME_REPOSITORY_TIP" = "Authorization is required for this repository. Please re-authorize the repository and try again (Click warning sign to authorize).";
+"HOME_REPOSITORY_REAUTH_FAILED" = "The account you entered is different from the original SkyDRM account";
+"HOME_REPOSITORY_NOT_EXIST" = "The repository is not exist and we cannot add this repository";
+
+//account view
+"ACCOUNT_CHANGE_PASSWORD" = "Change Password";
+"ACCOUNT_CHANGE_PHOTO" = "Change Photo";
+"ACCOUNT_LOGOUT" = "Log Out";
+"ACCOUNT_DISPLAY_NAME" = "Display Name";
+"ACCOUNT_EMAIL_ADDRESS" = "Email Address";
+"ACCOUNT_PHONE_NUMBER" = "Phone Number";
+"ACCOUNT_UPDATE" = "Update";
+"ACCOUNT_PHONE_NUMBER_TIP" = "Enter your phone number...";
+"ACCOUNT_CURRENT_PASSWORD" = "Current Password";
+"ACCOUNT_NEW_PASSWORD" = "New Password";
+"ACCOUNT_CONFIRM_NEW_PASSWORD" = "Confirm New Password";
+"ACCOUNT_CANCEL" = "Cancel";
+"ACCOUNT_CHECKFORUPDATE" = "Check for updates";
+"ACCOUNT_VERSION" = "Desktop version";
+"ACCOUNT_MANAGE_PROFILE" = "Manage Profile";
+"ACCOUNT_LOGOUT_ALERT" = "Are you sure you want to log out？";
+"ACCOUNT_LOGOUT_ALERT_CANCEL" = "Cancel";
+"ACCOUNT_LOGOUT_ALERT_OK" = "Log Out";
+"ACCOUNT_EMPTY_DISPLAY_NAME" = "Please enter a display name";
+"ACCOUNT_SAME_DISPLAY_NAME" = "There is already an user with the name %@";
+"ACCOUNT_DISPLAYNAME_TOOLONG" = "Display Name cannot exceed 40 characters";
+"ACCOUNT_INVALID_DISPLAY_NAME" = "Display Name cannot contain special characters.";
+"ACCOUNT_FAILED_DISPLAY_NAME" = "Failed to update Display Name";
+"ACCOUNT_SUCCEEDED_DISPLAY_NAME" = "Display Name successfully updated";
+"ACCOUNT_CHANGE_PASSWORD_EMPTY_OLD_PASSWORD" = "Current Password is required";
+"ACCOUNT_CHANGE_PASSWORD_SAME_WITH_OLD_PASSWORD" = "Your old password and new password cannot be the same. Please provide a different password";
+"ACCOUNT_CHANGE_PASSWORD_EMPTY_NEW_PASSWORD" = "New Password is required";
+"ACCOUNT_CHANGE_PASSWORD_MISMATCH_NEW_PASSWORD" = "Passwords do not match";
+"ACCOUNT_CHANGE_PASSWORD_INCORRECT_NEW_PASSWORD" = "Password length must be at least 8 characters long and contain at least one alphabet, one number and one special character";
+"ACCOUNT_CHANGE_PASSWORD_SAME_NEW_PASSWORD" = "Your old password and new password cannot be the same. Please provide a different password.";
+"ACCOUNT_CHANGE_CURRENTPASSWORD_WRONG" = "Current password is incorrect";
+"ACCOUNT_CHANGE_PASSWORD_FAILED" = "Failed to update password";
+
+// file info view
+"FILEINFO_PROTECT" = "Protect";
+"FILEINFO_SHARE" = "Share";
+"FILEINFO_DECRYPT" = "Decrypt";
+"FILEINFO_ENCRYPT" = "Encrypt";
+"FILE_INFO_FILENAME" = "Name";
+"FILE_INFO_FILELOCATION" = "File location";
+"FILE_INFO_MODIFIEDTIME" = "Date modified";
+"FILE_INFO_SIZE" = "Size";
+"FILE_INFO_SHAREDWITH" = "Shared with";
+"FILE_INFO_SHAREDBY" = "Shared by";
+"FILE_INFO_SHAREDTIME" = "Date shared";
+"FILE_INFO_TYPE" = "Type";
+"FILE_INFO_LOCATION_ONLINE" = "Online";
+"FILE_INFOLOCATION_LOCATION" = "Local";
+"FILE_INFO_EMPTY_FOLDER" = "This folder is empty!";
+"FILE_INFO_EMPTY_PROJECT" = "This project is empty!";
+//repository
+"REPOSITORY_CONNECTED" = "Connected Repositories";
+"REPOSITORY_ADD" = "Add a Repository";
+"REPOSITORY_CONNECT" = "Connect Repository";
+"REPOSITORY" = "Repository";
+"REPOSITORY_SERVICE_PROVIDER" = "Service Provider";
+"REPOSITORY_DISPLAY_NAME" = "Display Name";
+"REPOSITORY_DISPLAY_ANME_TIP" = "Provide a name to your repository..";
+"REPOSITORY_CONNECT_TIP" = "Connect to your account to sync the files and folders.";
+"REPOSITORY_CONNECT_BUTTON" = "Add";
+"REPOSITORY_DISCONNECT" = "Disconnect";
+"REPOSITORY_DISCONNECT_ERROR" = "Error occurred while disconnecting repository";
+"REPOSITORY_MANAGE" = "Manage Repository";
+"REPOSITORY_CANCEL" = "Cancel";
+"REPOSITORY_UPDATE" = "Update";
+"REPOSITORY_ADD_ALERT_SAME_ACCOUNT" = "Only a single account of Microsoft OneDrive is supported. You can delete the current account and add a new one.";
+"REPOSITORY_ADD_ALERT_OTHER_ACCOUNT" = "We only support one account of %@, you can switch to the old user and delete the one, then you can add a new one";
+"REPOSITORY_ADD_ALERT_OK" = "OK";
+"REPOSITORY_ADD_EMPTY_SERVICE_PROVIDER" = "Please select a service provider";
+"REPOSITORY_ADD_EMPTY_DISPLAY_NAME" = "Please enter a display name";
+"REPOSITORY_ADD_SAME_DISPLAY_NAME" = "There is already a repository with the name %@";
+"REPOSITORY_DISCONNECT_ALERT" = "Do you really want to disconnect this repository %@?";
+"REPOSITORY_DISCONNECT_ALERT_CANCEL" = "Cancel";
+"REPOSITORY_DISCONNECT_ALERT_OK" = "OK";
+"REPOSITORY_ADD_FAILED" = "Failed to add repository";
+"REPOSITORY_ADD_FAILED_EXISTING" = "A repository has already been added with this account. Please choose a different account.";
+"REPOSITORY_ADD_CANCEL" = "cancel adding repository";
+"REPOSITORY_ADD_SUCCEEDED" = "add repository successfully";
+"REPOSITORY_DISPLAY_NAME_FAILED" = "Failed to update display name";
+"REPOSITORY_DISPLAY_NAME_NOT_FOUND" = "The Repository has been deleted.";
+"REPOSITORY_DISPLAY_NAME_SUCCEEDED" = "display name successfully updated";
+"REPOSITORY_DISPLAY_NAME_INCORRECT_FORMAT" = "Display name length must not exceed 40 characters \nand should contain alphanumeric characters, spaces, hyphens and underscores";
+
+//sharepoint online
+"SHAREPOINT_ONLINE_AUTH_TITILE" = "Link to Sharepoint Online";
+"SHAREPOINT_ONLINE_AUTH_URL" = "Sharepoint Online Site URL";
+"SHAREPOINT_ONLINE_AUTH_USERNAME" = "Domain/Username";
+"SHAREPOINT_ONLINE_AUTH_PASSWORD" = "Password";
+"SHAREPOINT_ONLINE_AUTH_OK" = "OK";
+
+//project
+"PROJECT_INVITE_TITLE" = "Invite";
+"REMOVE_MEMBER_TIPS" = "Are you sure you want to delete this member?";
+"REVOKE_PENDING_INVITATION" = "Are you sure you want to revoke this invitation?";
+"REVOKE_SUCCESS" = "Invitation has been revoked successfully";
+"REVOKE_FAILED" = "Revoke failed!";
+
+//project people
+"PROJECT_PEOPLE_INVITE_BUTTON" = "Invite";
+"PROJECT_PEOPLE_VIEW_BUTTON" = "View all members";
+
+//project recent files
+"PROJECT_RECENT_FILES_ADD_FILE_BUTTON" = "Add File";
+"PROJECT_RECENT_FILES_VIEW_BUTTON" = "View all files";
+"PROJECT_RECENT_FILES_NO_RECENT_FILES" = "There are no recent files";
+
+//project policy
+"PROJECT_MEMBERS_ADD_POLICY_BUTTON" = "Add Policy";
+
+//project section title
+"PROJECT_CREATE_BY_ME" = "Projects created by me";
+"PROJECT_CREATE_BY_ME_PREFIX" = "Projects created by ";
+"PROJECT_CREATE_BY_ME_SUFFIX" = "me";
+"PROJECT_INVITED_BY_OTHERS" = "Projects invited by others";
+"PROJECT_INVITED_BY_OTHERS_PREFIX" = "Projects invited by ";
+"PROJECT_INVITED_BY_OTHERS_SUFFIX" = "others";
+"PROJECT_PENDING_INVITATIONS" = "Pending Invitations";
+"PROJECT_SECTION_HEADER_CREATE_NEW_PROJECT" = "Create New Project";
+"PROJECT_SECTION_HEADER_VIEW_ALL_PROJECTS" = "View all projects";
+
+//all project view
+"PROJECT_FILE_COUNTS" = "%@ Files";
+"PROJECT_FILE_COUNT" = "%@ File";
+"PROJECT_FILE_COUNT_ZERO" = "No Files";
+"PROJECT_INVITE_PEOPLE" = "Invite Members";
+"PROJECT_JOIN" = "Join the project";
+"PROJECT_OWNER" = "Owner";
+"PROJECT_INVITED_BY" = "Invited by: \n%@";
+"PROJECT_PENDING_INVITATIONS_TIP" = "Invited by";
+"PROJECT_PENDING_INVITATIONS_DECLINE" = "Decline";
+"PROJECT_PENDING_INVITATIONS_ACCEPT" = "Accept";
+"PROJECT_PENDING_INVITATIONS_DECLINE_TITLE" = "Are you sure you want to decline the invitation?";
+"PROJECT_PENDING_INVITATIONS_DECLINE_TOOLTIP" = "Provide a reason for declining(Optional)";
+"PROJECT_PENDING_INVITATIONS_DECLINE_CANCEL_BUTTON" = "Cancel";
+"PROJECT_PENDING_INVITATIONS_DECLINE_DECLINE_BUTTON" = "Decline";
+"PROJECT_PENDING_INVITATIONS_DECLINE_WARNING" = "The reason for declining cannot be longer than 250 characters";
+"PROJECT_PENDING_INVITATIONS_DECLINE_VC_TITLE" = "Decline Invitation";
+"CREATEPROJECT_FAIL" = "Error occurred while Creating a project";
+"CREATEPROJECT_SUCCESS" = "A project has been created successfully";
+
+//Create project viewcontroll
+"PROJECT_CREATE_VC_TITLE_SPECIFIC_ERROR" = "Project Name only allows special characters like ' \" , - _ #";
+"PROJECT_CREATE_VC_TITLE_LENGTH_ERROR" = "Project Name is required and should not exceed 50 characters";
+"PROJECT_CREATE_VC_DESCRIPTION_LENGTH_ERROR" = "Project Description is required and should not exceed 250 characters";
+
+"PROJECT_CREATE_VC_WARNING_TITLE" = "Project Name is required and should not exceed 50 characters";
+"PROJECT_CREATE_VC_WARNING_DESCRIPTION" = "Project Description is required and should not exceed 250 characters";
+
+//specific project view
+"PROJECT_HOME" = "Summary";
+"PROJECT_FILES" = "Files";
+"PROJECT_POLICIES" = "Policies";
+"PROJECT_PEOPLE" = "Members";
+"PROJECT_ACTIVITY_STREAM" = "Activity Stream";
+"PROJECT_CONFIGURATION" = "Configuration";
+"PROJECT_REPORTS" = "Reports";
+
+"INVITE_SUCCESS" = "Invite successfully";
+"INVITE_FAILED" = "Error occurred while sending invitation";
+"INVITE_RESEND_SUCCESS" = "Invitation has been resend successfully";
+"UPDATE_PROJECT_FAILED" = "Error occurred while configuring the project";
+"UPDATE_PROJECT_SUCCESS" = "The project has been configured successfully";
+"GET_PROJECT_META_DATA_FAILED" = "Error occurred while getting the project info";
+
+//localized error message
+"ERROR_ACCESS_UNAUTHORIZED_DESC"             = "Access repository failed, please rebind your repository and try again";
+"ERROR_NO_SUCH_FILE_DESC"                    = "Resource not exist or internal server error";
+"ERROR_AUTH_FAILED_DESC"                     = "User authentication failed";
+"ERROR_CONVERT_FILE_FAILED_DESC"             = "Convert file failed";
+"ERROR_CONVERTFILE_CHECKSUM_NOTMATCHED_DESC" = "Checksum not matched when convert file";
+"ERROR_REPO_ACCOUNT_EXISTED"                 = "The repository account has already existed";
+"ERROR_ADD_REPO_ACCOUNT_DISPLAY_NAME_DUMPLICATE" = "The repository dispaly name duplicate";
+"ERROR_ADD_REPO_SYNC_RMS_ERROR"                   = "Error occur when sync add repository info with RMS";
+"ERROR_URL_TRANS_FAILED"                     = "The internet transfer data failed";
+"ERROR_SYNC_REPO_ACCOUNT_NOT_SAME_WITH_RMS"  = "The account you entered is different from the original SkyDRM account";
+"ERROR_DEL_REPO_SYNC_RMS_ERROR"  = "Error occur when sync delete repository info with RMS";
+"ERROR_UPDATE_REPO_SYNC_RMS_ERROR"  = "Error occur when update repository info with RMS";
+"ERROR_UNKNOWN" = "Unknown Error";
+"ERROR_CLOUDDRIVE_EXPIRED_OR_UNAUTHORIZED" = "Current repository is expired, please authorize once again.";
+"ERROR_FILE_ACCESS_DENIED" = "File access is denied";
+"ERROR_IS_NOT_STEWARD" = "Only steward can view NXL file activity logs";
+"ERROR_CAN_NOT_GET_ACTIVITY_LOG" = "Error occurred while viewing the activity log";
+"ERROR_LOSE_CONNECT" = "The Internet connection appears to be offline!";
+"ERROR_LOGIN_GET_ROUTER_URL_FAILED" = "Please input the correct server address!";
+"ERROR_LOGIN_REQUEST_TIMEOUT" = "Request timeout!";
+"ERROR_LOGIN_WEBVIEW_LOAD_FAILED" = "Loading failed!";
+"ERROR_OPEN_FILE_HAS_NO_RIGHTS" = "You do not have any rights on this file";
+"ERROR_OPEN_FILE_FAILED" = "A error occured when processing this file";
+
+// mySpace
+"LIST_FILE_FAILED" = "Error occurred while listing this folder";
+
+"CREATE_FOLDER_SUCCESS" = "Create folder successfully";
+"CREATE_FOLDER_FAILED" = "Error occurred while creating folder";
+
+"DELETE_FILE_TIPS" = "Are you sure you want to delete the selected file?";
+"DELETE_FOLDER_TIPS" = "Are you sure you want to delete the selected folder?";
+
+"DOWNLOAD_FILE_FAILED" = "Error occurred while downloading this file";
+"DOWNLOAD_SHAREWITHME_FILE_FAILED" = "You are not authorized to download the file.";
+
+// application menuItems
+"MENU_SIGNOUT_TIPS" = "Are you sure you want to log out?";
+"MENU_SIGNOUT_TIPS_2" = "Some files are being downloaded or uploaded, are you sure to log out?";
+"MENU_SIGNOUT_QUIT_BUTTON" = "Log Out";
+"MENU_SIGNOUT_CANCEL_BUTTON" = "Cancel";
+"MENU_ITEAM_LOGOUT_BUTTON" = "Log Out";
+"MENU_ITEAM_ABOUT_BUTTON" = "About";
+"MENU_ITEAM_HELP_BUTTON" = "Help";
+"MENU_ITEAM_PREFERENCES" = "Preferences";
+
+"INCLOUDE_SPECIALCHARACTER_WARNING" = "The folder name can only contain alphanumeric\ncharacters, spaces, hyphens, and underscores.";
+
+//Upload ViewController
+"UploadVC_File_ACCESS_DENIED_TIP" = "Files are not allowed to be uploaded to this destination. Please select a different destination.";
+"UPLOAD_FILE_SUCCESS" = "Upload file successfully";
+"SHARE_NONXLFILE_SUCCESS" = "The rights-protected file has been shared as a link via email and saved to MyVault.";
+"SHARE_NXLFILE_SUCCESS" = "The file has been shared as a link with %@.";
+"UPDATE_SHARE_FILE_FAIL" = "Error occurred while updating file";
+"UPDATE_SHARE_FILE_NO_UPDATE" = "No update";
+"UPDATE_SHARE_FILE_REMOVE_SUCCESS" = "Successfully revoked rights for %@.";
+"UPDATE_SHARE_FILE_ADD_SUCCESS" = "Successfully shared the file and emailed the link to %@.";
+"UPDATE_SHARE_FILE_ADD_REMOVE_SUCCESS" = "Successfully shared the file and emailed the link to %@. Successfully revoked rights for %@.";
+
+//Menu
+"MENU_MANAGE_REPOSITORIES_VIEW_FILES" = "View Files";
+"MENU_MANAGE_REPOSITORIES_RENAME" = "Rename";
+"MENU_MANAGE_REPOSITORIES_REMOVE" = "Remove";
+
+//Select File View
+"SELECT_FILE_WARNING" = "We do not support this operation for folder";
+
+//Welcome
+"WELCOME_SHARE_FIRST_LINE" = "Use";
+"WELCOME_SHARE_SECOND_LINE" = "share files with anyone";
+"WELCOME_SHARE_THIRD_LINE" = "anywhere!";
+"WELCOME_SHARE_INFO" = "Persistent protection for your files regardless of where they go or who has them.";
+"WELCOME_PROTECT_FIRST_LINE" = "Protect documents";
+"WELCOME_PROTECT_SECOND_LINE" = "across multiple";
+"WELCOME_PROTECT_THIRD_LINE" = "cloud repositories!";
+"WELCOME_PROTECT_INFO" = "Unified document security service to protect and manage documents stored in the cloud.";
+"WELCOME_ACCESS_FIRST_LINE" = "Access files managed in a";
+"WELCOME_ACCESS_SECOND_LINE" = "document vault";
+"WELCOME_ACCESS_THIRD_LINE" = "from any device!";
+"WELCOME_ACCESS_INFO" = "Centrally manage and track the critical documents and sensitive files you've shared.";
+"WELCOME_REVOKE_FIRST_LINE" = "Revoke, track and monitor";
+"WELCOME_REVOKE_SECOND_LINE" = "usage";
+"WELCOME_REVOKE_THIRD_LINE" = "of your documents!";
+"WELCOME_REVOKE_INFO" = "Safeguard documents by tracking where they go, who is using them, and how they're being used.";
+"WELCOME_SHARE_THRID_LINE" = "digital rights";
+"WELCOME_SHARE_FIVE_LINE" = "to";
+//project activate
+"ACTIVATE_SHARE_FIRST_LINE" = "Share project documents";
+"ACTIVATE_SHARE_SECOND_LINE" = "safely!";
+"ACTIVATE_SHARE_INFO" = "Store and manage documents for the project for secure sharing across project team.";
+"ACTIVATE_TEAMWORK_FIRST_LINE" = "Teamwork!";
+"ACTIVATE_TEAMWORK_SECOND_LINE" = "";
+"ACTIVATE_TEAMWORK_INFO" = "Common collaboration space for the project team to work together.";
+"ACTIVATE_MANAGE_FIRST_LINE" = "Manage project";
+"ACTIVATE_MANAGE_SECOND_LINE" = "centrally!";
+"ACTIVATE_MANAGE_INFO" = "Central place to manage and track all the critical documents and sensitive files shared with project team.";
+"ACTIVATE_TRACK_FIRST_LINE" = "Track and monitor";
+"ACTIVATE_TRACK_SECOND_LINE" = "usage and risk!";
+"ACTIVATE_TRACK_INFO" = "Revoke, track, monitor, and report usage of all project documents easily.";
+"ACTIVATE_CREATE_BUTTON" = "Create a project";
+
+//Check Permission
+"PERMISSION_GET_RIGHTS_ERROR" = "Get Files owner failed";
+"PERMISSION_ENCRYPT_SUCCESS" = "Encrypt file successed";
+"PERMISSION_ENCRYPT_ERROR" = "Encrypt file failed";
+"PERMISSION_DECRYPT_SUCCESS" = "Decrypt nxl file successfully";
+"PERMISSION_DECRYPT_ERROR" = "Decrypt NXL file failed, Please try again later";
+"PERMISSION_STEWARD_TEXT" = "As the document steward, you have all rights.\nHere are the rights granted to other users:";
+"PERMISSION_NOT_STEWARD_TEXT" = "File Rights";
+"PERMISSION_NO_RIGHTS_TEXT" = "You have no rights";
+"PERMISSION_ERROR_TEXT" = "Get rights failed, please try again";
+
+//ResponseTOContextMenu
+"ENCRYPT_SUCCESS_MESSAGE" = "Encrypt successfully!";
+"ENCRYPT_FAILED_MESSAGE" = "Encrypt failed!";
+"DECRYPT_SUCCESS_MESSAGE" = "Decrypt successfully!";
+"DECRYPT_FAILED_MESSAGE" = "Decrypt failed!";
+"RIGHTS_SELECT_TITLE" = "Encrypt";
+
+//File Render Common
+"FILE_RENDER_NOT_AUTH" = "You are not authorized to view this document";
+"FILE_RENDER_NO_RIGHTS" = "You have no right to view this file";
+"FILE_RENDER_NO_PRINT_RIGHT" = "You have no print right";
+"FILE_RENDER_GET_OWNER_FAILED" = "Get Files owner failed";
+"FILE_RENDER_DECRYPT_FAILED" = "Error occurred while processing the file";
+"FILE_RENDER_DECRYPT_SUCCESS" = "Decrypt nxl file successfully";
+"FILE_RENDER_NO_SHARE_RIGHTS" = "You have no share rights";
+"FILE_RENDER_PRINT" = "Print";
+"FILE_RENDER_SHARE" = "Share";
+"FILE_RENDER_PROPERTY" = "Info";
+"FILE_RENDER_SAVEAS" = "SaveAs";
+"FILE_RENDER_PDF_INCLUDE_3D" = "This document includes 3D content, do you want to open it in 3D model?";
+"FILE_RENDER_PDF_INCLUDE_3D_CONFIRM" = "OK";
+"FILE_RENDER_PDF_INCLUDE_3D_CANCEL" = "Cancel";
+
+//File Render Favorite/Offline
+"FILE_RENDER_MARK_FAVORITE_FAILED" = "Mark file favorite failed";
+"FILE_RENDER_MARK_FAVORITE_SUCCESS" = "Mark file favorite successfully";
+"FILE_RENDER_UNMARK_FAVORITE_FAILED" = "Unmark file favorite failed";
+"FILE_RENDER_UNMARK_FAVORITE_SUCCESS" = "Unmark file favorite successfully";
+"FILE_RENDER_MARK_OFFLINE_FAILED" = "Mark file offline failed";
+"FILE_RENDER_MARK_OFFLINE_SUCCESS" = "Mark file offline successfully";
+"FILE_RENDER_UNMARK_OFFLINE_FAILED" = "Unmark file offline failed";
+"FILE_RENDER_UNMARK_OFFLINE_SUCCESS" = "Unmark file offline successfully";
+
+//FileRender Operation
+"FILE_RENDER_ENCRYPT_FAILED" = "Encrypt file failed";
+"FILE_RENDER_ENCRYPT_SUCCESS" = "Encrypt file successed";
+"FILE_RENDER_FAILED" = "Render file failed";
+"FILE_RENDER_PROTECT_FAILED" = "Cannot protect an NXL file";
+"FILE_RENDER_PROJECT_FILE_NOT_EXIST" = "The file has been deleted from this project";
+"FILE_RENDER_DOWNLOAD_FAILED" = "Download File failed, Please try again later.";
+"FILE_RENDER_DOWNLOAD_NETWORK_OFFLINE" = "Error occurred while downloading the file";
+"FILE_RENDER_RENDER_FILECONTENTS_ERROR" = "File contents cannot be displayed due some issues with SkyDRM";
+"FILE_OPERATION_SHARE" = "Share";
+"FILE_OPERATION_VIEW" = "View File";
+"FILE_OPERATION_VIEWFILEINFO" = "View File Info";
+"FILE_OPERATION_REMOVE_FILE" = "Remove";
+"FILE_OPERATION_MAKEAVAILABLE_OFFLINE" = "Make Available Offline";
+"FILE_OPERATION_MAKEUNAVAILABLE_OFFLINE" = "Make Unavailable Offline";
+"FILE_OPERATION_STOPUPLOAD" = "Stop Upload";
+"FILE_OPERATION_WEB" =  "Open SkyDRM Web";
+"FILE_OPERATION_ADD_FILE" = "Add to Project";
+
+//File Render Print
+"FILE_RENDER_PRINT_NOT_SUPPORT" = "Do not support print this type file";
+"FILE_RENDER_PRINT_ERROR" = "Have some error when print file";
+"FILE_RENDER_PRINT_UNSTART" = "Print file failed";
+
+//File Operation
+"FILE_OPERATION_DOWNLOAD_FAILED" = "Download File failed, Please try again later";
+"FILE_OPERATION_DOWNLOAD_NO_SUCH_FILE" = "The file has been deleted from this repository.";
+"FILE_OPERATION_FILE_DELETED_FROM_MYVAULT" = "The file has been deleted";
+"FILE_OPERATION_DOWNLOAD_NOT_SUPPORT_SUCH_FILE" = "Do not support to download this type file.";
+"FILE_OPERATION_DOWNLOAD_NO_RIGHTS" = "You have no download rights";
+"FILE_OPERATION_PROTECT_FAILED" = "Cannot protect an NXL file";
+"FILE_OPERATION_NO_RIGHTS" = "You have no share rights";
+"FILE_OPERATION_INVALID_EMAIL" = "Please enter a valid email address!";
+"FILE_OPERATION_FILE_HAS_REVOKED" = "The file has been revoked";
+"FILE_OPERATION_SHARE_FAILED" = "Error occurred while sharing file";
+"FILE_OPERATION_SHAREWITHME_FAILED" = "You are not authorized to share the file.";
+"FILE_OPERATION_USED_UP_STORAGE_UPLOAD" = "You have used up all of your allocated storage. You cannot upload files here.";
+"FILE_OPERATION_MYVAULT_USED_UP_STORAGE_UPLOAD" = "You have used up all of your allocated storage. You cannot protect and upload files to MyVault.";
+"FILE_OPERATION_MYVAULT_USED_UP_STORAGE_SHARE" = "You have used up all of your allocated storage. You cannot share iles.";
+"FILE_OPERATION_UPLOAD_EMPTY_FILE" = "Empty file are not allowed to be uploaded. Please select a different file.";
+"FILE_OPERATION_SHARE_PROTECT_EMPTY_FILE" = "Empty file are not allowed to be protected or shared.";
+"FILE_OPERATION_OPEN_EMPTY_FILE" = "This file is empty!";
+"FILE_OPERATION_UPLOAD_FAILED" = "Error occurred while uploading file.";
+"FILE_OPERATION_EXIST_INVALID_EMAIL" = "One or more email address is invalid";
+"FILE_OPERATION_EXIST_SHARED_EMAIL" = "User with the same email address already been shared %@";
+"FILE_OPERATION_PROTECT_FILE" = "Protect a File";
+"FILE_OPERATION_PROTECT_AND_SHARED" = "Protect & Share";
+"FILE_OPERATION_PROTECT_AND_SHARED" = "Protect & Share";
+"FILE_OPERATION_PROTECT_EMPTY_FILE" = "Empty file are not allowed to be uploaded,Please select a different file, %@";
+"FILE_OPERATION_PROTECT_FAILED_FILE" = "Follow files protect failed(The file can't be protected.E.g.,no permission on the new protected file,no protection key,invalid source file,protected file existed in destination folder,and so on..), %@";
+
+//File Info Local
+"FILE_LOCAL_INFO_NO_RIGHTS" = "You have no rights";
+"FILE_LOCAL_INFO_GET_RIGHTS_FAILED" = "Get rights failed, please try again";
+"FILE_LOCAL_INFO_STEWARD_RIGHTS" = "As the document steward, you have all rights.\nHere are the rights granted to other users:";
+"FILE_LOCAL_INFO_NOT_STEWARD_RIGHTS" = "File Rights";
+
+//File Info
+"FILE_INFO_MANAGE_TITLE" = "Manage";
+"FILE_INFO_DETAIL_TITLE" = "Details";
+"FILE_INFO_DELETED_MESSAGE" = "This file has been deleted";
+"FILE_INFO_REVOKED_MESSAGE" = "Rights to this file have been revoked for all users.";
+"FILE_INFO_STEWARD_RIGHTS" = "As the document steward, you have all rights.\nHere are the rights granted to other users:";
+"FILE_INFO_LAST_MODIFIEDTIME" = "Last modified time";
+"FILE_INFO_ORIGINAL" = "Original";
+"FILE_INFO_NOT_STEWARD_RIGHTS" = "File Rights";
+"FILE_INFO_NO_RIGHTS" = "You have no rights";
+"FILE_INFO_GET_RIGHTS_FAILED" = "Get rights failed, please try again";
+"FILE_INFO_REVOKE_CONFIRM" = "Revoking this file will revoke all the rights for everyone with whom this file has been shared. But you will still be able to access the file. Are you sure you want to revoke the file?";
+//Home Local File
+"HOME_LOCAL_FILE_ACTION_DESCRIPTION" = "for a file to protect or share";
+//Home Share Config
+"HOME_SHARE_FILE_HAS_REVOKED" = "The file has been revoked";
+"HOME_SHARE_FAILED" = "Error occurred while sharing file";
+"HOME_SHARE_DOWNLOAD_FAILED" = "Download File failed, Please try again later";
+"HOME_SHARE_NO_SHARE_RIGHTS" = "You have no share rights";
+"HOME_SHARE_INVALID_EMAIL" = "One or more email address is invalid";
+"HOME_SHARE_FILE_EXIST" = "The file you selected could not be shared. Please check that the file exists.";
+"HOME_SHARE_ACTION_DESCRIPTION" = "for a file to share";
+
+//Home Protect Config
+"HOME_PROTECT_DOWNLOAD_FAILED" = "Error occurred while downloading file";
+"HOME_PROTECT_FILE_EXIST" = "The file you selected could not be protected. Please check that the file exists.";
+"HOME_PROTECT_FAILED" = "Error occurred while protecting file";
+"HOME_PROTECT_ACTION_DESCRIPTION" = "for a file to protect";
+
+//Home Bottom View
+"HOME_BOTTOM_DECLINE" = "Error occurred while declining invitation";
+"HOME_BOTTOM_ACCEPT_FAILED" = "Error occurred while accepting invitation";
+
+//My Space
+"MY_SPACE_NOT_SUPPORT_TYPE_RENDER" = "You are attempting to view a file type that is not supported currently.";
+"MY_SPACE_NO_RIGHTS" = "You have no share rights";
+"MY_SPACE_CANNOT_PROTECT_NXL" = "Cannot protect an NXL file";
+"MY_SPACE_FOLDER_NAME_EXISTED" = "A folder with this name already exists in the current folder";
+"MY_SPACE_FILE_NAME_EXISTED" = "A file with the same name already exists in the current folder.";
+"MY_SPACE_DELETE_FAILED" = "Error occurred while deleting %@";
+"MY_SPACE_DELETE_SUCCESS" = "Delete successfully";
+
+//Project Invite
+"PROJECT_INVITE_INVALID_EMAIL" = "One or more email address is invalid";
+"PROJECT_FILED_NOT_ADD_TO_PROJECT" = "Cannot be added to a project because there are no permissions";
+
+//Project Files
+"PROJECT_FILES_UPLOAD_FAILED" = "You cannot upload a nxl file into this project!";
+"PROJECt_FILES_EXIST_FILE" = "A folder with this name already exists in the current folder";
+"PROJECT_FILES_RENDER_FAILED" = "You are attempting to view a file type that is not supported currently.";
+"PROJECT_FILES_RIGHT_RENDER_FAILED" = "Access failure";
+"PROJECT_FILES_RETRIEVE_FILES_FAILED" = "Error occurred while downloading the file";
+"PROJECT_FILES_NO_DOWNLOAD_RIGHTS" = "You have no download rights";
+"PROJECT_FILES_PROTECT" = "Please select a valid folder for the project";
+"PROJECT_FILES_PROTECT_MANDATORY_NO" = "Please select at least one classification label for the mandatory category";
+
+//Project Home Member
+"PROJECT_HOME_MEMBER_REMOVE_SUCCESS" = "%@ has been removed from the project";
+"PROJECT_HOME_MEMBER_REMOVE_FAILED" = "Remove failed!";
+
+//Project Home Rencent
+"PROJECT_HOME_RENCENT_UPLOAD_FAILED" = "You cannot upload a nxl file into this project!";
+
+//Project Member
+"PROJECT_MEMBER_EMAIL_FALIED" = "These members will not receive email, they are already members of the project: %@";
+"PROJECT_MEMBER_EMAIL_PART_FAILED" = "Invite successfully!\nBut following members will not receive email because they are already members of the project: %@";
+"PROJECT_MEMBER_REMOVE_SUCCESS" = "%@ has been removed from the project";
+"PROJECT_MEMBER_REMOVE_FAILED" = "Remove failed!";
+
+//Project New VC Invalid Email
+"PROJECT_NEW_VC_INVALID_EMAIL" = "One or more email address is invalid";
+
+//Project All
+"PROJECT_ALL_DECLINE_FAILED" = "Error occurred while declining invitation";
+"PROJECT_ALL_ACCEPT_FAILED" = "Error occurred while accepting invitation";
+
+//ViewController.swift
+"VIEW_CONTROLLER_INVALID_OPERATION" = "We do not support this operation for folders.";
+"SERVICES_INVALID_OPERATION_FOR_NXL_FILE" = "We do not support this operation for nxl file.";
+"SERVICES_INVALID_OPERATION_FOR_MULTIPLE_FILE" = "We do not support this operation for multiple file.";
+"SERVICES_INVALID_OPERATION_FOR_NORMAL_FILE" = "We do not support this operation for normal file.";
+
+
+//Upload VC
+"UPLOAD_VIEW_ENCRYPT_FAILED" = "Encrypt file failed";
+
+//Comment placeholder
+"COMMENT_VIEW_SHARE_COMMENT" = "Add a message to be included in the notification email";
+"COMMENT_VIEW_INIVITATION_MSG" = "Add your message here";
+
+//New Project
+"NEW_PROJECT_NAME_PLACEHOLDER" = "Provide a name for your project";
+"NEW_PROJECT_DESCRIPTION_PLACEHOLDER" = "Give a brief description about the project..";
+
+"RESHARE_HAS_ALREADY_SHARED" = "File has already been shared with %@ and email will not be sent again.";
+//Delete File
+"CONFIRM_DELETING_FILE" = "Are you sure to delete this file?";
+
+// Workspace
+// Check upgrade
+"CHECK_UPGRADE_ALREADY_LASTEST" = "You already have the latest version of SkyDRM.";
+"CHECK_UPGRADE_MESSAGE" = "A new version is available. Do you want to update now?";
+"CHECK_UPGRADE_UPDATE" = "Update";
+"CHECK_UPGRADE_CANCEL" = "Cancel";
+"CHECK_UPGRADE_IGNORE" = "Skip this version";
+"CHECK_UPGRADE_CHECK_FAILED" = "Check new version failed";
+
+//Network Status
+"NETWORK_STATUS_OFFLINE" = "OFFLINE";
+"NETWORK_STATUS_ONLINE" = "ONLINE";
+
+//Sync Status
+"SYNC_STATUS_UPLOADING" = "Uploading %lld of %lld";
+"SYNC_STATUS_PENDING" = "Pending Uploaded %lld";
+
+// Local Main
+"LOCAL_MAIN_OPERATIONBAR_PROTECT" = "Protect a file";
+"LOCAL_MAIN_OPERATIONBAR_SHARE" = "Protect & Share";
+"LOCAL_MAIN_OPERATIONBAR_CATEGORY_VIEWALL" = "View All";
+"LOCAL_MAIN_OPERATIONBAR_STOPALL" = "Stop Upload";
+"LOCAL_MATN_OPERATIONBAR_START" = "Start Upload";
+
+"LOCAL_MAIN_TABLE_COLUMN_NAME" = "Name";
+"LOCAL_MAIN_TABLE_COLUMN_DATEMODIFIED" = "Date modified";
+"LOCAL_MAIN_TABLE_COLUMN_SIZE" = "size";
+"LOCAL_MAIN_TABLE_COLUMN_SHAREDWITH" = "Shared with";
+"LOCAL_MAIN_TABLE_STATUS_TEXT_EMPTY" = "This folder is empty";
+"LOCAL_MAIN_TABLE_EMPTY_PROTECT_FILE_DESCRIPTION" = "Protect files on your local or\nnetwork drive, MyDrive, or an\nexternal repository, You can\naccess protected files from\nMyVault.";
+"LOCAL_MAIN_TABLE_EMPTY_SHARE_FILE_DESCRIPTION" = "Protect and Share files\nfrom your local or network\ndrive, MyDrive, or an external\nrepository.";
+
+"LOCAL_MAIN_FOOTER_ITEM" = "%i item";
+"LOCAL_MAIN_FOOTER_ITEMS" = "%i items";
+"LOCAL_MAIN_FOOTER_USAGE_USED" = "%@ used";
+"LOCAL_MAIN_FOOTER_USAGE_FREE" = "%@ free";
+"LOCAL_MAIN_FOOTER_UPLOAD_SCHEDULE" = "Upload Schedule";
+"LOCAL_MAIN_FOOTER_UPLOAD_SCHEDULE_AUTOMATIC" = "Automatic";
+"LOCAL_MAIN_FOOTER_UPLOAD_SCHEDULE_CHANGE" = "Change";
+"LOCAL_MAIN_FOOTER_NETWORK_STATUS" = "Status";
+"LOCAL_MAIN_FOOTER_NETWORK_STATUS_CONNECT" = "Status: Connected";
+"LOCAL_MAIN_FOOTER_NETWORK_STATUS_DISCONNECT" = "Status: Network Error";
+"LOCAL_MAIN_TABLE_EMPTY_PROTECT" = "Protect";
+"LOCAL_MAIN_TABLE_EMPTY_PROTECT_SHARE" = "Protect & Share";
+"LOCAL_MAIN_TABLE_EMPTY_PROTECT_TEXT" = "Protect Files";
+"LOCAL_MAIN_TABLE_ENPTY_PROTECT_SHARE_TEXT" = "Protect and Share Files";
+
+
+//Watermark
+"WATERMARK_EMPTY" = "Watermark cannot be set empty.";
+"WATERMARK_EXCEED_MAXIMUM" = "Watermark string exceeds 50 characters.";
+"WATERMARK_TEXT_INCLUDE_TAG" = "Cannot contain $(Date),$(User),$(Time),$(Break).";
+
+// Local fileinfo
+"LOCAL_FILEINFO_INFO_SHARED_WITH_S" = "Shared with %i members";
+"LOCAL_FILEINFO_INFO_SHARED_WITH" = "Shared with %i member";
+
+//Expiry
+"EXPIRY_RELATIVE_INVALID" = "Please specify relative digital rights validity period";
+"EXPIRY_CANNOT_SHARE" = "The input validity time is invalid. Please choose a validity time again.";
+
+//Connection Error
+"CONNECTION_ERROR_WINDOW_TITLE" = "Error in Internet Connection";
+
+//Remove File
+"REMOVE_FILE_WINDOW_TITLE" = "Remove File";
+//Sider bar Name
+"SIDERBAR_NAME_MYVAULT" = "MyVault";
+"SIDERBAR_NAME_SHAREDWITHME" = "Shared with me";
+"SIDERBAR_NAME_SHAREDWITHME_NOBLANK" = "SharedWithMe://";
+"SIDERBAR_NAME_ALLOFFLINEFILES" = "All offline files";
+"SIDERBAR_NAME_OUTBOX" = "Outbox";
+"SIDERBAR_NAME_PROJECT" = "Project";
+"SIDERBAR_NAME_WORKSPACE" = "WorkSpace";
+// Tray.
+"TRAY_CANNOT_CONNECT" = "Can't Connect";
+"WAIT_FOR_UPLOAD" = "Waiting for upload";
+
+// configure server url page
+"MSG_INPUT_URL_EMPTY" = "Please enter the server URL";
+"MSG_INPUT_URL_INVALID" = "Url invalid";
+"MSG_YOU_CAN_CHANGE_URL" = "You can change the URL";
+
+// preference
+"MSG_PREFERENCE_SAVE_SUCCESS" = "Save successfully!";
+//File Rights
+"FILE_RIGHT_PROMPT" = "User-defined rights are pre-defined permissions that you can apply to your documents.";
+"FILE_RIGHT_VIEW" = "View";
+"FILE_RIGHT_EDIT" = "Edit";
+"FILE_RIGHT_EXTRACT" = "Extract";
+"FILE_RIGHT_PRINT" = "Print";
+"FILE_RIGHT_Share" = "Re-share";
+"FILE_RIGHT_SAVEAS" = "Save As";
+"FILE_RIGHT_WATERMARK" = "Watermark";
+"FILE_RIGHT_VALIDITY" = "Validity";
+"FILE_RIGHT_CONTENT" = "Content";
+"FILE_RIGHT_COLLABORATION" = "Collaboration";
+"FILE_RIGHT_EFFECT" = "Effect";
+"FILE_RIGHT_VALIDITY_UNITIL" = "Until";
+"FILE_RIGHT_EXPIRATION" = "Validity";
+"FILE_RIGHT_VALIDITY_NAVER" = "Never validity";
+"FILE_RIGHT_MOUSEEVENT_CHANGE" = "Change";
+"FILE_RIGHT_USER_DEFINED" = "User-defined Rights";
+"FILE_RIGHT_PERMISSIONS" = "Permission applied to the file";
+"FILE_RIGHT_EXPIRE" = "Never expire";
+"FILE_RIGHT_RELATIVE" = "Relative";
+"FILE_RIGHT_ABSOLUTEDATE" = "Absolute date";
+"FILE_RIGHT_DATERANGE" = "Date range";
+"FILE_RIGHT_ACCESS" = "Access rights will";
+"FILE_RIGHT_COMPANY_DEFINED" = "Company-defined Rights";
+"FILE_RIGHT_COMPANY_POLICIES" = "Company-defined rights are permissions determined by centralized policies";
+
+//Tray message
+"UPLOAD_WAITING" = "Waiting for upload...";
+"UPLOAD_DOING" = "Uploading....";
+"UPLOAD_SUCCESSFUL" = "Successful uploaded";
+"SYSTEMBUCKET_PROTECT_SUCCESSFUL" = "Protect succeeded";
+"DOWNLOAD_WAITING" = "Waiting for download...";
+"DOWNLOAD_DOING" = "Downloading....";
+"DOWNLOAD_SUCCESSFUL" = "Successful downloaded";
+"DOWNLOAD_FAILED" = "Failed";
+"BUTTON_TOOPTIP_OPEN_SkyDRM_DESKTOP" = "Open SkyDRM Desktop";
+"BUTTON_TOOPTIP_OPEN_SKYDRM_WEB" = "Open SkyDRM Web";
+"BUTTON_TOOPTIP_OPTIONS" = "Options";
+"BUTTON_TOOPTIP_PREFERENCES" = "Preferences";
+//Hoops
+"HOOPS_SAVING_FILE" = "Saving file";
+"HOOPS_SAVING_LODING" = "Loding...";
+
+"WARNING_EMPTY_FOLDER" = "Please select a folder";
+
+"WARNING_GET_RIGHT_FAILED" = "Get rights failed in offline mode";

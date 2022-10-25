@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXRightsSelectViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="fileNameTextField" destination="RYj-YX-99R" id="5wE-Bg-uWe"/>
+                <outlet property="rightsSelectView" destination="Mt3-6V-diJ" id="epE-WE-zRL"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="481" height="221"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5v-N4-rUo">
+                    <rect key="frame" x="313" y="20" width="148" height="21"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kTQ-pl-O9x">
+                            <rect key="frame" x="-6" y="-7" width="82" height="32"/>
+                            <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JFw-ma-H7X">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                            </buttonCell>
+                            <connections>
+                                <action selector="clickCancelBtn:" target="-2" id="vWl-oM-Ubv"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7I8-Gx-9eO">
+                            <rect key="frame" x="72" y="-7" width="82" height="32"/>
+                            <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dWa-wb-fHL">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                            </buttonCell>
+                            <connections>
+                                <action selector="clickOKBtn:" target="-2" id="RZR-Np-wuj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="kTQ-pl-O9x" firstAttribute="width" secondItem="7I8-Gx-9eO" secondAttribute="width" id="z2i-dY-BlH"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Mt3-6V-diJ" customClass="NXRightsView" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="20" y="49" width="441" height="127"/>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYj-YX-99R">
+                    <rect key="frame" x="18" y="184" width="41" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="3Rr-nZ-PK0">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Mt3-6V-diJ" firstAttribute="top" secondItem="RYj-YX-99R" secondAttribute="bottom" constant="8" symbolic="YES" id="CNr-jZ-bIE"/>
+                <constraint firstItem="Mt3-6V-diJ" firstAttribute="leading" secondItem="RYj-YX-99R" secondAttribute="leading" id="SgS-uk-2Xy"/>
+                <constraint firstAttribute="bottom" secondItem="M5v-N4-rUo" secondAttribute="bottom" constant="20" symbolic="YES" id="VS9-0G-qBa"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RYj-YX-99R" secondAttribute="trailing" constant="20" symbolic="YES" id="ZDH-q3-MaL"/>
+                <constraint firstItem="RYj-YX-99R" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="a8j-Jl-6Hm"/>
+                <constraint firstItem="Mt3-6V-diJ" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="hdV-RS-MvY"/>
+                <constraint firstItem="M5v-N4-rUo" firstAttribute="top" secondItem="Mt3-6V-diJ" secondAttribute="bottom" constant="8" symbolic="YES" id="qFH-fk-Dcr"/>
+                <constraint firstItem="RYj-YX-99R" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="qsk-l5-Hj5"/>
+                <constraint firstAttribute="trailing" secondItem="M5v-N4-rUo" secondAttribute="trailing" constant="20" symbolic="YES" id="trA-wa-nlu"/>
+            </constraints>
+            <point key="canvasLocation" x="140.5" y="142.5"/>
+        </customView>
+    </objects>
+</document>

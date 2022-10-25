@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXProjectTabViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="allProjects" destination="3PF-ag-Yw9" id="uIG-og-8ct"/>
+                <outlet property="createByMe" destination="Z8D-EL-ddV" id="GKc-y6-L2v"/>
+                <outlet property="createByOthers" destination="Ln1-Xa-qI2" id="DaH-3f-Gql"/>
+                <outlet property="oneTableView" destination="jH2-1L-OhY" id="epQ-vc-g0A"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="916" height="427"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabView canDrawConcurrently="YES" fixedFrame="YES" drawsBackground="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH2-1L-OhY">
+                    <rect key="frame" x="-7" y="-10" width="930" height="443"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                    <font key="font" metaFont="system"/>
+                    <tabViewItems>
+                        <tabViewItem label="Tab" identifier="" id="3PF-ag-Yw9">
+                            <view key="view" canDrawConcurrently="YES" id="gG6-Ez-rj3">
+                                <rect key="frame" x="10" y="33" width="910" height="397"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                        </tabViewItem>
+                        <tabViewItem label="View" identifier="" id="Z8D-EL-ddV">
+                            <view key="view" canDrawConcurrently="YES" id="4jl-BL-XWf">
+                                <rect key="frame" x="10" y="33" width="910" height="397"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                        </tabViewItem>
+                        <tabViewItem label="Item 2" identifier="" id="Ln1-Xa-qI2">
+                            <view key="view" canDrawConcurrently="YES" ambiguous="YES" id="LOw-Sl-g06">
+                                <rect key="frame" x="10" y="33" width="910" height="397"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                        </tabViewItem>
+                    </tabViewItems>
+                </tabView>
+            </subviews>
+            <point key="canvasLocation" x="139" y="154.5"/>
+        </customView>
+    </objects>
+</document>

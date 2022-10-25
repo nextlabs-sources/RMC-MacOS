@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FileInfoViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBtn" destination="Wjl-UM-qmh" id="5yz-Is-dCV"/>
+                <outlet property="fileInfoView" destination="vhG-L7-iil" id="uRg-lv-RTP"/>
+                <outlet property="infoViewHeight" destination="DIf-3N-snV" id="xpJ-Pc-hMU"/>
+                <outlet property="rightsView" destination="1tY-YI-QK0" id="jwP-bo-juJ"/>
+                <outlet property="rightsViewHeight" destination="anx-KS-EjE" id="der-uC-T6r"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="FileInfoView" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="650" height="550"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="vhG-L7-iil">
+                    <rect key="frame" x="0.0" y="300" width="650" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="DIf-3N-snV"/>
+                    </constraints>
+                </customView>
+                <customView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tY-YI-QK0">
+                    <rect key="frame" x="0.0" y="50" width="650" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="anx-KS-EjE"/>
+                    </constraints>
+                </customView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wjl-UM-qmh">
+                    <rect key="frame" x="274" y="3" width="102" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Wjl-UM-qmh" secondAttribute="height" multiplier="3:1" id="1aK-e6-3oi"/>
+                        <constraint firstAttribute="height" constant="30" id="pUR-0P-d6A"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ait-h5-MgG">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="close:" target="-2" id="O1S-q9-51N"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1tY-YI-QK0" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="NYQ-wK-Okj"/>
+                <constraint firstItem="vhG-L7-iil" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="QZO-fd-gC4"/>
+                <constraint firstAttribute="bottom" secondItem="Wjl-UM-qmh" secondAttribute="bottom" constant="10" id="Z8Y-uB-y7K"/>
+                <constraint firstAttribute="trailing" secondItem="vhG-L7-iil" secondAttribute="trailing" id="bla-qr-Qq9"/>
+                <constraint firstItem="vhG-L7-iil" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="mOV-Fa-B8i"/>
+                <constraint firstItem="1tY-YI-QK0" firstAttribute="top" secondItem="vhG-L7-iil" secondAttribute="bottom" id="mZy-FO-aOr"/>
+                <constraint firstAttribute="trailing" secondItem="1tY-YI-QK0" secondAttribute="trailing" id="p5B-di-Obz"/>
+                <constraint firstItem="Wjl-UM-qmh" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="xFn-0w-eDW"/>
+            </constraints>
+            <point key="canvasLocation" x="-54" y="81"/>
+        </customView>
+    </objects>
+</document>

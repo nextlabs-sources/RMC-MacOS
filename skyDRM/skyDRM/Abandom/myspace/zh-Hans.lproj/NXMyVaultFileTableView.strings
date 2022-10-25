@@ -1,0 +1,39 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Shared With"; ObjectID = "179-jq-ghp"; */
+"179-jq-ghp.headerCell.title" = "Shared With";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "3Qz-gV-gHA"; */
+"3Qz-gV-gHA.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Button"; ObjectID = "7yB-9x-Bl0"; */
+"7yB-9x-Bl0.title" = "Button";
+
+/* Class = "NSTableColumn"; headerCell.title = "File Name"; ObjectID = "Bns-ob-Vgh"; */
+"Bns-ob-Vgh.headerCell.title" = "File Name";
+
+/* Class = "NSTableColumn"; headerCell.title = "File Size"; ObjectID = "CVT-6B-vQq"; */
+"CVT-6B-vQq.headerCell.title" = "File Size";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HrT-f3-AUc"; */
+"HrT-f3-AUc.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "There are no files here"; ObjectID = "XjS-Tq-XGx"; */
+"XjS-Tq-XGx.title" = "当前目录没有文件";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "YyH-rt-iFc"; */
+"YyH-rt-iFc.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "bkI-LC-hVu"; */
+"bkI-LC-hVu.title" = "Table View Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Date Modified"; ObjectID = "hFS-Dc-Aaq"; */
+"hFS-Dc-Aaq.headerCell.title" = "Date Modified";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "lrP-Jn-6yl"; */
+"lrP-Jn-6yl.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "uZT-N5-OcM"; */
+"uZT-N5-OcM.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "xmZ-x9-Zzz"; */
+"xmZ-x9-Zzz.title" = "Label";

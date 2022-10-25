@@ -1,0 +1,21 @@
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Window";
+
+/* Class = "NSToolbarItem"; label = "Print"; ObjectID = "kme-Mg-yho"; */
+"kme-Mg-yho.label" = "Print";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Print"; ObjectID = "kme-Mg-yho"; */
+"kme-Mg-yho.paletteLabel" = "Print";
+
+/* Class = "NSToolbarItem"; label = "Share"; ObjectID = "ldN-n7-PBm"; */
+"ldN-n7-PBm.label" = "Share";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Share"; ObjectID = "ldN-n7-PBm"; */
+"ldN-n7-PBm.paletteLabel" = "Share";
+
+/* Class = "NSToolbarItem"; label = "Info"; ObjectID = "qmY-gI-qXP"; */
+"qmY-gI-qXP.label" = "Info";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Info"; ObjectID = "qmY-gI-qXP"; */
+"qmY-gI-qXP.paletteLabel" = "Info";

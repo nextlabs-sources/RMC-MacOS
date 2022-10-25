@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "Choose a file from your local drive or from any connected repository"; ObjectID = "6L7-zf-VZh"; */
+"6L7-zf-VZh.title" = "从本地或者仓库中选择一个文件";
+
+/* Class = "NSTextFieldCell"; title = "Share"; ObjectID = "ARb-As-3fg"; */
+"ARb-As-3fg.title" = "分享";
+
+/* Class = "NSButtonCell"; title = "Proceed"; ObjectID = "Re3-FR-V3Q"; */
+"Re3-FR-V3Q.title" = "进行";
+
+/* Class = "NSButtonCell"; title = "cancel"; ObjectID = "TXZ-Ex-V8N"; */
+"TXZ-Ex-V8N.title" = "取消";

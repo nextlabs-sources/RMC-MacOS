@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXAddFileSelectNewProjectViewItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="fileNameLabel" destination="Wit-PX-6Cc" id="dWL-al-uss"/>
+                <outlet property="lineView" destination="rfm-ZZ-gff" id="nbA-8n-p8P"/>
+                <outlet property="rightsDescText" destination="viw-vI-Q52" id="7cL-Ps-eag"/>
+                <outlet property="view" destination="03v-BC-OFU" id="8rJ-E7-5VH"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="NXAddFileSelectNewProjectViewItemIdentifier" id="03v-BC-OFU">
+            <rect key="frame" x="0.0" y="0.0" width="516" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wit-PX-6Cc" userLabel="fileNameLab">
+                    <rect key="frame" x="0.0" y="50" width="490" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="eZQ-2r-aXQ"/>
+                    </constraints>
+                    <textFieldCell key="cell" truncatesLastVisibleLine="YES" alignment="left" title="fejeeeee7wfsfgje-2019-05-15.text.nxl" id="BBb-bu-5Ky">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" red="0.45446892620000001" green="0.45327899760000001" blue="0.47406408630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="rfm-ZZ-gff" userLabel="lineView">
+                    <rect key="frame" x="2" y="41" width="471" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BLh-8P-Adb"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="viw-vI-Q52" userLabel="rightsDescText">
+                    <rect key="frame" x="0.0" y="14" width="332" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="328" id="5Ko-uG-tvJ"/>
+                        <constraint firstAttribute="height" constant="19" id="9g8-rw-kbL"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Protected with company defined rights" id="UuG-d8-oCZ">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" red="0.27457748160000001" green="0.52068870060000005" blue="0.309048979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rfm-ZZ-gff" secondAttribute="trailing" constant="43" id="Afj-aA-lcG"/>
+                <constraint firstItem="rfm-ZZ-gff" firstAttribute="top" secondItem="Wit-PX-6Cc" secondAttribute="bottom" constant="8" id="Cck-gY-jWm"/>
+                <constraint firstItem="viw-vI-Q52" firstAttribute="top" secondItem="rfm-ZZ-gff" secondAttribute="bottom" constant="8" id="K0h-fu-fnx"/>
+                <constraint firstItem="rfm-ZZ-gff" firstAttribute="leading" secondItem="03v-BC-OFU" secondAttribute="leading" constant="2" id="fHJ-tI-Y0M"/>
+                <constraint firstItem="viw-vI-Q52" firstAttribute="leading" secondItem="03v-BC-OFU" secondAttribute="leading" constant="2" id="hUB-MF-gui"/>
+                <constraint firstItem="Wit-PX-6Cc" firstAttribute="leading" secondItem="03v-BC-OFU" secondAttribute="leading" constant="2" id="mMT-xA-phf"/>
+                <constraint firstItem="rfm-ZZ-gff" firstAttribute="width" secondItem="Wit-PX-6Cc" secondAttribute="width" constant="-15" id="mSq-6h-Z1v"/>
+                <constraint firstItem="Wit-PX-6Cc" firstAttribute="top" secondItem="03v-BC-OFU" secondAttribute="top" constant="4" id="rPZ-zc-5U7"/>
+            </constraints>
+            <point key="canvasLocation" x="-94" y="-197.5"/>
+        </customView>
+    </objects>
+</document>

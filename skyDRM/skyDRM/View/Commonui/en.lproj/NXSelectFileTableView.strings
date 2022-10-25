@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ZXG-2Z-SUU"; */
+"ZXG-2Z-SUU.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "name"; ObjectID = "kVF-j4-CWK"; */
+"kVF-j4-CWK.headerCell.title" = "name";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "pof-se-v0L"; */
+"pof-se-v0L.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "There are no files here"; ObjectID = "prp-5k-akW"; */
+"prp-5k-akW.title" = "This folder is empty! ";

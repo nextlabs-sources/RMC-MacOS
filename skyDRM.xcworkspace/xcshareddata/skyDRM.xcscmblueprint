@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FF9C537A51ADE166230E9FF33307324A738A696B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FF9C537A51ADE166230E9FF33307324A738A696B" : 9223372036854775807,
+    "253A0260149FFB10A9F408256390D868B098820F" : 9223372036854775807,
+    "7F6EF1C150E8649CB5EA26D43FD01569F98F5676" : 9223372036854775807,
+    "925C2375FC95231424C4B6F1179AD76D856BFE00" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0FD1041E-49DF-499B-9075-272F3B10BDBA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FF9C537A51ADE166230E9FF33307324A738A696B" : "rmc-mac\/",
+    "253A0260149FFB10A9F408256390D868B098820F" : "git_external\/GoogleDriveSDK\/Mac\/3.0\/Deps\/AppAuth\/",
+    "7F6EF1C150E8649CB5EA26D43FD01569F98F5676" : "common\/",
+    "925C2375FC95231424C4B6F1179AD76D856BFE00" : "rmc-sdk-iosmac\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "skyDRM",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "skyDRM.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/openid\/AppAuth-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "253A0260149FFB10A9F408256390D868B098820F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/nxtlbs-devops\/rmc-mobile-common.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7F6EF1C150E8649CB5EA26D43FD01569F98F5676"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/kevzhou\/rmc-sdk-iosmac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "925C2375FC95231424C4B6F1179AD76D856BFE00"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/kevzhou\/rmc-mac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF9C537A51ADE166230E9FF33307324A738A696B"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXLocalMainOperationViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="nameLbl" destination="WV9-el-J3B" id="mul-vb-OI5"/>
+                <outlet property="openWebsiteButton" destination="ZVj-Rj-zNK" id="RkE-yF-Wq7"/>
+                <outlet property="portraitView" destination="Wfh-Co-8cl" id="cbJ-JO-gm8"/>
+                <outlet property="preferenceButton" destination="YjL-49-q4k" id="Hgb-pa-f0X"/>
+                <outlet property="protectAndShare" destination="Rwe-r8-jZw" id="ule-wQ-xpp"/>
+                <outlet property="protectFile" destination="mJj-Uu-8at" id="9Yi-PL-Efq"/>
+                <outlet property="refreshBtn" destination="d3j-UQ-hv9" id="pjs-5C-KPf"/>
+                <outlet property="searchField" destination="9Ri-Wb-gWr" id="Mbe-CG-1Et"/>
+                <outlet property="statusLbl" destination="fGK-GQ-IvM" id="IxZ-9o-Nvm"/>
+                <outlet property="uploadBtn" destination="ZSm-yw-G3o" id="fOC-jk-yA5"/>
+                <outlet property="view" destination="c22-O7-iKe" id="1ar-7Z-35v"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView appearanceType="aqua" id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="1142" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mJj-Uu-8at">
+                    <rect key="frame" x="20" y="41" width="109" height="18"/>
+                    <buttonCell key="cell" type="bevel" title="  Protect a File" alternateTitle=" " bezelStyle="rounded" image="ProtectAFile-ToolBarIcon" imagePosition="left" alignment="center" inset="2" id="ClZ-Ts-r59">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="protectFile:" target="-2" id="fFA-j7-rNq"/>
+                    </connections>
+                </button>
+                <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="FSr-s4-cyc">
+                    <rect key="frame" x="284" y="0.0" width="5" height="100"/>
+                </box>
+                <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="WNs-0r-l1a">
+                    <rect key="frame" x="937" y="0.0" width="5" height="100"/>
+                </box>
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ri-Wb-gWr">
+                    <rect key="frame" x="347" y="39" width="250" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="hJ4-rq-l7W"/>
+                    </constraints>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="QCO-Ib-zhr">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                    <connections>
+                        <action selector="changeSearchContent:" target="-2" id="z7R-FM-GVN"/>
+                    </connections>
+                </searchField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZSm-yw-G3o">
+                    <rect key="frame" x="813" y="41" width="110" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="tzi-42-2tv"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Stop Upload" bezelStyle="regularSquare" image="StopUpload-ToolBarIcon" imagePosition="left" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="514-T8-Ghd">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="changeUpload:" target="-2" id="m1a-kY-waH"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZVj-Rj-zNK">
+                    <rect key="frame" x="956" y="39" width="22" height="22"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="tray_openweb" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="UBC-Oi-OPs">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openWeb:" target="-2" id="d6F-L9-Alc"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YjL-49-q4k">
+                    <rect key="frame" x="994" y="40" width="21" height="20"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="tray_settings" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="tpT-Ht-StY">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openPreference:" target="-2" id="UcH-BQ-hTO"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rwe-r8-jZw">
+                    <rect key="frame" x="145" y="41" width="125" height="18"/>
+                    <buttonCell key="cell" type="bevel" title="  Protect &amp; Share" bezelStyle="regularSquare" image="ProtectShare-ToolBarIcon" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="dwr-yO-EcW">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="shareFile:" target="-2" id="ZvX-yA-zZk"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d3j-UQ-hv9">
+                    <rect key="frame" x="303" y="36" width="28" height="28"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="circular" image="refresh" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="hTY-1R-SPc">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="refresh:" target="-2" id="Gtn-4v-mJw"/>
+                    </connections>
+                </button>
+                <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="coq-B8-bo6">
+                    <rect key="frame" x="1047" y="33" width="75" height="34"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Wfh-Co-8cl" customClass="NXCircleText" customModule="SkyDRM" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Wfh-Co-8cl" secondAttribute="height" id="WxY-gn-u0N"/>
+                                <constraint firstAttribute="width" constant="34" id="spg-j6-HSl"/>
+                            </constraints>
+                        </customView>
+                        <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H2F-oC-vSZ">
+                            <rect key="frame" x="42" y="0.0" width="33" height="34"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WV9-el-J3B">
+                                    <rect key="frame" x="-2" y="17" width="37" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="PNR-VJ-7DS">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fGK-GQ-IvM">
+                                    <rect key="frame" x="-2" y="0.0" width="31" height="13"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="1bP-BD-dsz">
+                                        <font key="font" metaFont="system" size="10"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9Ri-Wb-gWr" firstAttribute="leading" secondItem="d3j-UQ-hv9" secondAttribute="trailing" constant="16" id="3Z6-bT-tl8"/>
+                <constraint firstItem="YjL-49-q4k" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="45u-Q2-CfU"/>
+                <constraint firstItem="Rwe-r8-jZw" firstAttribute="leading" secondItem="mJj-Uu-8at" secondAttribute="trailing" constant="16" id="7bJ-uG-kHQ"/>
+                <constraint firstItem="WNs-0r-l1a" firstAttribute="leading" secondItem="ZSm-yw-G3o" secondAttribute="trailing" constant="16" id="E2m-4E-aQG"/>
+                <constraint firstItem="9Ri-Wb-gWr" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="IfC-4G-5eO"/>
+                <constraint firstItem="mJj-Uu-8at" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="Ius-3g-swl"/>
+                <constraint firstItem="YjL-49-q4k" firstAttribute="leading" secondItem="ZVj-Rj-zNK" secondAttribute="trailing" constant="16" id="KXd-K1-mDY"/>
+                <constraint firstItem="FSr-s4-cyc" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="LMq-69-CId"/>
+                <constraint firstItem="ZVj-Rj-zNK" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="LN4-2G-PFQ"/>
+                <constraint firstItem="Rwe-r8-jZw" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="N3s-60-Wdj"/>
+                <constraint firstItem="FSr-s4-cyc" firstAttribute="leading" secondItem="Rwe-r8-jZw" secondAttribute="trailing" constant="16" id="OeK-Nb-6iE"/>
+                <constraint firstItem="FSr-s4-cyc" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="RYe-eJ-jGT"/>
+                <constraint firstItem="ZVj-Rj-zNK" firstAttribute="leading" secondItem="WNs-0r-l1a" secondAttribute="trailing" constant="16" id="SJi-EU-Ipc"/>
+                <constraint firstItem="d3j-UQ-hv9" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="bNC-QU-ib3"/>
+                <constraint firstItem="coq-B8-bo6" firstAttribute="leading" secondItem="YjL-49-q4k" secondAttribute="trailing" constant="32" id="cf1-UK-4Yu"/>
+                <constraint firstItem="WNs-0r-l1a" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="d2C-Ku-UsB"/>
+                <constraint firstItem="mJj-Uu-8at" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="i0X-E2-Eck"/>
+                <constraint firstItem="WNs-0r-l1a" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="kiu-J3-KMc"/>
+                <constraint firstItem="coq-B8-bo6" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="nU4-tx-Oiy"/>
+                <constraint firstItem="ZSm-yw-G3o" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="ntf-9u-OkU"/>
+                <constraint firstItem="d3j-UQ-hv9" firstAttribute="leading" secondItem="FSr-s4-cyc" secondAttribute="trailing" constant="16" id="q7Y-6s-6We"/>
+                <constraint firstAttribute="trailing" secondItem="coq-B8-bo6" secondAttribute="trailing" constant="20" symbolic="YES" id="yND-Sn-PuZ"/>
+            </constraints>
+            <point key="canvasLocation" x="188" y="118"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ProtectAFile-ToolBarIcon" width="18" height="18"/>
+        <image name="ProtectShare-ToolBarIcon" width="18" height="18"/>
+        <image name="StopUpload-ToolBarIcon" width="18" height="18"/>
+        <image name="refresh" width="28" height="28"/>
+        <image name="tray_openweb" width="22" height="22"/>
+        <image name="tray_settings" width="21" height="20"/>
+    </resources>
+</document>

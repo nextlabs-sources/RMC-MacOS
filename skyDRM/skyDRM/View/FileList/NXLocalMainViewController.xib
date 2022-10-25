@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXLocalMainViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="fileListView" destination="t2Y-tO-QZs" id="Vg3-6z-oT5"/>
+                <outlet property="footerView" destination="cAd-Ce-nS0" id="PQL-gb-pS4"/>
+                <outlet property="operationView" destination="8Oy-7L-vRo" id="8LR-dh-BlJ"/>
+                <outlet property="siderBarView" destination="daV-DU-92i" id="qfQ-aV-fAv"/>
+                <outlet property="view" destination="c22-O7-iKe" id="nWj-Gb-lnl"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView canDrawConcurrently="YES" appearanceType="aqua" id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="8Oy-7L-vRo">
+                    <rect key="frame" x="0.0" y="440" width="800" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="T8s-AF-z67"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="cAd-Ce-nS0">
+                    <rect key="frame" x="0.0" y="0.0" width="800" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="cS9-nt-jNt"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="daV-DU-92i">
+                    <rect key="frame" x="0.0" y="42" width="160" height="398"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="wantsLayer" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.backgroundColorWithNSColor">
+                            <color key="value" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="t2Y-tO-QZs">
+                    <rect key="frame" x="160" y="40" width="640" height="400"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8Oy-7L-vRo" secondAttribute="trailing" id="1lA-GR-Af7"/>
+                <constraint firstItem="cAd-Ce-nS0" firstAttribute="top" secondItem="t2Y-tO-QZs" secondAttribute="bottom" id="6GQ-wV-er9"/>
+                <constraint firstAttribute="trailing" secondItem="t2Y-tO-QZs" secondAttribute="trailing" id="7ox-eM-Fvh"/>
+                <constraint firstItem="t2Y-tO-QZs" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="160" id="Lex-HJ-1cE"/>
+                <constraint firstItem="daV-DU-92i" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="YZD-43-3I9"/>
+                <constraint firstItem="t2Y-tO-QZs" firstAttribute="leading" secondItem="daV-DU-92i" secondAttribute="trailing" id="hCV-NY-X1d"/>
+                <constraint firstItem="cAd-Ce-nS0" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="kjw-g5-wVo"/>
+                <constraint firstItem="t2Y-tO-QZs" firstAttribute="top" secondItem="8Oy-7L-vRo" secondAttribute="bottom" id="sAg-vL-Cbq"/>
+                <constraint firstAttribute="trailing" secondItem="cAd-Ce-nS0" secondAttribute="trailing" id="seJ-YI-mjd"/>
+                <constraint firstAttribute="bottom" secondItem="cAd-Ce-nS0" secondAttribute="bottom" id="tA1-Q0-qbE"/>
+                <constraint firstItem="8Oy-7L-vRo" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="wH9-YQ-hTL"/>
+                <constraint firstItem="daV-DU-92i" firstAttribute="top" secondItem="8Oy-7L-vRo" secondAttribute="bottom" id="wxu-22-gsE"/>
+                <constraint firstItem="8Oy-7L-vRo" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="yOH-xp-zl4"/>
+                <constraint firstItem="t2Y-tO-QZs" firstAttribute="bottom" secondItem="daV-DU-92i" secondAttribute="bottom" constant="2" id="zzk-wU-GQC"/>
+            </constraints>
+            <point key="canvasLocation" x="147" y="124"/>
+        </customView>
+    </objects>
+</document>

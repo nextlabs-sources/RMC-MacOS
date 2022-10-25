@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXCreateNewProjectItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="bkBtn" destination="vFV-PF-3GH" id="XOV-za-Jla"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vFV-PF-3GH">
+                    <rect key="frame" x="0.0" y="0.0" width="220" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="Q4W-Pe-nCF"/>
+                        <constraint firstAttribute="width" constant="220" id="ae7-tC-Saz"/>
+                    </constraints>
+                    <shadow key="shadow">
+                        <color key="color" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                    </shadow>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="project_create_new_bk" imagePosition="overlaps" alignment="center" transparent="YES" imageScaling="axesIndependently" inset="2" id="FB0-cb-QH2">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onCreateClick:" target="-2" id="aNl-Ov-Md3"/>
+                    </connections>
+                </button>
+                <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rA3-dV-HkA">
+                    <rect key="frame" x="23" y="28" width="173" height="64"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7IJ-ik-c0c">
+                            <rect key="frame" x="71" y="32" width="32" height="32"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="project_add_icon" id="Vk6-5B-sJC"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iH4-xQ-r8I">
+                            <rect key="frame" x="-2" y="0.0" width="177" height="24"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Create new project" id="0jd-Lm-IGq">
+                                <font key="font" metaFont="system" size="20"/>
+                                <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vFV-PF-3GH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="51D-P1-yMf"/>
+                <constraint firstItem="vFV-PF-3GH" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="9ak-2D-3je"/>
+                <constraint firstAttribute="bottom" secondItem="vFV-PF-3GH" secondAttribute="bottom" id="HSo-y5-BMo"/>
+                <constraint firstItem="rA3-dV-HkA" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="MFv-1t-xZl"/>
+                <constraint firstAttribute="trailing" secondItem="vFV-PF-3GH" secondAttribute="trailing" id="jeH-Kn-LYt"/>
+                <constraint firstItem="rA3-dV-HkA" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="op4-Ka-jFT"/>
+            </constraints>
+            <shadow key="shadow" blurRadius="2">
+                <color key="color" name="headerColor" catalog="System" colorSpace="catalog"/>
+            </shadow>
+            <point key="canvasLocation" x="601" y="-362"/>
+        </customView>
+        <collectionViewItem id="3M9-Xx-iEc" customClass="NXCreateNewProjectItem" customModule="SkyDRM" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="project_add_icon" width="32" height="32"/>
+        <image name="project_create_new_bk" width="1440" height="1024"/>
+    </resources>
+</document>

@@ -1,0 +1,39 @@
+
+/* Class = "NSTextFieldCell"; title = "(optional)"; ObjectID = "4oE-Fr-EDs"; */
+"4oE-Fr-EDs.title" = "(可选)";
+
+/* Class = "NSTextFieldCell"; title = "New Project"; ObjectID = "64p-oR-BLV"; */
+"64p-oR-BLV.title" = "新建工程";
+
+/* Class = "NSTextFieldCell"; title = "Invite members to the project"; ObjectID = "68U-VQ-PJl"; */
+"68U-VQ-PJl.title" = "邀请好友加入工程";
+
+/* Class = "NSTextFieldCell"; title = "Description"; ObjectID = "Ahb-5B-D6M"; */
+"Ahb-5B-D6M.title" = "描述";
+
+/* Class = "NSTextFieldCell"; title = "(optional)"; ObjectID = "CqE-xm-43c"; */
+"CqE-xm-43c.title" = "(可选)";
+
+/* Class = "NSButtonCell"; title = "Create Project"; ObjectID = "Nrf-Vo-YeX"; */
+"Nrf-Vo-YeX.title" = "创建工程";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Provide a name for your project"; ObjectID = "U9A-7m-Guv"; */
+"U9A-7m-Guv.placeholderString" = "为你的工程取一个名字";
+
+/* Class = "NSTextFieldCell"; title = "*"; ObjectID = "UlN-2Q-cE6"; */
+"UlN-2Q-cE6.title" = "*";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "h2l-lh-gdF"; */
+"h2l-lh-gdF.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Name of the project"; ObjectID = "jKu-M2-0tS"; */
+"jKu-M2-0tS.title" = "工程名";
+
+/* Class = "NSTextFieldCell"; title = "Invitation message"; ObjectID = "lDe-I3-ccT"; */
+"lDe-I3-ccT.title" = "邀请信息";
+
+/* Class = "NSTextFieldCell"; title = "*"; ObjectID = "oGW-ca-lgm"; */
+"oGW-ca-lgm.title" = "*";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Give a brief description about the project.."; ObjectID = "qMh-cz-ckl"; */
+"qMh-cz-ckl.placeholderString" = "关于工程的简单描述";

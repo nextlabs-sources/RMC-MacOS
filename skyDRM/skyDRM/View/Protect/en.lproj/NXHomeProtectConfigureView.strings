@@ -1,0 +1,18 @@
+
+/* Class = "NSTextFieldCell"; title = "Create a protected file"; ObjectID = "Ayf-WP-5I3"; */
+"Ayf-WP-5I3.title" = "Create a protected file";
+
+/* Class = "NSTextFieldCell"; title = "Selected file"; ObjectID = "C0L-js-XJg"; */
+"C0L-js-XJg.title" = "Selected file";
+
+/* Class = "NSTextFieldCell"; title = "Apply appropriate permissions to protect the file"; ObjectID = "IIz-AR-V9t"; */
+"IIz-AR-V9t.title" = "Apply appropriate permissions to protect the file";
+
+/* Class = "NSButtonCell"; title = "Protect"; ObjectID = "XPx-rV-xsn"; */
+"XPx-rV-xsn.title" = "Create File";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "hQf-2w-YAK"; */
+"hQf-2w-YAK.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "Specify digital rights"; ObjectID = "lLZ-Am-f58"; */
+"lLZ-Am-f58.title" = "Specify permissions to the file";

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXActivityCollectionViewItem" customModule="skyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="addtionText" destination="2Z8-Fc-g2H" id="jtI-7x-ppz"/>
+                <outlet property="imageView" destination="pWX-HK-Zgt" id="4JC-ab-1a8"/>
+                <outlet property="textField" destination="B0R-3A-mIl" id="lMG-Ni-q34"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="8jr-Zr-pcP"/>
+            </connections>
+        </customObject>
+        <collectionViewItem id="puB-jR-iqh" customClass="NXActivityCollectionViewItem" customModule="skyDRM" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pWX-HK-Zgt">
+                    <rect key="frame" x="20" y="111" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pWX-HK-Zgt" secondAttribute="height" id="Hav-Qe-Ju3"/>
+                        <constraint firstAttribute="width" constant="50" id="kiy-ie-hLy"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" image="icon_file added" id="9yu-ct-449"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="B0R-3A-mIl">
+                    <rect key="frame" x="76" y="234" width="56" height="18"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Content" id="PI4-sy-um9">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z8-Fc-g2H">
+                    <rect key="frame" x="76" y="20" width="34" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Time" id="qjc-wc-YMe">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pWX-HK-Zgt" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="0zF-fN-iFt"/>
+                <constraint firstAttribute="bottom" secondItem="2Z8-Fc-g2H" secondAttribute="bottom" constant="20" symbolic="YES" id="iOi-UD-72E"/>
+                <constraint firstItem="pWX-HK-Zgt" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="kfe-aR-dl7"/>
+                <constraint firstItem="B0R-3A-mIl" firstAttribute="leading" secondItem="pWX-HK-Zgt" secondAttribute="trailing" constant="8" symbolic="YES" id="pyf-3V-zsH"/>
+                <constraint firstItem="2Z8-Fc-g2H" firstAttribute="leading" secondItem="B0R-3A-mIl" secondAttribute="leading" id="tDv-PP-sjf"/>
+                <constraint firstItem="B0R-3A-mIl" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="wL8-Jo-USK"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="icon_file added" width="23" height="26"/>
+    </resources>
+</document>

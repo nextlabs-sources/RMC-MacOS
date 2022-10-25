@@ -1,0 +1,14 @@
+
+CHANNEL: SHADER
+SOURCE: brass.hlsl
+TWEAKABLES:	base_color, highlight_color, ior, roughness, mirror
+MULTITEXTURE: off
+PARAMETERIZATION_SOURCE: uv
+
+CHANNEL: ENVIRONMENT
+SOURCE: environment2
+
+
+
+
+

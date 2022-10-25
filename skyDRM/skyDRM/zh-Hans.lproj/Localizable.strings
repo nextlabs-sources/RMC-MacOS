@@ -1,0 +1,675 @@
+/*
+ resource.strings
+ skyDRM
+ 
+ Created by Kevin on 2017/1/18.
+ Copyright © 2017年 nextlabs. All rights reserved.
+ */
+
+"STRING_ROOT" = "全部文件";
+"APP_NAME" = "SkyDRM";
+
+"STRING_UPLOAD" = "上传";
+"STRING_DOWNLOAD" = "下载";
+"STRING_NEWFOLDER" = "新建文件夹";
+"STRING_DELETE" = "删除";
+
+"STRING_TOTALFILECOUNT" = "共: ";
+
+"MAINNAV_HOME" = "首页";
+"MAINNAV_MYSPACE" = "我的空间";
+"MAINNAV_PROJECTS" = "项目";
+
+"STRING_MYVAULT" = "MyVault";
+"STRING_MYDRIVE" = "Shared with me";
+"STRING_OUTBOX" = "Outbox";
+"STRING_ALLOFFLINEFILES" = "All offline files";
+
+"REPO_STRING_ALLFILES" = "所有文件";
+"REPO_STRING_FAVORITEFILES" = "收藏";
+"REPO_STRING_OFFLINEFILES" = "离线文件";
+"REPO_STRING_DELETEDFILES" = "删除文件";
+"REPO_STRING_SHAREDFILES" = "共享文件";
+
+//Title Name
+"TITLE_LOGOUT" = "退出";
+"TITLE_REMOVE_MEMBER_TIPS" = "移除成员";
+"TITLE_PROJECT_MEMBER_DETAIL" = "成员详情";
+"TITLE_REVOKE_PENDING" = "取消任务";
+"TITLE_PENDING_INVITATION" = "成员详情";
+"TITLE_SHARE_FROM_CONTEXT" = "分享";
+"TITLE_CHECK_PERMISSION" = "检查权限";
+"TITLE_ENCRYPT_DECRYPT" = "加密/解密";
+"TITLE_SPECIFIC_PROJECT" = "工程";
+"TITLE_DELETE_FILE" = "删除文件";
+"TITLE_DELETE_FOLDER" = "删除文件夹";
+"TITLE_SkyDRM_Desktop" = "SkyDRM Desktop";
+"TITLE_SETURL_PAGE_URL" = "URL";
+"TITLE_SETURL_PAGE_ENTERURL" = "输入URL";
+
+// login view
+"WELCOME_LOGIN" = "登陆";
+"WELCOME_SIGNUP" = "免费注册";
+"SKYDRM_NEXT" = "下一步";
+"WELCOME_ALREADY_TIP" = "已经注册帐号?";
+"MODIFY_PASSWORD_SUCCESS_TIPS" = "密码修改成功，请用新密码重新登录";
+"SKYDRM_Token_Expired_Tips" = "你的会话已经过期，请重新登陆";
+"LOGIN_YOUR_COUNT" = "登录您的账号";
+"LOGIN_PERSONAL_ACCOUNT" = "个人账号";
+"LOGIN_COMPANY_ACCOUNT" = "企业账号";
+"LOGIN_URL" = "URL";
+"LOGIN_REMEMBER_URL" = "记住URL";
+"LOGIN_CHANGE_URL" = "你可以更改URL";
+"LOGIN_ENTER_URL" = "输入URL";
+//home
+"HOME_TOPVIEW_INDICATORVIEW_STORAGE_LABEL" = "我的空间存储状态";
+"HOME_TOPVIEW_WELCOME" = "欢迎";
+"HOME_TOPVIEW_CONNECTED_REPOSITORIES" = "已绑定仓库";
+"HOME_TOPVIEW_PROTECTFILEVIEW_NAME" = "保护一个文件";
+"HOME_TOPVIEW_SHAREFILEVIEW_NAME" = "分享一个文件";
+"HOME_TOPVIEW_ADDREPROVIEW_NAME" = "添加仓库";
+"HOME_TOPVIEW_INDICATORVIEW_USED" = "已使用";
+"HOME_TOPVIEW_INDICATORVIEW_FREE" = "空闲";
+"HOME_TOPVIEW_INDICATORVIEW_VIEW_FILES" = "查看全部文件";
+"HOME_TOPVIEW_INDICATORVIEW_VIEW_PROTECTED_FILES" = "查看全部文件";
+"HOME_TOPVIEW_GOTO_MYSPACE" = "前往我的空间";
+"HOME_TOPVIEW_INDICATORVIEW_USED_PERCENTAGE" = "已使用 %@ / %@";
+"HOME_TOPVIEW_INDICATORVIEW_USED" = "已使用%@";
+"HOME_TOPVIEW_INDICATORVIEW_FREE" = "%@空闲";
+"HOME_TOPVIEW_NO_REPOSITORIES_TIP" = "未绑定任何仓库";
+"HOME_REPOSITORY_TIP" = "有未绑定的仓库。请点击图标，认证仓库";
+"HOME_REPOSITORY_REAUTH_FAILED" = "认证账号不一致";
+"HOME_REPOSITORY_NOT_EXIST" = "仓库已经存在";
+
+//account
+"ACCOUNT_CHANGE_PASSWORD" = "重置密码";
+"ACCOUNT_CHANGE_PHOTO" = "更换头像";
+"ACCOUNT_LOGOUT" = "注销";
+"ACCOUNT_DISPLAY_NAME" = "用户名";
+"ACCOUNT_EMAIL_ADDRESS" = "邮箱地址";
+"ACCOUNT_PHONE_NUMBER" = "手机号";
+"ACCOUNT_UPDATE" = "更新";
+"ACCOUNT_PHONE_NUMBER_TIP" = "输入手机号...";
+"ACCOUNT_CURRENT_PASSWORD" = "当前密码";
+"ACCOUNT_NEW_PASSWORD" = "新密码";
+"ACCOUNT_CONFIRM_NEW_PASSWORD" = "确认新密码";
+"ACCOUNT_CANCEL" = "取消";
+"ACCOUNT_CHECKFORUPDATE" = "检查更新";
+"ACCOUNT_VERSION" = "版本号";
+"ACCOUNT_MANAGE_PROFILE" = "用户管理";
+"ACCOUNT_LOGOUT_ALERT" = "你确定你想要注销吗？";
+"ACCOUNT_LOGOUT_ALERT_CANCEL" = "取消";
+"ACCOUNT_LOGOUT_ALERT_OK" = "注销";
+"ACCOUNT_EMPTY_DISPLAY_NAME" = "请输入一个用户名";
+"ACCOUNT_SAME_DISPLAY_NAME" = "已经有一个同名的用户 %@";
+"ACCOUNT_DISPLAYNAME_TOOLONG" = "用户名不能超过40个字符";
+"ACCOUNT_INVALID_DISPLAY_NAME" = "用户名不能包含特殊字符";
+"ACCOUNT_FAILED_DISPLAY_NAME" = "用户名更新失败";
+"ACCOUNT_SUCCEEDED_DISPLAY_NAME" = "用户名更新成功";
+"ACCOUNT_CHANGE_PASSWORD_EMPTY_OLD_PASSWORD" = "请输入当前密码";
+"ACCOUNT_CHANGE_PASSWORD_SAME_WITH_OLD_PASSWORD" = "新密码与当前密码一直，请输入一个不同的密码";
+"ACCOUNT_CHANGE_PASSWORD_EMPTY_NEW_PASSWORD" = "请输入新密码";
+"ACCOUNT_CHANGE_PASSWORD_MISMATCH_NEW_PASSWORD" = "新密码不匹配";
+"ACCOUNT_CHANGE_PASSWORD_INCORRECT_NEW_PASSWORD" = "密码至少包括八个字符，1个英文字符，一个数字和一个特殊字符";
+"ACCOUNT_CHANGE_PASSWORD_SAME_NEW_PASSWORD" = "当前密码和新密码不能一样，请输入不同的密码";
+"ACCOUNT_CHANGE_CURRENTPASSWORD_WRONG" = "当前密码错误";
+"ACCOUNT_CHANGE_PASSWORD_FAILED" = "密码更新失败";
+
+// file info view
+"FILEINFO_PROTECT" = "保护";
+"FILEINFO_SHARE" = "分享";
+"FILEINFO_DECRYPT" = "解密";
+"FILEINFO_ENCRYPT" = "加密";
+"FILE_INFO_FILENAME" = "文件名";
+"FILE_INFO_FILELOCATION" = "文件路径";
+"FILE_INFO_MODIFIEDTIME" = "修改时间";
+"FILE_INFO_LAST_MODIFIEDTIME" = "最后修改时间";
+"FILE_INFO_ORIGINAL" = "源文件";
+"FILE_INFO_SIZE" = "文件大小";
+"FILE_INFO_SHAREDWITH" = "分享的人";
+"FILE_INFO_SHAREDBY" = "来源";
+"FILE_INFO_SHAREDTIME" = "分享时间";
+"FILE_INFO_TYPE" = "类型";
+"FILE_INFO_LOCATION_ONLINE" = "云端";
+"FILE_INFOLOCATION_LOCATION" = "本地";
+"FILE_INFO_EMPTY_FOLDER" = "文件夹为空";
+"FILE_INFO_EMPTY_PROJECT"= "工程为空";
+
+//repository
+"REPOSITORY_CONNECTED" = "已绑定仓库";
+"REPOSITORY_ADD" = "新建仓库";
+"REPOSITORY_CONNECT" = "绑定仓库";
+"REPOSITORY" = "仓库";
+"REPOSITORY_SERVICE_PROVIDER" = "仓库类型";
+"REPOSITORY_DISPLAY_NAME" = "仓库别名";
+"REPOSITORY_DISPLAY_ANME_TIP" = "请输入仓库别名";
+"REPOSITORY_CONNECT_TIP" = "绑定到你的账号用以同步文件和文件夹";
+"REPOSITORY_CONNECT_BUTTON" = "添加";
+"REPOSITORY_CANCEL" = "取消";
+"REPOSITORY_DISCONNECT" = "解绑";
+"REPOSITORY_DISCONNECT_ERROR" = "解绑仓库时发生了错误";
+"REPOSITORY_MANAGE" = "管理仓库";
+"REPOSITORY_UPDATE" = "更新";
+"REPOSITORY_ADD_ALERT_SAME_ACCOUNT" = "仅支持一个Microsoft OneDrive账户，你可以删除当前账户能后添加一个新账户";
+"REPOSITORY_ADD_ALERT_OTHER_ACCOUNT" = "我们只支持一个%@帐户,您可以切换到旧用户并删除该账户，在添加一个新帐户";
+"REPOSITORY_ADD_ALERT_OK" = "确定";
+"REPOSITORY_ADD_EMPTY_SERVICE_PROVIDER" = "请选择一个仓库";
+"REPOSITORY_ADD_EMPTY_DISPLAY_NAME" = "请输入一个仓库别名";
+"REPOSITORY_ADD_SAME_DISPLAY_NAME" = "已经有一个同名的仓库 %@";
+"REPOSITORY_DISCONNECT_ALERT" = "确定断开%@连接吗？";
+"REPOSITORY_DISCONNECT_ALERT_CANCEL" = "取消";
+"REPOSITORY_DISCONNECT_ALERT_OK" = "确定";
+"REPOSITORY_ADD_FAILED" = "添加仓库失败";
+"REPOSITORY_ADD_FAILED_EXISTING" = "添加仓库已存在";
+"REPOSITORY_ADD_CANCEL" = "添加仓库取消";
+"REPOSITORY_ADD_SUCCEEDED" = "添加仓库成功";
+"REPOSITORY_DISPLAY_NAME_FAILED" = "仓库别名更新失败";
+"REPOSITORY_DISPLAY_NAME_NOT_FOUND" = "仓库被删除了";
+"REPOSITORY_DISPLAY_NAME_SUCCEEDED" = "仓库别名更新成功";
+"REPOSITORY_DISPLAY_NAME_INCORRECT_FORMAT" = "别名长度不能超过四十个字符，只能包含数字字符，下滑线，空格和连接符";
+
+//sharepoint online
+"SHAREPOINT_ONLINE_AUTH_TITILE" = "连接到Sharepoint Online";
+"SHAREPOINT_ONLINE_AUTH_URL" = "Sharepoint Online URL";
+"SHAREPOINT_ONLINE_AUTH_USERNAME" = "用户名";
+"SHAREPOINT_ONLINE_AUTH_PASSWORD" = "密码";
+"SHAREPOINT_ONLINE_AUTH_OK" = "确定";
+
+//project
+"PROJECT_INVITE_TITLE" = "邀请";
+"REMOVE_MEMBER_TIPS" = "确定要将这个人从群组中移除吗?";
+"REVOKE_PENDING_INVITATION" = "你确定要取消这个邀请的授权吗？";
+"REVOKE_SUCCESS" = "取消邀请成功";
+"REVOKE_FAILED" = "取消邀请失败";
+//Sider bar Name
+"SIDERBAR_NAME_MYVAULT" = "我的文件库";
+"SIDERBAR_NAME_SHAREDWITHME" = "分享给我的";
+"SIDERBAR_NAME_SHAREDWITHME_NOBLANK" = "SharedWithMe://";
+"SIDERBAR_NAME_ALLOFFLINEFILES" = "已下载的文件";
+"SIDERBAR_NAME_OUTBOX" = "已保护的文件";
+"SIDERBAR_NAME_PROJECT" = "工程文件";
+"SIDERBAR_NAME_WORKSPACE" = "工作空间";
+
+//project people
+"PROJECT_PEOPLE_INVITE_BUTTON" = "邀请";
+"PROJECT_PEOPLE_VIEW_BUTTON" = "查看全部成员";
+
+//project recent files
+"PROJECT_RECENT_FILES_ADD_FILE_BUTTON" = "添加文件";
+"PROJECT_RECENT_FILES_VIEW_BUTTON" = "查看全部文件";
+"PROJECT_RECENT_FILES_NO_RECENT_FILES" = "当前无近期文件";
+
+//project policy
+"PROJECT_MEMBERS_ADD_POLICY_BUTTON" = "添加策略";
+//Delete File
+"CONFIRM_DELETING_FILE" = "你确定删除此文件吗?";
+
+//project section title
+"PROJECT_CREATE_BY_ME" = "我创建的工程";
+"PROJECT_CREATE_BY_ME_SUFFIX" = "创建的工程";
+"PROJECT_CREATE_BY_ME_PREFIX" = "我";
+"PROJECT_INVITED_BY_OTHERS" = "他人创建的工程";
+"PROJECT_INVITED_BY_OTHERS_SUFFIX" = "分享的工程";
+"PROJECT_INVITED_BY_OTHERS_PREFIX" = "他人";
+"PROJECT_PENDING_INVITATIONS" = "待处理邀请";
+"PROJECT_SECTION_HEADER_CREATE_NEW_PROJECT" = "创建新工程";
+"PROJECT_SECTION_HEADER_VIEW_ALL_PROJECTS" = "查看全部工程";
+
+//Create project viewcontroll
+"PROJECT_CREATE_VC_TITLE_SPECIFIC_ERROR" = "工程名包含除了' \" , - _ #的特殊字符";
+"PROJECT_CREATE_VC_TITLE_LENGTH_ERROR" = "工程名长度不能大于50个字符";
+"PROJECT_CREATE_VC_DESCRIPTION_LENGTH_ERROR" = "工程描述不能大于250个字符";
+
+"PROJECT_CREATE_VC_WARNING_TITLE" = "请输入工程名称";
+"PROJECT_CREATE_VC_WARNING_DESCRIPTION" = "请输入工程描述";
+
+//all project view
+"PROJECT_FILE_COUNTS" = "%@ 个文件";
+"PROJECT_FILE_COUNT" = "%@ 个文件";
+"PROJECT_FILE_COUNT_ZERO" = "没有文件";
+"PROJECT_INVITE_PEOPLE" = "邀请";
+"PROJECT_JOIN" = "加入工程";
+"PROJECT_OWNER" = "创建人";
+"PROJECT_INVITED_BY" = "邀请人：\n%@";
+"PROJECT_PENDING_INVITATIONS_TIP" = "邀请者";
+"PROJECT_PENDING_INVITATIONS_DECLINE" = "放弃";
+"PROJECT_PENDING_INVITATIONS_ACCEPT" = "接受";
+"PROJECT_PENDING_INVITATIONS_DECLINE_TITLE" = "确定放弃邀请吗？";
+"PROJECT_PENDING_INVITATIONS_DECLINE_TOOLTIP" = "请提供放弃的理由（可选）";
+"PROJECT_PENDING_INVITATIONS_DECLINE_CANCEL_BUTTON" = "取消";
+"PROJECT_PENDING_INVITATIONS_DECLINE_DECLINE_BUTTON" = "放弃";
+"PROJECT_PENDING_INVITATIONS_DECLINE_WARNING" = "填写的理由不能超过250个字符";
+"PROJECT_PENDING_INVITATIONS_DECLINE_VC_TITLE" = "放弃邀请";
+"CREATEPROJECT_FAIL" = "创建工程失败";
+"CREATEPROJECT_SUCCESS" = "创建工程成功";
+
+//specific project view
+"PROJECT_HOME" = "工程摘要";
+"PROJECT_FILES" = "文件列表";
+"PROJECT_POLICIES" = "策略组";
+"PROJECT_PEOPLE" = "成员列表";
+"PROJECT_ACTIVITY_STREAM" = "消息";
+"PROJECT_CONFIGURATION" = "工程配置";
+"PROJECT_REPORTS" = "信息";
+
+"INVITE_SUCCESS" = "邀请成功";
+"INVITE_FAILED" = "邀请失败!";
+"INVITE_RESEND_SUCCESS" = "再次邀请成功";
+"UPDATE_PROJECT_FAILED" = "工程更新失败";
+"UPDATE_PROJECT_SUCCESS" = "工程更新成功";
+"GET_PROJECT_META_DATA_FAILED" = "获取工程信息失败";
+
+//localized error message
+"ERROR_ACCESS_UNAUTHORIZED_DESC"             = "访问云盘出错, 请重新绑定云盘后，再次尝试";
+"ERROR_NO_SUCH_FILE_DESC"                    = "云盘无该资源";
+"ERROR_AUTH_FAILED_DESC"                     = "用户认证失败";
+"ERROR_CONVERT_FILE_FAILED_DESC"             = "转换文件时出错";
+"ERROR_CONVERTFILE_CHECKSUM_NOTMATCHED_DESC" = "校验转化文件时出错";
+"ERROR_NO_NETWORK_DESC"                      = "网络不可用";
+"ERROR_REPO_ACCOUNT_EXISTED"                 = "云盘账户已存在";
+"ERROR_ADD_REPO_ACCOUNT_DISPLAY_NAME_DUMPLICATE" = "云盘账号别名已存在";
+"ERROR_ADD_REPO_SYNC_RMS_ERROR"                   = "同步RMS服务器时出错";
+"ERROR_URL_TRANS_FAILED"                     = "网络传输数据时出错";
+"ERROR_SYNC_REPO_ACCOUNT_NOT_SAME_WITH_RMS"  = "非法的账户同步操作";
+"ERROR_DEL_REPO_SYNC_RMS_ERROR"  = "删除云盘出错";
+"ERROR_UPDATE_REPO_SYNC_RMS_ERROR"  = "更新云盘出错";
+"ERROR_UNKNOWN" = "未知错误";
+"ERROR_CLOUDDRIVE_EXPIRED_OR_UNAUTHORIZED" = "当前云盘已过期或未认证,你应该去home页面重新授权";
+"ERROR_FILE_ACCESS_DENIED" = "你没有访问文件权限";
+"ERROR_IS_NOT_STEWARD" = "只有管理员有权限看日志";
+"ERROR_CAN_NOT_GET_ACTIVITY_LOG" = "查看Log失败";
+"ERROR_LOSE_CONNECT" = "网络似乎已断开！";
+"ERROR_LOGIN_GET_ROUTER_URL_FAILED" = "请输入正确的服务器地址！";
+"ERROR_LOGIN_REQUEST_TIMEOUT" = "请求超时！";
+"ERROR_LOGIN_WEBVIEW_LOAD_FAILED" = "加载失败！";
+"ERROR_OPEN_FILE_HAS_NO_RIGHTS" = "你没有权限访问这个文件";
+"ERROR_OPEN_FILE_FAILED" = "处理这个文件时发生了一个错误";
+
+//LOCAL MAIN
+"LOCAL_MAIN_FOOTER_ITEM" = "%i 个文件";
+"LOCAL_MAIN_FOOTER_ITEMS" = "%i 个文件";
+"LOCAL_MAIN_FOOTER_USAGE_USED" = "%@ used";
+"LOCAL_MAIN_FOOTER_USAGE_FREE" = "%@ free";
+"LOCAL_MAIN_FOOTER_UPLOAD_SCHEDULE" = "Upload Schedule";
+"LOCAL_MAIN_FOOTER_UPLOAD_SCHEDULE_AUTOMATIC" = "自动";
+"LOCAL_MAIN_FOOTER_UPLOAD_SCHEDULE_CHANGE" = "变化";
+"LOCAL_MAIN_FOOTER_NETWORK_STATUS" = "状态";
+"LOCAL_MAIN_FOOTER_NETWORK_STATUS_CONNECT" = "状态: 连接";
+"LOCAL_MAIN_FOOTER_NETWORK_STATUS_DISCONNECT" = "状态: 网络错误";
+"LOCAL_MAIN_TABLE_EMPTY_PROTECT_FILE_DESCRIPTION" = "保护本地或\n网络驱动器，MyDrive或\n外部存储库上的文件。您可以从我的库访问\n受保护的文件。";
+"LOCAL_MAIN_TABLE_EMPTY_SHARE_FILE_DESCRIPTION" = "从本地或网络驱动器，\nMyDrive或外部存储库共享受权限保护的文件。";
+"LOCAL_MAIN_TABLE_EMPTY_PROTECT" = "保护文件";
+"LOCAL_MAIN_TABLE_EMPTY_PROTECT_SHARE" = "保护并分享文件";
+"LOCAL_MAIN_TABLE_EMPTY_PROTECT_TEXT" = "保护文件";
+"LOCAL_MAIN_TABLE_ENPTY_PROTECT_SHARE_TEXT" = "保护并分享文件";
+"LOCAL_MAIN_OPERATIONBAR_STOPALL" = "停止";
+"LOCAL_MATN_OPERATIONBAR_START" = "开始";
+
+
+
+// mySpace
+"LIST_FILE_FAILED" = "显示文件列表时发生错误";
+
+"CREATE_FOLDER_SUCCESS" = "创建文件夹成功!";
+"CREATE_FOLDER_FAILED" = "创建文件夹失败!";
+
+"DELETE_FILE_TIPS" = "确定要删除选中的文件吗?";
+"DELETE_FOLDER_TIPS" = "确定要删除选中的文件夹吗";
+
+"DOWNLOAD_FILE_FAILED" = "下载文件时发生错误";
+"DOWNLOAD_SHAREWITHME_FILE_FAILED" = "你没有权限下载这个文件.";
+
+// application menuItems
+"MENU_SIGNOUT_TIPS" = "你确定你想要注销吗？";
+"MENU_SIGNOUT_TIPS_2" = "有文件正在上传或下载，你确定要注销吗？";
+"MENU_SIGNOUT_QUIT_BUTTON" = "注销";
+"MENU_SIGNOUT_CANCEL_BUTTON" = "取消";
+
+"INCLOUDE_SPECIALCHARACTER_WARNING" = "包含特殊字符";
+
+//Upload ViewController
+"UploadVC_File_ACCESS_DENIED_TIP" = "文件没有权限上传到该文件夹，请选择另一个目标文件夹";
+"UPLOAD_FILE_SUCCESS" = "上传文件成功";
+"SHARE_NONXLFILE_SUCCESS" = "这个权限保护的文件已经通过邮件作为链接方式分享且保存到MyVault.";
+"SHARE_NXLFILE_SUCCESS" = "文件作为链接被分享给 %@.";
+"UPDATE_SHARE_FILE_FAIL" = "更新文件时失败";
+"UPDATE_SHARE_FILE_NO_UPDATE" = "没有更新";
+"UPDATE_SHARE_FILE_REMOVE_SUCCESS" = "成功地撤销 %@的权限.";
+"UPDATE_SHARE_FILE_ADD_SUCCESS" = "成功地分享文件并且通过邮箱发送链接给 %@.";
+"UPDATE_SHARE_FILE_ADD_REMOVE_SUCCESS" = "成功地分享文件并且通过邮箱发送链接给 %@. 成功地撤销 %@的权限.";
+
+//Menu
+"MENU_MANAGE_REPOSITORIES_VIEW_FILES" = "查看文件";
+"MENU_MANAGE_REPOSITORIES_RENAME" = "重命名";
+"MENU_MANAGE_REPOSITORIES_REMOVE" = "移除";
+"MENU_ITEAM_LOGOUT_BUTTON" = "退出";
+"MENU_ITEAM_ABOUT_BUTTON" = "关于";
+"MENU_ITEAM_HELP_BUTTON" = "帮助";
+"MENU_ITEAM_PREFERENCES" = "偏好设置";
+
+//Select File View
+"SELECT_FILE_WARNING" = "选择单个文件";
+
+//Welcome
+"WELCOME_SHARE_FIRST_LINE" = "使用";
+"WELCOME_SHARE_SECOND_LINE" = "与任何人共享文件!";
+"WELCOME_SHARE_THIRD_LINE" = "任何地方!";
+"WELCOME_SHARE_INFO" = "持久保护您的文件，无论他们去哪里或拥有它们.";
+"WELCOME_PROTECT_FIRST_LINE" = "保护文件";
+"WELCOME_PROTECT_SECOND_LINE" = "跨越多个!";
+"WELCOME_PROTECT_THIRD_LINE" = "云存储库!";
+"WELCOME_PROTECT_INFO" = "统一文档安全服务，用于保护和管理存储在云中的文档";
+"WELCOME_ACCESS_FIRST_LINE" = "访问管理的文件";
+"WELCOME_ACCESS_SECOND_LINE" = "文件库";
+"WELCOME_ACCESS_THIRD_LINE" = "从任何设备！";
+"WELCOME_ACCESS_INFO" = "集中管理和跟踪您共享的关键文档和敏感文件。";
+"WELCOME_REVOKE_FIRST_LINE" = "撤消，跟踪和监控";
+"WELCOME_REVOKE_SECOND_LINE" = "用法";
+"WELCOME_REVOKE_THIRD_LINE" = "你的文件！";
+"WELCOME_REVOKE_INFO" = "通过跟踪文档的去向，使用者以及如何使用文档来保护文档。";
+"WELCOME_SHARE_THRID_LINE" = "数字版权";
+"WELCOME_SHARE_FIVE_LINE" = "";
+
+//project activate
+"ACTIVATE_SHARE_FIRST_LINE" = "分享project文档";
+"ACTIVATE_SHARE_SECOND_LINE" = "安全";
+"ACTIVATE_SHARE_INFO" = "在project团队中安全地分享，存储和管理文档";
+"ACTIVATE_TEAMWORK_FIRST_LINE" = "Teamwork!";
+"ACTIVATE_TEAMWORK_SECOND_LINE" = "";
+"ACTIVATE_TEAMWORK_INFO" = "协作空间对于project成员";
+"ACTIVATE_MANAGE_FIRST_LINE" = "管理project";
+"ACTIVATE_MANAGE_SECOND_LINE" = "中心";
+"ACTIVATE_MANAGE_INFO" = "中心的地方来管理和追踪机密的文档在成员中分享";
+"ACTIVATE_TRACK_FIRST_LINE" = "追踪和监控";
+"ACTIVATE_TRACK_SECONDE_LINE" = "使用和风险";
+"ACTIVATE_TRACK_INFO" = "容易地撤销，追踪，监控和报告对于所有的project文档";
+"ACTIVATE_CREATE_BUTTON" = "创建一个工程";
+
+//Check Permission
+"PERMISSION_GET_RIGHTS_ERROR" = "获取文件拥有者失败";
+"PERMISSION_ENCRYPT_SUCCESS" = "加密文件成功";
+"PERMISSION_ENCRYPT_ERROR" = "加密文件失败";
+"PERMISSION_DECRYPT_SUCCESS" = "解密文件成功";
+"PERMISSION_DECRYPT_ERROR" = "解密文件失败，请稍后重试";
+"PERMISSION_STEWARD_TEXT" = "做为文档拥有者，你拥有所有的权限，这些是其他授权用户拥有的权限：";
+"PERMISSION_NOT_STEWARD_TEXT" = "文件权限";
+"PERMISSION_NO_RIGHTS_TEXT" = "你没有权限";
+"PERMISSION_ERROR_TEXT" = "获取权限失败，请重试";
+
+//ResponseTOContextMenu
+"ENCRYPT_SUCCESS_MESSAGE" = "加密成功!";
+"ENCRYPT_FAILED_MESSAGE" = "加密失败";
+"DECRYPT_SUCCESS_MESSAGE" = "解密成功!";
+"DECRYPT_FAILED_MESSAGE" = "解密失败!";
+"RIGHTS_SELECT_TITLE" = "加密";
+
+//File Render Common
+"FILE_RENDER_NOT_AUTH" = "你没有权限查看此文件";
+"FILE_RENDER_NO_RIGHTS" = "你没有权限查看文件";
+"FILE_RENDER_NO_PRINT_RIGHT" = "你没有打印权限";
+"FILE_RENDER_GET_OWNER_FAILED" = "获取文件拥有者失败";
+"FILE_RENDER_DECRYPT_FAILED" = "处理文件时失败";
+"FILE_RENDER_DECRYPT_SUCCESS" = "解密NXL文件失败";
+"FILE_RENDER_NO_SHARE_RIGHTS" = "你没有分享权限";
+"FILE_RENDER_PDF_INCLUDE_3D" = "Pdf包含3D内容, 需要切换成3D吗?";
+"FILE_RENDER_PDF_INCLUDE_3D_CONFIRM" = "切换";
+"FILE_RENDER_PDF_INCLUDE_3D_CANCEL" = "取消";
+
+//File Render Favorite/Offline
+"FILE_RENDER_MARK_FAVORITE_FAILED" = "收藏文件失败";
+"FILE_RENDER_MARK_FAVORITE_SUCCESS" = "收藏文件成功";
+"FILE_RENDER_UNMARK_FAVORITE_FAILED" = "撤销收藏文件失败";
+"FILE_RENDER_UNMARK_FAVORITE_SUCCESS" = "撤销收藏文件成功";
+"FILE_RENDER_MARK_OFFLINE_FAILED" = "设置离线模式失败";
+"FILE_RENDER_MARK_OFFLINE_SUCCESS" = "设置离线模式成功";
+"FILE_RENDER_UNMARK_OFFLINE_FAILED" = "撤销离线模式失败";
+"FILE_RENDER_UNMARK_OFFLINE_SUCCESS" = "撤销离线模式成功";
+
+//FileRender Operation
+"FILE_RENDER_ENCRYPT_FAILED" = "加密文件失败";
+"FILE_RENDER_ENCRYPT_SUCCESS" = "加密文件成功";
+"FILE_RENDER_FAILED" = "查看文件失败";
+"FILE_RENDER_PROTECT_FAILED" = "不能保护一个NXL文件";
+"FILE_RENDER_PROJECT_FILE_NOT_EXIST" = "这个文件已经删除了";
+"FILE_RENDER_DOWNLOAD_FAILED" = "下载文件失败，请稍后重试";
+"FILE_RENDER_DOWNLOAD_NETWORK_OFFLINE" = "下载文件时发送错误";
+"FILE_RENDER_RENDER_FILECONTENTS_ERROR" = "由于某些原因文件内容不能显示";
+"FILE_RENDER_PRINT" = "打印";
+"FILE_RENDER_SHARE" = "分享";
+"FILE_RENDER_PROPERTY" = "详情";
+"FILE_RENDER_SAVEAS" = "另存为";
+
+//File Render Print
+"FILE_RENDER_PRINT_NOT_SUPPORT" = "不支持这种类型的文件";
+"FILE_RENDER_PRINT_ERROR" = "打印文件时遇到问题";
+"FILE_RENDER_PRINT_UNSTART" = "打印文件失败";
+//ViewController.swift
+"VIEW_CONTROLLER_INVALID_OPERATION" = "我们不支持文件夹的这种操作.";
+"SERVICES_INVALID_OPERATION_FOR_NXL_FILE" = "我们不支持对nxl操作.";
+"SERVICES_INVALID_OPERATION_FOR_MULTIPLE_FILE" = "我们不支持对多文件操作";
+"SERVICES_INVALID_OPERATION_FOR_NORMAL_FILE" = "我们不支持对普通文件操作";
+
+//File Operation
+"FILE_OPERATION_DOWNLOAD_FAILED" = "下载文件失败，请稍后重试";
+"FILE_OPERATION_DOWNLOAD_NO_SUCH_FILE" = "文件已经从仓库删除了.";
+"FILE_OPERATION_FILE_DELETED_FROM_MYVAULT" = "文件已经从MyVault上删除了";
+"FILE_OPERATION_DOWNLOAD_NOT_SUPPORT_SUCH_FILE" = "文件不支持下载.";
+"FILE_OPERATION_DOWNLOAD_NO_RIGHTS" = "你没有下载权限";
+"FILE_OPERATION_PROTECT_FAILED" = "不能保护一个NXL文件";
+"FILE_OPERATION_NO_RIGHTS" = "你没有分享权限";
+"FILE_OPERATION_INVALID_EMAIL" = "请输入一个有效的email地址!";
+"FILE_OPERATION_FILE_HAS_REVOKED" = "这个文件已经被撤销";
+"FILE_OPERATION_SHARE_FAILED" = "分享文件时失败";
+"FILE_OPERATION_SHAREWITHME_FAILED" = "你没有权限分享这个文件.";
+"FILE_OPERATION_USED_UP_STORAGE_UPLOAD" = "上传文件失败，空间用完了";
+"FILE_OPERATION_MYVAULT_USED_UP_STORAGE_UPLOAD" = "空间用完了, 你不能保护和上传文件到MyVault.";
+"FILE_OPERATION_MYVAULT_USED_UP_STORAGE_SHARE" = "空间用完了,你不能分享文件.";
+"FILE_OPERATION_UPLOAD_EMPTY_FILE" = "不允许上传空文件，请选择一个其它文件。";
+"FILE_OPERATION_SHARE_PROTECT_EMPTY_FILE" = "不允许保护或分享空文件。";
+"FILE_OPERATION_OPEN_EMPTY_FILE" = "这个文件为空！";
+"FILE_OPERATION_UPLOAD_FAILED" = "上传文件时失败";
+"FILE_OPERATION_EXIST_INVALID_EMAIL" = "Email地址无效";
+"FILE_OPERATION_EXIST_SHARED_EMAIL" = "有相同emai的用户 %@ 已经被分享了";
+"FILE_OPERATION_PROTECT_FILE" = "保护文件";
+"FILE_OPERATION_PROTECT_AND_SHARED" = "保护并分享";
+"FILE_OPERATION_SHARE" = "分享";
+"FILE_OPERATION_VIEW" = "查看文件";
+"FILE_OPERATION_VIEWFILEINFO" = "查看文件信息";
+"FILE_OPERATION_REMOVE_FILE" = "移除";
+"FILE_OPERATION_MAKEAVAILABLE_OFFLINE" = "标记为可用";
+"FILE_OPERATION_MAKEUNAVAILABLE_OFFLINE" = "标记为不可用";
+"FILE_OPERATION_STOPUPLOAD" = "停止下载";
+"FILE_OPERATION_WEB" =  "打开 SkyDRM.com";
+"FILE_OPERATION_ADD_FILE" = "添加文件到工程";
+
+//File Info Local
+"FILE_LOCAL_INFO_NO_RIGHTS" = "你没有权限";
+"FILE_LOCAL_INFO_GET_RIGHTS_FAILED" = "获取权限失败，请重试";
+"FILE_LOCAL_INFO_STEWARD_RIGHTS" = "作为文件的拥有者，你有所有的权限，下面的权限是授权给其他用户的:";
+"FILE_LOCAL_INFO_NOT_STEWARD_RIGHTS" = "权限";
+
+//File Info
+"FILE_INFO_MANAGE_TITLE" = "管理";
+"FILE_INFO_DETAIL_TITLE" = "详细";
+"FILE_INFO_DELETED_MESSAGE" = "文件已经被删除";
+"FILE_INFO_REVOKED_MESSAGE" = "文件已经被撤销";
+"FILE_INFO_STEWARD_RIGHTS" = "作为文件的拥有者，你有所有的权限，下面的权限是授权给其他用户的:";
+"FILE_INFO_NOT_STEWARD_RIGHTS" = "权限";
+"FILE_INFO_NO_RIGHTS" = "你没有权限";
+"FILE_INFO_GET_RIGHTS_FAILED" = "获取权限失败，请重试";
+"FILE_INFO_REVOKE_CONFIRM" = "所有分享此文件的用户的权限都会被撤销掉，但是你依旧可以访问此文件，你确定要撤销吗?";
+"FILE_INFO_EMPTY_FOLDER" = "文件夹为空!";
+
+//Home Local File
+"HOME_LOCAL_FILE_ACTION_DESCRIPTION" = "一个保护或者分享文件";
+//Home Share Config
+"HOME_SHARE_FILE_HAS_REVOKED" = "这个文件已经被撤销";
+"HOME_SHARE_FAILED" = "分享文件时失败";
+"HOME_SHARE_DOWNLOAD_FAILED" = "下载文件失败，请稍后重试";
+"HOME_SHARE_NO_SHARE_RIGHTS" = "你没有分享权限";
+"HOME_SHARE_INVALID_EMAIL" = "Email地址无效";
+"HOME_SHARE_FILE_EXIST" = "选中的文件无法分享，请检查文件是否存在";
+"HOME_SHARE_ACTION_DESCRIPTION" = "一个分享文件";
+//Home Protect Config
+"HOME_PROTECT_DOWNLOAD_FAILED" = "下载文件时发生错误";
+"HOME_PROTECT_FILE_EXIST" = "选中的文件无法保护，请检查文件是否存在";
+"HOME_PROTECT_FAILED" = "保护文件时发生错误";
+"HOME_PROTECT_ACTION_DESCRIPTION" = "一个保护文件";
+
+//Home Bottom View
+"HOME_BOTTOM_DECLINE" = "拒绝邀请失败";
+"HOME_BOTTOM_ACCEPT_FAILED" = "接首邀请失败";
+
+//My Space
+"MY_SPACE_NOT_SUPPORT_TYPE_RENDER" = "你正在尝试查看目前不支持的文件类型";
+"MY_SPACE_NO_RIGHTS" = "你没有分享权限";
+"MY_SPACE_CANNOT_PROTECT_NXL" = "不能保护一个NXL文件";
+"MY_SPACE_FOLDER_NAME_EXISTED" = "存在一个同名的文件夹.";
+"MY_SPACE_FILE_NAME_EXISTED" = "当前文件夹存在一个同名的文件.";
+"MY_SPACE_DELETE_FAILED" = "删除%@时发生错误";
+"MY_SPACE_DELETE_SUCCESS" = "删除成功";
+
+//Project Invite
+"PROJECT_INVITE_INVALID_EMAIL" = "Email地址无效";
+"PROJECT_FILED_NOT_ADD_TO_PROJECT" = "不能添加到某个project下，因为没有权限";
+
+//Project Files
+"PROJECT_FILES_UPLOAD_FAILED" = "你不能上传NXL文件到这个project";
+"PROJECt_FILES_EXIST_FILE" = "存在一个同名的文件夹.";
+"PROJECT_FILES_RENDER_FAILED" = "你正在尝试查看目前不支持的文件类型";
+"PROJECT_FILES_RIGHT_RENDER_FAILED" = "获取权限失败";
+"PROJECT_FILES_RETRIEVE_FILES_FAILED" = "下载project文件是发生错误";
+"PROJECT_FILES_NO_DOWNLOAD_RIGHTS" = "你没有下载权限";
+"PROJECT_FILES_PROTECT" = "请选择一个有效的project文件夹";
+"PROJECT_FILES_PROTECT_MANDATORY_NO" = "请为必选类别选择至少一个分类标签";
+"FILE_OPERATION_PROTECT_EMPTY_FILE" = "空文件不允许上传，请重新选择不同的文件,%@";
+"FILE_OPERATION_PROTECT_FAILED_FILE" = "以下文件加密失败, %@";
+
+//Project Home Member
+"PROJECT_HOME_MEMBER_REMOVE_SUCCESS" = "移除%@成功";
+"PROJECT_HOME_MEMBER_REMOVE_FAILED" = "移除失败";
+
+//Project Home Rencent
+"PROJECT_HOME_RENCENT_UPLOAD_FAILED" = "你不能上传NXL文件到这个project";
+
+//Project Member
+"PROJECT_MEMBER_EMAIL_FALIED" = "这些成员不会收到email，他们已经是project的成员：%@";
+"PROJECT_MEMBER_EMAIL_PART_FAILED" = "邀请成功，但是这些成员不会收到email，他们已经是project的成员：%@";
+"PROJECT_MEMBER_REMOVE_SUCCESS" = "移除%@成功";
+"PROJECT_MEMBER_REMOVE_FAILED" = "移除失败";
+
+//Project New VC Invalid Email
+"PROJECT_NEW_VC_INVALID_EMAIL" = "Email地址无效";
+
+//Project All
+"PROJECT_ALL_DECLINE_FAILED" = "拒绝邀请失败";
+"PROJECT_ALL_ACCEPT_FAILED" = "接收邀请失败";
+
+//ViewController.swift
+"VIEW_CONTROLLER_INVALID_OPERATION" = "不支持这个文件夹操作";
+
+//Upload VC
+"UPLOAD_VIEW_ENCRYPT_FAILED" = "加密文件失败";
+
+
+//Comment placeholder
+"COMMENT_VIEW_SHARE_COMMENT" = "添加评论";
+"COMMENT_VIEW_INIVITATION_MSG" = "点击此处添加消息";
+
+//New Project
+"NEW_PROJECT_NAME_PLACEHOLDER" = "为你的工程取一个名字";
+"NEW_PROJECT_DESCRIPTION_PLACEHOLDER" = "关于工程的简单描述";
+
+"RESHARE_HAS_ALREADY_SHARED" = "文件已经分享给%@, 邮件不回再次发送";
+
+// Workspace
+
+// Check upgrade
+"CHECK_UPGRADE_ALREADY_LASTEST" = "已经是最新版本";
+"CHECK_UPGRADE_MESSAGE" = "有新版本可以更新";
+"CHECK_UPGRADE_UPDATE" = "更新";
+"CHECK_UPGRADE_CANCEL" = "取消";
+"CHECK_UPGRADE_IGNORE" = "忽略";
+"CHECK_UPGRADE_CHECK_FAILED" = "检查更新失败";
+
+//Network Status
+"NETWORK_STATUS_OFFLINE" = "离线";
+"NETWORK_STATUS_ONLINE" = "在线";
+
+//Sync Status
+"SYNC_STATUS_UPLOADING" = "%lld of %lld同步中";
+"SYNC_STATUS_PENDING" = "%lld已同步";
+
+//Watermark
+"WATERMARK_EMPTY" = "水印不能为空";
+"WATERMARK_EXCEED_MAXIMUM" = "水印字符数超过50";
+"WATERMARK_TEXT_INCLUDE_TAG" = "不能包含$(Date),$(User),$(Time),$(Break)";
+
+//Expiry
+"EXPIRY_RELATIVE_INVALID" = "请输入有效数字";
+"EXPIRY_CANNOT_SHARE" = "时间失效";
+
+//Connection Error
+"CONNECTION_ERROR_WINDOW_TITLE" = "网络链接错误";
+
+//Remove File
+"REMOVE_FILE_WINDOW_TITLE" = "删除文件";
+
+// configure server url page
+"MSG_INPUT_URL_EMPTY" = "请输入服务器URL";
+"MSG_INPUT_URL_INVALID" = "无效URL";
+"MSG_YOU_CAN_CHANGE_URL" = "您可以更改服务器";
+
+// preference
+"MSG_PREFERENCE_SAVE_SUCCESS" = "保存成功!";
+//File Rights
+"FILE_RIGHT_PROMPT" = "用户定义的权限是可以应用于文档的预定义权限.";
+"FILE_RIGHT_VIEW" = "查看";
+"FILE_RIGHT_EDIT" = "编辑";
+"FILE_RIGHT_EXTRACT" = "提取";
+"FILE_RIGHT_PRINT" = "打印";
+"FILE_RIGHT_Share" = "分享";
+"FILE_RIGHT_SAVEAS" = "另存为";
+"FILE_RIGHT_WATERMARK" = "水印";
+"FILE_RIGHT_VALIDITY" = "日期";
+"FILE_RIGHT_CONTENT" = "内容";
+"FILE_RIGHT_COLLABORATION" = "协作";
+"FILE_RIGHT_EFFECT" = "覆盖层";
+"FILE_RIGHT_EXPIRATION" = "期限";
+"FILE_RIGHT_VALIDITY_NAVER" = "无期限";
+"FILE_RIGHT_VALIDITY_UNITIL" = "到期时间";
+"FILE_RIGHT_MOUSEEVENT_CHANGE" = "更改";
+"FILE_RIGHT_USER_DEFINED" = "用户定义的权限";
+"FILE_RIGHT_PERMISSIONS" = "应用于文件的权限";
+"FILE_RIGHT_EXPIRE" = "无期限";
+"FILE_RIGHT_RELATIVE" = "相对时间";
+"FILE_RIGHT_ABSOLUTEDATE" = "截止时间";
+"FILE_RIGHT_DATERANGE" = "时间区间";
+"FILE_RIGHT_ACCESS" = "访问权限将";
+"FILE_RIGHT_COMPANY_DEFINED" = "公司定义的权限";
+"FILE_RIGHT_COMPANY_POLICIES" = "公司定义的权限是由集中策略决定的";
+
+//Tray message
+"UPLOAD_WAITING" = "等待上传....";
+"UPLOAD_DOING" = "上传中....";
+"UPLOAD_SUCCESSFUL" = "上传成功";
+"SYSTEMBUCKET_PROTECT_SUCCESSFUL" = "加密成功";
+"DOWNLOAD_WAITING" = "等待下载...";
+"DOWNLOAD_DOING" = "下载中....";
+"DOWNLOAD_SUCCESSFUL" = "下载成功";
+"DOWNLOAD_FAILED" = "下载失败";
+"BUTTON_TOOPTIP_OPEN_SkyDRM_DESKTOP" = "Open SkyDRM Desktop";
+"BUTTON_TOOPTIP_OPEN_SKYDRM_WEB" = "Open SkyDRM Web";
+"BUTTON_TOOPTIP_OPTIONS" = "Options";
+"BUTTON_TOOPTIP_PREFERENCES" = "Preferences";
+
+// Local fileinfo
+"LOCAL_FILEINFO_INFO_SHARED_WITH_S" = "分享给%i个用户";
+"LOCAL_FILEINFO_INFO_SHARED_WITH" = "分享给%i个用户";
+//Hoops
+"HOOPS_SAVING_FILE" = "保存文件";
+"HOOPS_SAVING_LODING" = "加载中...";
+
+"WARNING_EMPTY_FOLDER" = "请选择一个文件夹";
+
+"WARNING_GET_RIGHT_FAILED" = "在离线模式下获取权限失败";

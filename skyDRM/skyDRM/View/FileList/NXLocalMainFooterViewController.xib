@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXLocalMainFooterViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="changeBtn" destination="fTS-7R-brv" id="mNt-Ve-YsT"/>
+                <outlet property="itemCountLbl" destination="iCI-cf-iRc" id="q0L-6D-MPd"/>
+                <outlet property="statusImage" destination="r4O-ZZ-JNb" id="elz-3X-Z4V"/>
+                <outlet property="statusLbl" destination="68j-SY-03S" id="FQr-X0-rRp"/>
+                <outlet property="uploadScheduleLbl" destination="uQs-LL-oQB" id="1Ys-5r-np6"/>
+                <outlet property="uploadSettingLbl" destination="Hld-Co-K5R" id="8NN-0v-mLA"/>
+                <outlet property="view" destination="c22-O7-iKe" id="iMs-7k-cY5"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="742" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCI-cf-iRc">
+                    <rect key="frame" x="18" y="15" width="38" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Items" id="jl9-t8-vQ6">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68j-SY-03S">
+                    <rect key="frame" x="663" y="15" width="37" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="dnc-Sw-KVo">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r4O-ZZ-JNb">
+                    <rect key="frame" x="706" y="15" width="16" height="16"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Status-LeaveACopy" id="Okz-jF-eU2"/>
+                </imageView>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uQs-LL-oQB">
+                    <rect key="frame" x="389" y="15" width="111" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Upload Schedule:" id="0i5-gI-Bp1">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hld-Co-K5R">
+                    <rect key="frame" x="504" y="15" width="71" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Automatic" id="mpZ-qX-GyL">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box horizontalHuggingPriority="247" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="3Ax-3m-9lH">
+                    <rect key="frame" x="646" y="12" width="5" height="22"/>
+                </box>
+                <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fTS-7R-brv">
+                    <rect key="frame" x="581" y="15" width="51" height="17"/>
+                    <buttonCell key="cell" type="bevel" title="Change" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="XsK-an-Q3t">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="eBh-Md-KSM">
+                    <rect key="frame" x="0.0" y="45" width="160" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="9yf-iB-BTC"/>
+                        <constraint firstAttribute="height" constant="1" id="ezS-Ra-UjC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="wantsLayer" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.backgroundColorWithNSColor">
+                            <color key="value" red="0.7724640965461731" green="0.77259790897369385" blue="0.77245563268661499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fTS-7R-brv" firstAttribute="leading" secondItem="Hld-Co-K5R" secondAttribute="trailing" constant="8" symbolic="YES" id="2f5-zG-bCN"/>
+                <constraint firstItem="68j-SY-03S" firstAttribute="leading" secondItem="3Ax-3m-9lH" secondAttribute="trailing" constant="16" id="HQi-78-Pej"/>
+                <constraint firstItem="iCI-cf-iRc" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="KvH-Vx-mQV"/>
+                <constraint firstItem="iCI-cf-iRc" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="Pzc-Au-VJj"/>
+                <constraint firstItem="r4O-ZZ-JNb" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="R5N-lb-OlJ"/>
+                <constraint firstItem="r4O-ZZ-JNb" firstAttribute="leading" secondItem="68j-SY-03S" secondAttribute="trailing" constant="8" symbolic="YES" id="SMk-ww-p9o"/>
+                <constraint firstItem="3Ax-3m-9lH" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="Sea-gc-pJw"/>
+                <constraint firstItem="eBh-Md-KSM" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="VBJ-hO-bE0"/>
+                <constraint firstItem="eBh-Md-KSM" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="ZZe-1b-rRn"/>
+                <constraint firstItem="3Ax-3m-9lH" firstAttribute="leading" secondItem="fTS-7R-brv" secondAttribute="trailing" constant="16" id="baq-zl-P2j"/>
+                <constraint firstItem="68j-SY-03S" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="eZM-mS-ltY"/>
+                <constraint firstItem="fTS-7R-brv" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="jdP-jh-DPn"/>
+                <constraint firstItem="uQs-LL-oQB" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="ktp-ek-ikg"/>
+                <constraint firstItem="Hld-Co-K5R" firstAttribute="leading" secondItem="uQs-LL-oQB" secondAttribute="trailing" constant="8" symbolic="YES" id="lm7-3i-EOR"/>
+                <constraint firstItem="Hld-Co-K5R" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="wWE-Fm-sl2"/>
+                <constraint firstAttribute="trailing" secondItem="r4O-ZZ-JNb" secondAttribute="trailing" constant="20" symbolic="YES" id="wx4-Q2-MzW"/>
+                <constraint firstItem="3Ax-3m-9lH" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="12" symbolic="YES" id="yvH-Uh-SKG"/>
+            </constraints>
+            <point key="canvasLocation" x="270" y="207.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Status-LeaveACopy" width="16" height="16"/>
+    </resources>
+</document>

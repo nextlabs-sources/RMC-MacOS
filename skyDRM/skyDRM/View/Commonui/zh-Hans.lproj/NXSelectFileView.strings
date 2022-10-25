@@ -1,0 +1,15 @@
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "0Pz-wm-RrM"; */
+"0Pz-wm-RrM.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Connected Repositories"; ObjectID = "PSt-9z-UEi"; */
+"PSt-9z-UEi.title" = "Connected Repositories";
+
+/* Class = "NSTextFieldCell"; title = "Local FIles"; ObjectID = "Zxm-Cg-0Kw"; */
+"Zxm-Cg-0Kw.title" = "本地文件";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "dNK-PM-2dn"; */
+"dNK-PM-2dn.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Connected Repositories"; ObjectID = "ecW-ao-5Fz"; */
+"ecW-ao-5Fz.headerCell.title" = "已绑定的仓库";

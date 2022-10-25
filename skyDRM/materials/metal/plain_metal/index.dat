@@ -1,0 +1,15 @@
+
+CHANNEL: SHADER
+SOURCE: metal.hlsl
+TWEAKABLES:	base_color
+MULTITEXTURE: off
+PARAMETERIZATION_SOURCE: uv
+TWEAKABLES: ior, base_color, highlight_color, roughness, mirror, fresnel_power
+
+CHANNEL: ENVIRONMENT
+SOURCE: environment2
+
+
+
+
+

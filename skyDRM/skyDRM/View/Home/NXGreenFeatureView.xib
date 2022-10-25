@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="greenFeatureView" id="c22-O7-iKe" customClass="NXGreenFeatureView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Se9-W1-zZr">
+                    <rect key="frame" x="47" y="15" width="37" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Lqc-Sa-YC0">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KU8-ah-zci">
+                    <rect key="frame" x="45" y="42" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="9Nh-4U-M2G"/>
+                        <constraint firstAttribute="height" constant="40" id="Twc-dQ-NPc"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="wBH-SI-fdw"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="KU8-ah-zci" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Xxt-ce-9ly"/>
+                <constraint firstItem="Se9-W1-zZr" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Z3d-AT-97S"/>
+                <constraint firstItem="Se9-W1-zZr" firstAttribute="top" secondItem="KU8-ah-zci" secondAttribute="bottom" constant="10" id="efX-xg-J62"/>
+                <constraint firstAttribute="bottom" secondItem="Se9-W1-zZr" secondAttribute="bottom" constant="15" id="eqI-dy-rsz"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="KU8-ah-zci" id="fKD-zR-s8o"/>
+                <outlet property="nameLabel" destination="Se9-W1-zZr" id="lCT-Bo-a1c"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXProjectPendingInvitationDetailViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="uuu-le-Br9" id="IS5-B6-zOB"/>
+                <outlet property="invitedByLabel" destination="cev-L1-BoJ" id="vmo-aN-I5d"/>
+                <outlet property="invitedTimeLabel" destination="nML-XK-1wT" id="OSt-cS-CGm"/>
+                <outlet property="nameLabel" destination="KUw-Bt-arc" id="GUH-EV-R2y"/>
+                <outlet property="resendInvitationButton" destination="uVi-B6-XNr" id="Q2X-zC-0iK"/>
+                <outlet property="revokeInvitationButton" destination="ume-nD-79A" id="cdR-mn-KDR"/>
+                <outlet property="view" destination="ebd-jA-yf9" id="JhI-zu-fTl"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="ebd-jA-yf9">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KUw-Bt-arc">
+                    <rect key="frame" x="114" y="163" width="263" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="Stepanoval" id="LWr-bH-L67">
+                        <font key="font" metaFont="system" size="19"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nML-XK-1wT">
+                    <rect key="frame" x="140" y="105" width="213" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" alignment="center" title="invited 28 Feb 2017,11:13AM" id="fw9-fd-i2p">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuu-le-Br9">
+                    <rect key="frame" x="208" y="196" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="wWd-4u-BHv"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cev-L1-BoJ">
+                    <rect key="frame" x="146" y="129" width="201" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="invited by stepanoval" id="BvH-kK-laj">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ume-nD-79A" userLabel="revokeInvitationButton">
+                    <rect key="frame" x="256" y="33" width="119" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" title="Revoke Invitation" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="Kay-Lu-AcG">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onTapRevokeButton:" target="-2" id="Wwv-gd-ch5"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uVi-B6-XNr" userLabel="reInvitateButton">
+                    <rect key="frame" x="116" y="33" width="119" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" title="Resend Invitation" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="RqU-9f-vD7">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onTapResendInvitationButton:" target="-2" id="Alk-0j-74Z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="25" y="154"/>
+        </customView>
+    </objects>
+</document>

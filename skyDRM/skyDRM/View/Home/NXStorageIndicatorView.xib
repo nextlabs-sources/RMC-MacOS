@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="mySpaceIndicatorView" id="c22-O7-iKe" customClass="NXMySpaceIndicatorView" customModule="SkyDrmUITest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bW0-BB-bXh" userLabel="UsedLabel">
+                    <rect key="frame" x="-2" y="139" width="4" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="QeR-1I-jtA">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-aj-FNM" userLabel="FreeLabel">
+                    <rect key="frame" x="490" y="139" width="4" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="60J-uA-BU8">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="A0K-8e-BjG" userLabel="MyDriveLabel">
+                    <rect key="frame" x="18" y="0.0" width="4" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="Zbe-Nr-90C">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xok-S9-Ryd" userLabel="MyVaultLabel">
+                    <rect key="frame" x="490" y="0.0" width="4" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="MGa-al-Zod">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="A0K-8e-BjG" secondAttribute="bottom" id="Bjf-73-XQ6"/>
+                <constraint firstItem="bW0-BB-bXh" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" id="TtH-nb-uGJ"/>
+                <constraint firstAttribute="bottom" secondItem="xok-S9-Ryd" secondAttribute="bottom" id="UlX-Zb-0rV"/>
+                <constraint firstItem="bW0-BB-bXh" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Zod-Rx-C78"/>
+                <constraint firstItem="A0K-8e-BjG" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="cYw-Fy-4rC"/>
+                <constraint firstAttribute="trailing" secondItem="wIs-aj-FNM" secondAttribute="trailing" id="nKk-4D-jFA"/>
+                <constraint firstItem="wIs-aj-FNM" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" id="s25-OJ-i2m"/>
+                <constraint firstAttribute="trailing" secondItem="xok-S9-Ryd" secondAttribute="trailing" id="yM8-8Z-IfR"/>
+            </constraints>
+            <connections>
+                <outlet property="freeLabel" destination="wIs-aj-FNM" id="qPO-P6-64B"/>
+                <outlet property="myDriveLabel" destination="A0K-8e-BjG" id="LV6-7s-Cc0"/>
+                <outlet property="myVaultLabel" destination="xok-S9-Ryd" id="Uio-9h-tuT"/>
+                <outlet property="usedLabel" destination="bW0-BB-bXh" id="trf-cK-oaf"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="247"/>
+        </customView>
+    </objects>
+</document>

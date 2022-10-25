@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXSpecificProjectTitlePopupViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Knd-O8-Tc4" id="EYc-vv-dAF"/>
+                <outlet property="emptyImage" destination="xjU-hj-zoX" id="XoB-vn-LMV"/>
+                <outlet property="emptyLabel" destination="kCd-Am-LG4" id="MUI-jo-EZB"/>
+                <outlet property="scrollView" destination="hne-oF-GRf" id="wCa-t8-Sqt"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="NXSpecificProjectTitlePopupViewController" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="926" height="587"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lh6-6d-hbP">
+                    <rect key="frame" x="338" y="540" width="251" height="27"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Switch to other projects" id="jcc-xL-aIy">
+                        <font key="font" metaFont="system" size="22"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hne-oF-GRf">
+                    <rect key="frame" x="30" y="53" width="866" height="467"/>
+                    <clipView key="contentView" drawsBackground="NO" id="34h-Zd-jzj">
+                        <rect key="frame" x="0.0" y="0.0" width="866" height="467"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView id="Knd-O8-Tc4" customClass="NXHomeProjectView" customModule="SkyDRM" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="866" height="467"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="vDe-dz-AXG">
+                                    <size key="itemSize" width="50" height="50"/>
+                                </collectionViewFlowLayout>
+                                <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Ixq-tx-wZT">
+                        <rect key="frame" x="0.0" y="451" width="866" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="G3n-C4-dwI">
+                        <rect key="frame" x="910" y="0.0" width="16" height="466"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BYi-DI-v86">
+                    <rect key="frame" x="853" y="13" width="53" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="5kA-EE-fpP"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Close" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="MEC-Rn-x4w">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="systemBold"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="dismiss:" target="-2" id="wu8-2C-abS"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xjU-hj-zoX">
+                    <rect key="frame" x="383" y="360" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="g5u-ye-vGT"/>
+                        <constraint firstAttribute="height" constant="160" id="vt3-9V-j9d"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="folder_empty" id="d4K-NL-JQz"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kCd-Am-LG4">
+                    <rect key="frame" x="379" y="319" width="168" height="21"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="There are no projects" id="wfn-D7-DXo">
+                        <font key="font" metaFont="system" size="17"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="BYi-DI-v86" firstAttribute="top" secondItem="hne-oF-GRf" secondAttribute="bottom" constant="8" id="2zt-It-TrW"/>
+                <constraint firstItem="hne-oF-GRf" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="30" id="4jQ-gC-Epg"/>
+                <constraint firstItem="Lh6-6d-hbP" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="5xU-X9-TqD"/>
+                <constraint firstAttribute="bottom" secondItem="BYi-DI-v86" secondAttribute="bottom" constant="13" id="Bpk-tK-LyE"/>
+                <constraint firstItem="kCd-Am-LG4" firstAttribute="top" secondItem="xjU-hj-zoX" secondAttribute="bottom" constant="20" id="E8k-78-UPC"/>
+                <constraint firstAttribute="trailing" secondItem="hne-oF-GRf" secondAttribute="trailing" constant="30" id="GYS-gl-OqY"/>
+                <constraint firstAttribute="trailing" secondItem="Lh6-6d-hbP" secondAttribute="trailing" constant="339" id="Jee-uE-3g2"/>
+                <constraint firstAttribute="trailing" secondItem="BYi-DI-v86" secondAttribute="trailing" constant="20" id="Oq1-6g-sHN"/>
+                <constraint firstItem="xjU-hj-zoX" firstAttribute="top" secondItem="hne-oF-GRf" secondAttribute="top" id="V3y-1C-WXB"/>
+                <constraint firstItem="xjU-hj-zoX" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="fFm-MP-wdZ"/>
+                <constraint firstItem="hne-oF-GRf" firstAttribute="top" secondItem="Lh6-6d-hbP" secondAttribute="bottom" constant="20" id="fU3-1y-m8H"/>
+                <constraint firstItem="kCd-Am-LG4" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="yVm-xz-xew"/>
+                <constraint firstItem="Lh6-6d-hbP" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="340" id="zQa-Sb-W41"/>
+            </constraints>
+            <point key="canvasLocation" x="217" y="304.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="folder_empty" width="64" height="64"/>
+    </resources>
+</document>

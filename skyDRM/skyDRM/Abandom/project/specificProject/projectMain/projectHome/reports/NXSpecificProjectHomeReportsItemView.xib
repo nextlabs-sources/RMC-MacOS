@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXSpecificProjectHomeReportsItemView" customModule="skyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="itemValue" destination="pvF-ig-LWT" id="Cjz-hq-VNy"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvF-ig-LWT">
+                    <rect key="frame" x="18" y="9" width="368" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Label" id="tRo-vW-f8L">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pvF-ig-LWT" secondAttribute="trailing" constant="20" id="aHJ-kh-0Kw"/>
+                <constraint firstItem="pvF-ig-LWT" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="if4-Tk-CNJ"/>
+                <constraint firstItem="pvF-ig-LWT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="kPS-I4-UCe"/>
+                <constraint firstAttribute="bottom" secondItem="pvF-ig-LWT" secondAttribute="bottom" constant="9" id="mV8-rc-D95"/>
+            </constraints>
+            <point key="canvasLocation" x="101" y="52.5"/>
+        </customView>
+        <collectionViewItem id="Kqr-7t-32J" customClass="NXSpecificProjectHomeReportsItemView" customModule="skyDRM" customModuleProvider="target"/>
+    </objects>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXFileSharingManageViewItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBtn" destination="fRE-EH-dlL" id="1Lo-iU-RwO"/>
+                <outlet property="emailTextField" destination="Uhv-bC-BDI" id="HCD-G3-uEL"/>
+                <outlet property="icon" destination="ze0-Ob-gg3" id="W9n-53-PK4"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <collectionViewItem id="ndc-mz-Nl7" customClass="NXFileSharingManageViewItem" customModule="SkyDRM" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="491" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0S-hI-4ko">
+                    <rect key="frame" x="8" y="8" width="475" height="83"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="ze0-Ob-gg3" customClass="NXCircleText" customModule="SkyDRM" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ze0-Ob-gg3" secondAttribute="height" id="JK0-lW-S2X"/>
+                            </constraints>
+                        </customView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhv-bC-BDI">
+                            <rect key="frame" x="89" y="33" width="368" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="Label" id="AOQ-BY-JaD">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fRE-EH-dlL">
+                            <rect key="frame" x="463" y="36" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="RhB-sn-jUk"/>
+                                <constraint firstAttribute="width" secondItem="fRE-EH-dlL" secondAttribute="height" id="Wza-MA-YkO"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Close" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="La6-Vo-bZv">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="removeItem:" target="-2" id="lbw-6j-aCK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ze0-Ob-gg3" firstAttribute="top" secondItem="k0S-hI-4ko" secondAttribute="top" id="BOH-rH-QED"/>
+                        <constraint firstAttribute="bottom" secondItem="ze0-Ob-gg3" secondAttribute="bottom" id="mVE-vZ-kWV"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="k0S-hI-4ko" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="GBL-BU-83c"/>
+                <constraint firstAttribute="trailing" secondItem="k0S-hI-4ko" secondAttribute="trailing" constant="8" id="U2e-HM-O3A"/>
+                <constraint firstAttribute="bottom" secondItem="k0S-hI-4ko" secondAttribute="bottom" constant="8" id="fI0-5H-MbJ"/>
+                <constraint firstItem="k0S-hI-4ko" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="zyA-YZ-XjX"/>
+            </constraints>
+            <point key="canvasLocation" x="124" y="71"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Close" width="32" height="33"/>
+    </resources>
+</document>

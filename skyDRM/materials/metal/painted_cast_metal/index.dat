@@ -1,0 +1,14 @@
+
+CHANNEL: SHADER
+SOURCE: painted_cast_metal.hlsl
+MULTITEXTURE: off
+PARAMETERIZATION_SOURCE: uv
+TWEAKABLES: detail_repeat, base_color, paint_f0, roughness, mirror, fresnel_power, parallax
+
+CHANNEL: ENVIRONMENT
+SOURCE environment0
+
+CHANNEL: TEXTURE1
+SOURCE: heightfield.png
+HEIGHTFIELD: 0.9
+

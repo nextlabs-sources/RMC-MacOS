@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="projectActivateView" id="c22-O7-iKe" customClass="NXProjectActivateView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="760" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52i-gm-SbY">
+                    <rect key="frame" x="20" y="29" width="424" height="22"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZaV-hb-jhe">
+                            <rect key="frame" x="-2" y="0.0" width="284" height="22"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Collaborate in project securely. Try" id="FPm-0g-aBR">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wEe-8s-aJ3">
+                            <rect key="frame" x="286" y="0.0" width="140" height="22"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SkyDRM Project!" id="zul-gN-wKB">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" red="0.22262668609619141" green="0.58899372816085815" blue="0.28460371494293213" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="wEe-8s-aJ3" firstAttribute="leading" secondItem="ZaV-hb-jhe" secondAttribute="trailing" constant="8" id="5Cm-UM-NT5"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0rp-Gp-2PS">
+                    <rect key="frame" x="632" y="17" width="104" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="55q-3K-PAJ"/>
+                        <constraint firstAttribute="height" constant="40" id="9wW-Wr-nPd"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Activate" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lHh-Nj-Uzl">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="18"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onActivate:" target="c22-O7-iKe" id="EhC-0b-adt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="52i-gm-SbY" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="0gY-Os-ynZ"/>
+                <constraint firstItem="0rp-Gp-2PS" firstAttribute="leading" secondItem="52i-gm-SbY" secondAttribute="trailing" constant="190" id="Lxm-K8-aMZ"/>
+                <constraint firstItem="52i-gm-SbY" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="g99-YW-cgL"/>
+                <constraint firstItem="0rp-Gp-2PS" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="ykd-pK-C85"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

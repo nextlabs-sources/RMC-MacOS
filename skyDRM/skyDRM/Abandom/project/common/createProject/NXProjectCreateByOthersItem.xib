@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXProjectCreateByOthersItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="bkBtn" destination="RYI-MG-pF6" id="sZG-Nt-v2J"/>
+                <outlet property="inviteByOwner" destination="86b-mQ-SFm" id="if7-Kz-SmC"/>
+                <outlet property="membersView" destination="8oY-ks-KOl" id="T3D-Vo-vQ7"/>
+                <outlet property="ownerNameLabel" destination="l73-9z-xMl" id="bBL-pR-FIS"/>
+                <outlet property="projectName" destination="cih-VV-xBb" id="gSq-V8-eLn"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cih-VV-xBb">
+                    <rect key="frame" x="18" y="85" width="204" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3ND-Gm-eTq"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="Label" id="ua1-0h-cGp">
+                        <font key="font" metaFont="systemThin" size="17"/>
+                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="86b-mQ-SFm">
+                    <rect key="frame" x="18" y="28" width="204" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="left" title="Owner" id="c6n-1z-t56">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="l73-9z-xMl">
+                    <rect key="frame" x="18" y="8" width="204" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="left" title="Label" id="JVE-x6-SET">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="8oY-ks-KOl" customClass="NXMultiCircleView" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="20" y="50" width="200" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="3X6-fA-Qge"/>
+                    </constraints>
+                </customView>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RYI-MG-pF6" customClass="NXMouseEventButton" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="220" height="120"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" transparent="YES" imageScaling="proportionallyDown" inset="2" id="O4H-Qj-skr">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onBtn:" target="-2" id="dJf-LH-d4L"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="86b-mQ-SFm" secondAttribute="trailing" id="Bl4-20-5ce"/>
+                <constraint firstItem="l73-9z-xMl" firstAttribute="leading" secondItem="86b-mQ-SFm" secondAttribute="leading" id="L2u-QS-FJM"/>
+                <constraint firstItem="8oY-ks-KOl" firstAttribute="top" secondItem="cih-VV-xBb" secondAttribute="bottom" id="enT-EA-exD"/>
+                <constraint firstItem="l73-9z-xMl" firstAttribute="trailing" secondItem="86b-mQ-SFm" secondAttribute="trailing" id="f5P-eT-hhd"/>
+                <constraint firstItem="cih-VV-xBb" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="fBq-R0-Rk6"/>
+                <constraint firstAttribute="trailing" secondItem="8oY-ks-KOl" secondAttribute="trailing" id="lwq-Hg-CAM"/>
+                <constraint firstItem="8oY-ks-KOl" firstAttribute="leading" secondItem="cih-VV-xBb" secondAttribute="leading" id="rqR-aP-4Fw"/>
+                <constraint firstItem="cih-VV-xBb" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="vTk-hY-7xb"/>
+                <constraint firstItem="l73-9z-xMl" firstAttribute="top" secondItem="86b-mQ-SFm" secondAttribute="bottom" constant="3" id="vd7-sJ-vpb"/>
+                <constraint firstItem="86b-mQ-SFm" firstAttribute="leading" secondItem="cih-VV-xBb" secondAttribute="leading" id="wbv-Dj-8QH"/>
+                <constraint firstItem="86b-mQ-SFm" firstAttribute="top" secondItem="8oY-ks-KOl" secondAttribute="bottom" constant="5" id="x6y-Dj-PcX"/>
+                <constraint firstAttribute="trailing" secondItem="cih-VV-xBb" secondAttribute="trailing" id="yYI-eh-jV7"/>
+            </constraints>
+            <shadow key="shadow" blurRadius="2">
+                <color key="color" name="headerColor" catalog="System" colorSpace="catalog"/>
+            </shadow>
+            <point key="canvasLocation" x="104" y="219"/>
+        </customView>
+        <collectionViewItem id="3Hp-rU-mWw" customClass="NXProjectCreateByOthersItem" customModule="SkyDRM" customModuleProvider="target"/>
+    </objects>
+</document>

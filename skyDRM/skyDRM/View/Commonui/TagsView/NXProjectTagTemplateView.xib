@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="TagTemplateView" id="c22-O7-iKe" customClass="NXProjectTagTemplateView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView wantsLayer="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dst-S5-hKd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <clipView key="contentView" copiesOnScroll="NO" id="Oca-Vd-YLJ">
+                        <rect key="frame" x="1" y="1" width="598" height="198"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView allowsEmptySelection="NO" id="I9B-Ve-AwA">
+                                <rect key="frame" x="0.0" y="0.0" width="598" height="158"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <collectionViewLayout key="collectionViewLayout" id="7zQ-7Q-KfK" customClass="NXRightsViewFlowlayout" customModule="SkyDRM" customModuleProvider="target"/>
+                                <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="c22-O7-iKe" id="nUx-WH-bOt"/>
+                                    <outlet property="delegate" destination="c22-O7-iKe" id="tHf-F1-baM"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="x3V-rg-qRI">
+                        <rect key="frame" x="-100" y="-100" width="233" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="ssX-q1-qTL">
+                        <rect key="frame" x="-100" y="-100" width="16" height="198"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dst-S5-hKd" secondAttribute="bottom" id="7Vm-lo-ARD"/>
+                <constraint firstItem="dst-S5-hKd" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Yds-yA-wuI"/>
+                <constraint firstItem="dst-S5-hKd" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="oLm-cD-lg0"/>
+                <constraint firstAttribute="trailing" secondItem="dst-S5-hKd" secondAttribute="trailing" id="svs-hn-IzN"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="I9B-Ve-AwA" id="Lhi-QG-ogQ"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="142"/>
+        </customView>
+    </objects>
+</document>

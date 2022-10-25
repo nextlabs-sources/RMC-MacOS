@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="emailView" id="c22-O7-iKe" customClass="NXEmailView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGR-9j-Ni8">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <clipView key="contentView" id="moL-4B-BGc">
+                        <rect key="frame" x="1" y="1" width="478" height="270"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView id="ZRr-Ke-sT6">
+                                <rect key="frame" x="0.0" y="0.0" width="478" height="270"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewLayout key="collectionViewLayout" id="ThU-B1-knq" customClass="NXEmailViewFlowlayout" customModule="SkyDRM" customModuleProvider="target"/>
+                                <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="c22-O7-iKe" id="WyO-rI-yF7"/>
+                                    <outlet property="delegate" destination="c22-O7-iKe" id="t4g-1M-b2j"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="IPS-bp-kLh">
+                        <rect key="frame" x="1" y="225" width="397" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="sH6-Ok-N6k">
+                        <rect key="frame" x="382" y="1" width="16" height="206"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gGR-9j-Ni8" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="HLm-PM-IyM"/>
+                <constraint firstItem="gGR-9j-Ni8" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="Lw0-mk-hon"/>
+                <constraint firstAttribute="bottom" secondItem="gGR-9j-Ni8" secondAttribute="bottom" id="k8H-xE-uNc"/>
+                <constraint firstAttribute="trailing" secondItem="gGR-9j-Ni8" secondAttribute="trailing" id="yHR-6e-4ls"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="ZRr-Ke-sT6" id="8bq-40-Yba"/>
+                <outlet property="scrollView" destination="gGR-9j-Ni8" id="3NB-vZ-os6"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXProjectMemberCellItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarView" destination="8NX-29-7ab" id="hbh-dy-bgd"/>
+                <outlet property="bkButton" destination="Gih-lZ-DSv" id="noa-cw-SRy"/>
+                <outlet property="joinedTimeLabel" destination="BYE-Ia-Lld" id="rdB-S5-lmt"/>
+                <outlet property="nameLabel" destination="9bg-Ld-ziV" id="K4r-l4-bOR"/>
+                <outlet property="ownerImageView" destination="To6-QU-ySu" id="OBF-35-ckG"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9bg-Ld-ziV">
+                    <rect key="frame" x="0.0" y="28" width="136" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="132" id="ePR-mq-xiF"/>
+                        <constraint firstAttribute="height" constant="17" id="fdG-yg-ZWv"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="stepanoval" id="rNS-b3-P1I">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BYE-Ia-Lld">
+                    <rect key="frame" x="0.0" y="11" width="136" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="132" id="M7E-Y0-cRi"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="joined on Dec 2016" id="khq-tM-aEV">
+                        <font key="font" metaFont="system" size="10"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8NX-29-7ab" userLabel="avatarImage View">
+                    <rect key="frame" x="36" y="56" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="GuF-kF-12h"/>
+                        <constraint firstAttribute="height" constant="64" id="nWm-Ep-f4F"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Sxl-JP-LXk"/>
+                </imageView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Gih-lZ-DSv">
+                    <rect key="frame" x="0.0" y="0.0" width="136" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="6zI-A4-Vqo"/>
+                        <constraint firstAttribute="width" constant="136" id="q9K-yX-dwq"/>
+                    </constraints>
+                    <shadow key="shadow">
+                        <color key="color" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                    </shadow>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" imagePosition="overlaps" alignment="center" imageScaling="axesIndependently" inset="2" id="Tia-O4-neT">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onTapBkButton:" target="-2" id="t0f-fz-BoI"/>
+                    </connections>
+                </button>
+                <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="To6-QU-ySu">
+                    <rect key="frame" x="92" y="114" width="44" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="JYT-1T-UWa"/>
+                        <constraint firstAttribute="height" constant="18" id="cyU-Wg-xy9"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Admin-with-cogwheels" id="g8Z-HJ-owT"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="To6-QU-ySu" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="1L7-LJ-ARo"/>
+                <constraint firstItem="8NX-29-7ab" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="36" id="1Lc-5p-s9V"/>
+                <constraint firstItem="9bg-Ld-ziV" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="2" id="2RR-qS-IPO"/>
+                <constraint firstItem="Gih-lZ-DSv" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="77d-io-yoD"/>
+                <constraint firstItem="9bg-Ld-ziV" firstAttribute="top" secondItem="8NX-29-7ab" secondAttribute="bottom" constant="11" id="BDe-PW-Oje"/>
+                <constraint firstItem="BYE-Ia-Lld" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="He7-fo-3xT"/>
+                <constraint firstAttribute="trailing" secondItem="8NX-29-7ab" secondAttribute="trailing" constant="36" id="Hr2-VH-Ypw"/>
+                <constraint firstItem="9bg-Ld-ziV" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="OUH-b0-vcu"/>
+                <constraint firstAttribute="trailing" secondItem="Gih-lZ-DSv" secondAttribute="trailing" id="R6S-6a-jrW"/>
+                <constraint firstItem="Gih-lZ-DSv" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="T5b-RE-MrG"/>
+                <constraint firstItem="BYE-Ia-Lld" firstAttribute="top" secondItem="9bg-Ld-ziV" secondAttribute="bottom" constant="4" id="WdV-G5-Wu9"/>
+                <constraint firstAttribute="trailing" secondItem="To6-QU-ySu" secondAttribute="trailing" id="dEz-sy-YlW"/>
+                <constraint firstItem="8NX-29-7ab" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="ihu-Bc-BuF"/>
+            </constraints>
+            <shadow key="shadow" blurRadius="2">
+                <color key="color" name="headerColor" catalog="System" colorSpace="catalog"/>
+            </shadow>
+            <point key="canvasLocation" x="13" y="106"/>
+        </customView>
+        <collectionViewItem id="dNL-qq-zBA" customClass="NXProjectMemberCellItem" customModule="SkyDRM" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="Admin-with-cogwheels" width="50" height="19"/>
+    </resources>
+</document>

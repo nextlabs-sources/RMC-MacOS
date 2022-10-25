@@ -1,0 +1,39 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "3Qz-gV-gHA"; */
+"3Qz-gV-gHA.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Button"; ObjectID = "7yB-9x-Bl0"; */
+"7yB-9x-Bl0.title" = "Button";
+
+/* Class = "NSTableColumn"; headerCell.title = "File Name"; ObjectID = "Bns-ob-Vgh"; */
+"Bns-ob-Vgh.headerCell.title" = "File Name";
+
+/* Class = "NSTableColumn"; headerCell.title = "File Size"; ObjectID = "CVT-6B-vQq"; */
+"CVT-6B-vQq.headerCell.title" = "File Size";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HrT-f3-AUc"; */
+"HrT-f3-AUc.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "YyH-rt-iFc"; */
+"YyH-rt-iFc.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "bkI-LC-hVu"; */
+"bkI-LC-hVu.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "dCU-hr-smi"; */
+"dCU-hr-smi.title" = "Table View Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Date Modified"; ObjectID = "hFS-Dc-Aaq"; */
+"hFS-Dc-Aaq.headerCell.title" = "Date Modified";
+
+/* Class = "NSTextFieldCell"; title = "There are no files here"; ObjectID = "oeJ-yT-syX"; */
+"oeJ-yT-syX.title" = "当前目录没有文件";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "uZT-N5-OcM"; */
+"uZT-N5-OcM.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Repository"; ObjectID = "zQo-f1-oml"; */
+"zQo-f1-oml.headerCell.title" = "Repository";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "zmV-7i-ZFO"; */
+"zmV-7i-ZFO.title" = "Text Cell";

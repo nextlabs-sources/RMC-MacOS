@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="filesView" id="c22-O7-iKe" customClass="NXFileListView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="789" height="565"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPK-IR-IvJ" userLabel="Left Nav View">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="515"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZ0-hK-0yX">
+                            <rect key="frame" x="18" y="475" width="113" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MySpace" id="O1x-EC-ChS">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-27-9Er">
+                            <rect key="frame" x="0.0" y="109" width="180" height="354"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        </customView>
+                    </subviews>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="vIb-08-eeR">
+                    <rect key="frame" x="0.0" y="515" width="789" height="50"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PK6-X5-Sow">
+                            <rect key="frame" x="20" y="9" width="40" height="32"/>
+                            <buttonCell key="cell" type="bevel" title="Home" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Gfe-oi-AVv">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="backHome:" target="c22-O7-iKe" id="39N-PD-hJw"/>
+                            </connections>
+                        </button>
+                        <stackView distribution="equalSpacing" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3US-AP-wAa">
+                            <rect key="frame" x="337" y="13" width="116" height="24"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnj-P4-tiK">
+                                    <rect key="frame" x="-2" y="0.0" width="92" height="24"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="MySpace" id="eW9-3o-8fp">
+                                        <font key="font" metaFont="system" size="20"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button translatesAutoresizingMaskIntoConstraints="NO" id="Xy8-au-97h">
+                                    <rect key="frame" x="96" y="2" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Xy8-au-97h" secondAttribute="height" id="fhh-fI-sUj"/>
+                                        <constraint firstAttribute="width" constant="20" id="lRc-oq-aPx"/>
+                                    </constraints>
+                                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="myspace_chevron_down_btn" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="n5o-6r-Kph">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="showDropDownList:" target="c22-O7-iKe" id="utg-QV-LaR"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5H8-kz-E5i"/>
+                        <constraint firstItem="PK6-X5-Sow" firstAttribute="leading" secondItem="vIb-08-eeR" secondAttribute="leading" constant="20" symbolic="YES" id="C8s-qi-xOa"/>
+                        <constraint firstItem="3US-AP-wAa" firstAttribute="centerX" secondItem="vIb-08-eeR" secondAttribute="centerX" id="Olb-lE-29w"/>
+                        <constraint firstItem="PK6-X5-Sow" firstAttribute="centerY" secondItem="vIb-08-eeR" secondAttribute="centerY" id="eNC-cf-XrT"/>
+                        <constraint firstItem="3US-AP-wAa" firstAttribute="centerY" secondItem="vIb-08-eeR" secondAttribute="centerY" id="yi8-LN-ijC"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vIb-08-eeR" secondAttribute="trailing" id="WzA-NN-uqp"/>
+                <constraint firstItem="vIb-08-eeR" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="Xjo-Yv-FK2"/>
+                <constraint firstItem="vIb-08-eeR" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="cWB-eR-O91"/>
+            </constraints>
+            <connections>
+                <outlet property="homeBtn" destination="PK6-X5-Sow" id="JYp-yH-4AN"/>
+                <outlet property="leftPanelView" destination="zPK-IR-IvJ" id="uNK-cg-Cou"/>
+                <outlet property="repoNavView" destination="0ht-27-9Er" id="LYl-5P-WYe"/>
+                <outlet property="titleLabel" destination="vnj-P4-tiK" id="Fxg-Mz-qex"/>
+                <outlet property="titleView" destination="vIb-08-eeR" id="y81-uT-lzJ"/>
+            </connections>
+            <point key="canvasLocation" x="270.5" y="256.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="myspace_chevron_down_btn" width="100" height="100"/>
+    </resources>
+</document>

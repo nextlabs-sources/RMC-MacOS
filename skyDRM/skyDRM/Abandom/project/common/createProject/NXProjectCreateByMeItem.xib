@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXProjectCreateByMeItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="bkBtn" destination="yEd-Wb-q7w" id="qyi-3f-Jn4"/>
+                <outlet property="fileCounts" destination="BSV-6u-LJr" id="cML-49-ctB"/>
+                <outlet property="inviteBtn" destination="0HW-yy-xqj" id="9aT-TU-FMT"/>
+                <outlet property="membersView" destination="n5k-X6-aF0" id="uKd-iV-7o0"/>
+                <outlet property="projectName" destination="39x-0h-aNr" id="ldy-hf-hyt"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="752" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="39x-0h-aNr">
+                    <rect key="frame" x="18" y="85" width="204" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="AM3-U3-8aL"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="Label" id="Znu-v2-zxA">
+                        <font key="font" metaFont="systemThin" size="17"/>
+                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BSV-6u-LJr">
+                    <rect key="frame" x="18" y="0.0" width="84" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="E22-NJ-AQc"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="left" title="Label" id="Cac-iq-GmD">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yEd-Wb-q7w" customClass="NXMouseEventButton" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="220" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="3xk-hS-j95"/>
+                        <constraint firstAttribute="width" constant="220" id="VZE-Nf-gA7"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" transparent="YES" imageScaling="axesIndependently" inset="2" id="maf-8k-SBF">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onItemClick:" target="-2" id="qJf-vB-EXK"/>
+                    </connections>
+                </button>
+                <button hidden="YES" verticalHuggingPriority="751" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="0HW-yy-xqj" customClass="NXMouseEventButton" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="108" y="0.0" width="102" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="uc0-Nh-vtM"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Invite Members" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="tMQ-2B-9ar">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="invitePeople:" target="-2" id="0uk-a4-HOX"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="n5k-X6-aF0" customClass="NXMultiCircleView" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="20" y="50" width="200" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="0bm-vB-jeZ"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="39x-0h-aNr" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="40p-2B-FsH"/>
+                <constraint firstItem="yEd-Wb-q7w" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="84N-qw-ggZ"/>
+                <constraint firstItem="BSV-6u-LJr" firstAttribute="top" secondItem="n5k-X6-aF0" secondAttribute="bottom" constant="25" id="9RJ-8i-YFW"/>
+                <constraint firstItem="0HW-yy-xqj" firstAttribute="leading" secondItem="BSV-6u-LJr" secondAttribute="trailing" constant="8" id="Cgd-PU-8FX"/>
+                <constraint firstAttribute="trailing" secondItem="n5k-X6-aF0" secondAttribute="trailing" id="EYy-kt-2R4"/>
+                <constraint firstItem="n5k-X6-aF0" firstAttribute="top" secondItem="39x-0h-aNr" secondAttribute="bottom" id="IOS-QF-vwN"/>
+                <constraint firstAttribute="trailing" secondItem="0HW-yy-xqj" secondAttribute="trailing" constant="10" id="Rcf-4e-Nua"/>
+                <constraint firstAttribute="bottom" secondItem="yEd-Wb-q7w" secondAttribute="bottom" id="b5y-FM-BE0"/>
+                <constraint firstAttribute="trailing" secondItem="yEd-Wb-q7w" secondAttribute="trailing" id="ey1-wl-950"/>
+                <constraint firstItem="yEd-Wb-q7w" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="gEu-Pv-10Q"/>
+                <constraint firstAttribute="trailing" secondItem="yEd-Wb-q7w" secondAttribute="trailing" id="hcm-kt-u5U"/>
+                <constraint firstAttribute="bottom" secondItem="BSV-6u-LJr" secondAttribute="bottom" id="iKC-3X-Tez"/>
+                <constraint firstItem="BSV-6u-LJr" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="otD-n9-mH3"/>
+                <constraint firstItem="0HW-yy-xqj" firstAttribute="bottom" secondItem="BSV-6u-LJr" secondAttribute="bottom" id="rsZ-QB-PsM"/>
+                <constraint firstItem="39x-0h-aNr" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="s93-ey-r89"/>
+                <constraint firstItem="n5k-X6-aF0" firstAttribute="leading" secondItem="39x-0h-aNr" secondAttribute="leading" id="t97-wp-3vR"/>
+                <constraint firstAttribute="trailing" secondItem="39x-0h-aNr" secondAttribute="trailing" id="wtq-SK-i1b"/>
+            </constraints>
+            <shadow key="shadow" blurRadius="2">
+                <color key="color" name="headerColor" catalog="System" colorSpace="catalog"/>
+            </shadow>
+            <point key="canvasLocation" x="140" y="163"/>
+        </customView>
+        <collectionViewItem id="tcR-Ar-a7B" customClass="NXProjectCreateByMeItem" customModule="SkyDRM" customModuleProvider="target"/>
+    </objects>
+</document>

@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FF9C537A51ADE166230E9FF33307324A738A696B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7F6EF1C150E8649CB5EA26D43FD01569F98F5676" : 9223372036854775807,
+    "FF9C537A51ADE166230E9FF33307324A738A696B" : 9223372036854775807,
+    "925C2375FC95231424C4B6F1179AD76D856BFE00" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B1E872CC-EF02-45A5-9F77-35AF6930E1D0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7F6EF1C150E8649CB5EA26D43FD01569F98F5676" : "common\/",
+    "FF9C537A51ADE166230E9FF33307324A738A696B" : "rmc-mac\/",
+    "925C2375FC95231424C4B6F1179AD76D856BFE00" : "ios-mac%20sdk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "skyDRM",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "skyDRM\/skyDRM.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/nxtlbs-devops\/rmc-mobile-common.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7F6EF1C150E8649CB5EA26D43FD01569F98F5676"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/kevzhou\/rmc-sdk-iosmac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "925C2375FC95231424C4B6F1179AD76D856BFE00"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/kevzhou\/rmc-mac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF9C537A51ADE166230E9FF33307324A738A696B"
+    }
+  ]
+}

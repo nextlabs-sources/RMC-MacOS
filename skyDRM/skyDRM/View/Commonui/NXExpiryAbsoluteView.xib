@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="expiryAbsoluteView" id="c22-O7-iKe" customClass="NXExpiryAbsoluteView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="840" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZxW-RL-KYp">
+                    <rect key="frame" x="528" y="277" width="314" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="J1n-Wh-9gT">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tvl-3z-UaP">
+                    <rect key="frame" x="0.0" y="69" width="139" height="148"/>
+                    <datePickerCell key="cell" borderStyle="bezel" alignment="left" datePickerStyle="clockAndCalendar" id="5UQ-sC-05Q">
+                        <font key="font" metaFont="system"/>
+                        <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                            <!--1982-02-12 16:00:00 +0000-->
+                        </date>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                    </datePickerCell>
+                    <connections>
+                        <action selector="onGraphPicker:" target="c22-O7-iKe" id="BB3-jU-1Sh"/>
+                    </connections>
+                </datePicker>
+                <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I2o-DF-rDt">
+                    <rect key="frame" x="23" y="227" width="96" height="27"/>
+                    <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="PG3-GU-XM9">
+                        <font key="font" metaFont="system"/>
+                        <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                            <!--1982-02-12 16:00:00 +0000-->
+                        </date>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                    </datePickerCell>
+                    <connections>
+                        <action selector="onTextualPicker:" target="c22-O7-iKe" id="b9R-dS-o8k"/>
+                    </connections>
+                </datePicker>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-UH-qAz">
+                    <rect key="frame" x="0.0" y="270" width="500" height="30"/>
+                    <view key="contentView" id="2f6-Wv-ayc">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ylm-d6-Zr9"/>
+                        <constraint firstAttribute="width" constant="500" id="raS-QL-xsL"/>
+                    </constraints>
+                    <color key="fillColor" red="0.94499540329999998" green="0.94515722989999995" blue="0.94498521089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="atU-96-SW3">
+                    <rect key="frame" x="8" y="276" width="494" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="rFX-sM-B7K">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="knobColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="atU-96-SW3" firstAttribute="centerY" secondItem="cDf-UH-qAz" secondAttribute="centerY" id="1yy-bV-zvJ"/>
+                <constraint firstItem="cDf-UH-qAz" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="43A-gf-Aml"/>
+                <constraint firstItem="cDf-UH-qAz" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="E7i-BM-Hwk"/>
+                <constraint firstItem="Tvl-3z-UaP" firstAttribute="top" secondItem="I2o-DF-rDt" secondAttribute="bottom" constant="10" id="FMa-0v-Qd6"/>
+                <constraint firstItem="I2o-DF-rDt" firstAttribute="centerX" secondItem="Tvl-3z-UaP" secondAttribute="centerX" id="Kjt-OT-oTV"/>
+                <constraint firstItem="atU-96-SW3" firstAttribute="leading" secondItem="cDf-UH-qAz" secondAttribute="leading" constant="10" id="TZF-M5-f5V"/>
+                <constraint firstAttribute="trailing" secondItem="ZxW-RL-KYp" secondAttribute="trailing" id="UAd-YI-DVF"/>
+                <constraint firstItem="Tvl-3z-UaP" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="nhe-rQ-TBJ"/>
+                <constraint firstItem="ZxW-RL-KYp" firstAttribute="leading" secondItem="cDf-UH-qAz" secondAttribute="trailing" constant="30" id="nm3-J3-uYu"/>
+                <constraint firstItem="I2o-DF-rDt" firstAttribute="top" secondItem="cDf-UH-qAz" secondAttribute="bottom" constant="20" id="pwG-Uy-rda"/>
+                <constraint firstItem="atU-96-SW3" firstAttribute="trailing" secondItem="cDf-UH-qAz" secondAttribute="trailing" id="wNY-Id-GPg"/>
+                <constraint firstItem="ZxW-RL-KYp" firstAttribute="centerY" secondItem="cDf-UH-qAz" secondAttribute="centerY" id="wjU-kZ-Qwb"/>
+            </constraints>
+            <connections>
+                <outlet property="box" destination="cDf-UH-qAz" id="Lbw-GM-SoW"/>
+                <outlet property="graphPicker" destination="Tvl-3z-UaP" id="Oq4-8n-Uiz"/>
+                <outlet property="rangeDateLabel" destination="atU-96-SW3" id="osS-5T-d1F"/>
+                <outlet property="textualPicker" destination="I2o-DF-rDt" id="lDl-lx-MNj"/>
+                <outlet property="totalDaysLabel" destination="ZxW-RL-KYp" id="oYz-UI-eSd"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

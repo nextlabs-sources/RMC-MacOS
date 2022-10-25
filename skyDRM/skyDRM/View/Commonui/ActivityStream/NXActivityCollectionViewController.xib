@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXActivityCollectionViewController" customModule="skyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="UE0-qz-w4A" id="yhf-p5-kmK"/>
+                <outlet property="titleText" destination="ANk-iM-7fd" id="UdG-s3-Ugg"/>
+                <outlet property="view" destination="c22-O7-iKe" id="453-lI-o9e"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="NXActivityCollectionViewController" id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="304"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgh-eV-PpN">
+                    <rect key="frame" x="0.0" y="20" width="420" height="204"/>
+                    <clipView key="contentView" drawsBackground="NO" id="Ko0-ie-DDe">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="204"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView selectable="YES" id="UE0-qz-w4A">
+                                <rect key="frame" x="0.0" y="0.0" width="420" height="204"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="TEf-9w-CNI">
+                                    <size key="itemSize" width="50" height="50"/>
+                                </collectionViewFlowLayout>
+                                <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Hv8-gr-gp1">
+                        <rect key="frame" x="0.0" y="211" width="420" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="RSQ-pM-yEF">
+                        <rect key="frame" x="404" y="0.0" width="16" height="170"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANk-iM-7fd">
+                    <rect key="frame" x="18" y="232" width="85" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Collection" id="otU-5F-F6i">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Lgh-eV-PpN" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="5hE-zQ-dds"/>
+                <constraint firstAttribute="trailing" secondItem="Lgh-eV-PpN" secondAttribute="trailing" id="L4I-bt-UbT"/>
+                <constraint firstItem="ANk-iM-7fd" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="Ukk-MO-q1e"/>
+                <constraint firstItem="ANk-iM-7fd" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="50" id="YoE-3s-wxx"/>
+                <constraint firstAttribute="bottom" secondItem="Lgh-eV-PpN" secondAttribute="bottom" constant="20" symbolic="YES" id="lPN-6F-lsg"/>
+                <constraint firstItem="Lgh-eV-PpN" firstAttribute="top" secondItem="ANk-iM-7fd" secondAttribute="bottom" constant="8" symbolic="YES" id="pdX-ii-Tdl"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="-82"/>
+        </customView>
+    </objects>
+</document>

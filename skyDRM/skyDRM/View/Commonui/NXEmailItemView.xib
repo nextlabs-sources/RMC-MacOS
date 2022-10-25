@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXEmailItemView" customModule="SkyDRM" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="emailItemView" id="c22-O7-iKe" customClass="NXEmailItemView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="18"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4dX-k2-Iew">
+                    <rect key="frame" x="6" y="0.0" width="199" height="18"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Label" usesSingleLineMode="YES" id="5b9-xz-ob2">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oh5-gO-4zI">
+                    <rect key="frame" x="211" y="5" width="8" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="6Zz-hx-P8F"/>
+                        <constraint firstAttribute="height" constant="8" id="I36-zF-gsn"/>
+                    </constraints>
+                    <buttonCell key="cell" type="roundRect" bezelStyle="roundedRect" image="Close" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="HfR-NV-z1T">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="closeClicked:" target="c22-O7-iKe" id="hZ0-Uf-DMZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oh5-gO-4zI" secondAttribute="trailing" constant="17" id="0ht-ld-VdE"/>
+                <constraint firstItem="4dX-k2-Iew" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="1Oc-aa-Q8t"/>
+                <constraint firstItem="oh5-gO-4zI" firstAttribute="leading" secondItem="4dX-k2-Iew" secondAttribute="trailing" constant="8" id="FdW-Ef-a2f"/>
+                <constraint firstItem="oh5-gO-4zI" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="Hdy-co-a2h"/>
+                <constraint firstItem="4dX-k2-Iew" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="8" id="N19-1j-xJb"/>
+            </constraints>
+            <connections>
+                <outlet property="closeButton" destination="oh5-gO-4zI" id="ldg-lb-Pcu"/>
+                <outlet property="titleLabel" destination="4dX-k2-Iew" id="BdR-5k-ODU"/>
+            </connections>
+            <point key="canvasLocation" x="-223" y="56.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Close" width="32" height="33"/>
+    </resources>
+</document>

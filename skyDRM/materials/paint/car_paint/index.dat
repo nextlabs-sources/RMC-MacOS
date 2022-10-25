@@ -1,0 +1,11 @@
+
+CHANNEL: SHADER
+SOURCE: car_paint.hlsl
+MULTITEXTURE: off
+PARAMETERIZATION_SOURCE: uv
+TWEAKABLES: f0, base_color, roughness, ambient_weight, fresnel_power
+
+CHANNEL: ENVIRONMENT
+SOURCE: environment1
+
+

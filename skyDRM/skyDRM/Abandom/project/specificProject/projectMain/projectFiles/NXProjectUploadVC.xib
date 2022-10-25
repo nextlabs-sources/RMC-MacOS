@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXProjectUploadVC" customModule="skyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="rightsContainer" destination="wTE-x2-CuH" id="aKT-Je-8r6"/>
+                <outlet property="titleButton" destination="Jpo-Ec-hGG" id="2lE-Cl-Ho5"/>
+                <outlet property="uploadButton" destination="ohT-k6-ypK" id="WD8-ZH-TOC"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="422"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="wTE-x2-CuH">
+                    <rect key="frame" x="20" y="80" width="560" height="283"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="283" placeholder="YES" id="CDI-m5-X4E"/>
+                    </constraints>
+                </customView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ohT-k6-ypK">
+                    <rect key="frame" x="260" y="20" width="80" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="eX5-DX-FP3"/>
+                        <constraint firstAttribute="height" constant="40" id="pZ5-JT-UKf"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Upload" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="8nB-aq-TiS">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="16"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="uploadButton:" target="-2" id="Ri6-og-jgr"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jpo-Ec-hGG">
+                    <rect key="frame" x="20" y="383" width="560" height="19"/>
+                    <buttonCell key="cell" type="bevel" title="Button" bezelStyle="regularSquare" alignment="left" lineBreakMode="truncatingMiddle" imageScaling="proportionallyDown" inset="2" id="N2N-7s-Sov">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="15"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="changeFile:" target="-2" id="kCg-JZ-4NS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ohT-k6-ypK" secondAttribute="bottom" constant="20" id="6NO-WP-xjA"/>
+                <constraint firstItem="Jpo-Ec-hGG" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="6au-MH-5sz"/>
+                <constraint firstItem="wTE-x2-CuH" firstAttribute="top" secondItem="Jpo-Ec-hGG" secondAttribute="bottom" constant="20" id="KTI-ob-ET4"/>
+                <constraint firstItem="wTE-x2-CuH" firstAttribute="trailing" secondItem="Jpo-Ec-hGG" secondAttribute="trailing" id="UqY-Yg-tYp"/>
+                <constraint firstItem="ohT-k6-ypK" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="abf-6F-7em"/>
+                <constraint firstItem="Jpo-Ec-hGG" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="enl-eY-baN"/>
+                <constraint firstItem="ohT-k6-ypK" firstAttribute="top" secondItem="wTE-x2-CuH" secondAttribute="bottom" constant="20" id="gQX-7a-oDZ"/>
+                <constraint firstAttribute="trailing" secondItem="Jpo-Ec-hGG" secondAttribute="trailing" constant="20" id="jZK-RE-y2m"/>
+                <constraint firstItem="wTE-x2-CuH" firstAttribute="leading" secondItem="Jpo-Ec-hGG" secondAttribute="leading" id="vjy-qZ-enx"/>
+            </constraints>
+            <point key="canvasLocation" x="183" y="256"/>
+        </customView>
+    </objects>
+</document>

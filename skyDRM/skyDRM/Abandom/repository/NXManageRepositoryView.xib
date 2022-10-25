@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="manageRepositoryView" id="b2C-jc-Z9d" customClass="NXManageRepositoryView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="cZ2-24-lB8">
+                    <rect key="frame" x="0.0" y="300" width="550" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="Mti-Fq-r1M"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XuG-t0-iEJ">
+                    <rect key="frame" x="38" y="241" width="98" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="5WZ-Cs-dfH"/>
+                        <constraint firstAttribute="width" constant="94" id="Uix-aA-KpW"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Display Name" id="7ez-vY-S0i">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cs2-qt-VCn">
+                    <rect key="frame" x="336" y="30" width="154" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="154" id="CzN-3j-RJc"/>
+                        <constraint firstAttribute="height" constant="44" id="Sx4-id-GU8"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Update" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="2El-uA-i8J">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="14"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onUpdate:" target="b2C-jc-Z9d" id="cJV-12-UMv"/>
+                        <outlet property="nextKeyView" destination="Fzk-bZ-1TM" id="hzo-a8-J7R"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZYP-CH-HzI">
+                    <rect key="frame" x="172" y="30" width="154" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Xqb-qw-7Z9"/>
+                        <constraint firstAttribute="width" constant="154" id="l4h-1o-JWL"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Cancel" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="sIi-5t-g0c">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onCancel:" target="b2C-jc-Z9d" id="Pjb-w9-34X"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fzk-bZ-1TM">
+                    <rect key="frame" x="40" y="191" width="450" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="19L-KP-Q8e"/>
+                        <constraint firstAttribute="width" constant="450" id="zyW-5e-HHv"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="v4e-lL-5w1">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="Cs2-qt-VCn" id="Ajr-zU-HG3"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3rd-Zd-NZd">
+                    <rect key="frame" x="38" y="82" width="544" height="104"/>
+                    <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" title="Label" id="IIt-8g-Q40">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Fzk-bZ-1TM" firstAttribute="top" secondItem="XuG-t0-iEJ" secondAttribute="bottom" constant="10" id="2mG-Hk-zrd"/>
+                <constraint firstAttribute="bottom" secondItem="ZYP-CH-HzI" secondAttribute="bottom" constant="30" id="EFM-Il-u9M"/>
+                <constraint firstItem="Fzk-bZ-1TM" firstAttribute="leading" secondItem="XuG-t0-iEJ" secondAttribute="leading" id="JRa-6w-inW"/>
+                <constraint firstItem="Cs2-qt-VCn" firstAttribute="trailing" secondItem="Fzk-bZ-1TM" secondAttribute="trailing" id="PeJ-WV-RfW"/>
+                <constraint firstItem="3rd-Zd-NZd" firstAttribute="top" secondItem="Fzk-bZ-1TM" secondAttribute="bottom" constant="5" id="Qtg-gT-03W"/>
+                <constraint firstAttribute="trailing" secondItem="cZ2-24-lB8" secondAttribute="trailing" id="RBn-ru-2dF"/>
+                <constraint firstItem="XuG-t0-iEJ" firstAttribute="leading" secondItem="b2C-jc-Z9d" secondAttribute="leading" constant="40" id="Ssl-Pt-tv6"/>
+                <constraint firstItem="XuG-t0-iEJ" firstAttribute="top" secondItem="cZ2-24-lB8" secondAttribute="bottom" constant="40" id="TMa-AG-1iO"/>
+                <constraint firstItem="cZ2-24-lB8" firstAttribute="top" secondItem="b2C-jc-Z9d" secondAttribute="top" id="YIY-Vc-DAy"/>
+                <constraint firstAttribute="bottom" secondItem="Cs2-qt-VCn" secondAttribute="bottom" constant="30" id="nZT-2e-vKy"/>
+                <constraint firstItem="Cs2-qt-VCn" firstAttribute="leading" secondItem="ZYP-CH-HzI" secondAttribute="trailing" constant="10" id="skk-R0-v8m"/>
+                <constraint firstItem="3rd-Zd-NZd" firstAttribute="leading" secondItem="Fzk-bZ-1TM" secondAttribute="leading" id="slS-kz-F3c"/>
+                <constraint firstItem="cZ2-24-lB8" firstAttribute="leading" secondItem="b2C-jc-Z9d" secondAttribute="leading" id="tRw-1Z-6Uu"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelBtn" destination="ZYP-CH-HzI" id="Td1-MO-fZj"/>
+                <outlet property="leftView" destination="cZ2-24-lB8" id="ZaI-vE-18v"/>
+                <outlet property="nameLabel" destination="Fzk-bZ-1TM" id="r8B-HE-dtc"/>
+                <outlet property="nameTipLabel" destination="XuG-t0-iEJ" id="SR1-uq-rIE"/>
+                <outlet property="updateBtn" destination="Cs2-qt-VCn" id="Dza-jc-lYh"/>
+                <outlet property="warningLabel" destination="3rd-Zd-NZd" id="ymb-Qr-6fk"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="168"/>
+        </customView>
+    </objects>
+</document>

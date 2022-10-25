@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXSpecificProjectHomePeopleItemView" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="avatar" destination="UB3-gj-v8P" id="mL5-zK-xhk"/>
+                <outlet property="bkButton" destination="sAw-my-iEF" id="O9h-X1-8Tj"/>
+                <outlet property="displayName" destination="oVF-Nr-FNy" id="nFs-8T-jjQ"/>
+                <outlet property="joinedTime" destination="KJv-e1-AM1" id="g4c-8e-Euk"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sAw-my-iEF">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
+                    <shadow key="shadow">
+                        <color key="color" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                    </shadow>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" imagePosition="overlaps" alignment="center" imageScaling="axesIndependently" inset="2" id="X63-a4-SKh">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onTapBkButton:" target="-2" id="Ula-cb-NdY"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oVF-Nr-FNy">
+                    <rect key="frame" x="8" y="32" width="364" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" id="9vt-8m-7ft">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DcJ-fk-Eoc">
+                    <rect key="frame" x="10" y="13" width="304" height="17"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zQ9-Sz-WMb">
+                            <rect key="frame" x="-2" y="0.0" width="45" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Joined" id="QjW-bX-iMT">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="knobColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KJv-e1-AM1">
+                            <rect key="frame" x="47" y="0.0" width="259" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="4 Apr 2016.03:05 PM                        " id="lFS-bU-N4z">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UB3-gj-v8P">
+                    <rect key="frame" x="62" y="14" width="0.0" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Awj-WH-4jn"/>
+                </imageView>
+                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="CI6-s4-DLa">
+                    <rect key="frame" x="10" y="-2" width="360" height="5"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="oVF-Nr-FNy" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="1" id="0KB-qk-L0H"/>
+                <constraint firstAttribute="bottom" secondItem="CI6-s4-DLa" secondAttribute="bottom" id="3HM-b7-epq"/>
+                <constraint firstAttribute="trailing" secondItem="oVF-Nr-FNy" secondAttribute="trailing" constant="20" id="Dwf-rH-1GF"/>
+                <constraint firstItem="oVF-Nr-FNy" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="Kce-9v-nQF"/>
+                <constraint firstItem="DcJ-fk-Eoc" firstAttribute="top" secondItem="oVF-Nr-FNy" secondAttribute="bottom" constant="2" id="Kxe-fz-fAN"/>
+                <constraint firstItem="sAw-my-iEF" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Qrk-wB-K4R"/>
+                <constraint firstItem="DcJ-fk-Eoc" firstAttribute="top" secondItem="oVF-Nr-FNy" secondAttribute="bottom" constant="2" id="Qyo-QM-cLQ"/>
+                <constraint firstAttribute="trailing" secondItem="CI6-s4-DLa" secondAttribute="trailing" constant="20" id="S3n-tG-HKB"/>
+                <constraint firstAttribute="trailing" secondItem="DcJ-fk-Eoc" secondAttribute="trailing" constant="76" id="WQh-ca-mWO"/>
+                <constraint firstItem="DcJ-fk-Eoc" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="fVz-h7-uKW"/>
+                <constraint firstAttribute="bottom" secondItem="DcJ-fk-Eoc" secondAttribute="bottom" constant="13" id="oVJ-fa-8Tt"/>
+                <constraint firstAttribute="bottom" secondItem="sAw-my-iEF" secondAttribute="bottom" id="ohF-Cp-L7o"/>
+                <constraint firstItem="sAw-my-iEF" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="oiv-KL-DlT"/>
+                <constraint firstAttribute="trailing" secondItem="sAw-my-iEF" secondAttribute="trailing" id="ryy-QK-Q6J"/>
+                <constraint firstItem="CI6-s4-DLa" firstAttribute="leading" secondItem="DcJ-fk-Eoc" secondAttribute="leading" id="sud-gy-aEg"/>
+            </constraints>
+        </customView>
+        <collectionViewItem id="axU-Wg-eDj" customClass="NXSpecificProjectHomePeopleItemView" customModule="SkyDRM" customModuleProvider="target"/>
+    </objects>
+</document>

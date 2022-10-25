@@ -1,0 +1,9 @@
+
+/* Class = "NSButtonCell"; title = "browser"; ObjectID = "P9a-wo-goP"; */
+"P9a-wo-goP.title" = "浏览";
+
+/* Class = "NSTextFieldCell"; title = "for a file to upload"; ObjectID = "Wj9-Wq-qmP"; */
+"Wj9-Wq-qmP.title" = "一个上传文件";
+
+/* Class = "NSTextFieldCell"; title = "Drag and drop or "; ObjectID = "u6N-q0-utl"; */
+"u6N-q0-utl.title" = "拖拽或者";

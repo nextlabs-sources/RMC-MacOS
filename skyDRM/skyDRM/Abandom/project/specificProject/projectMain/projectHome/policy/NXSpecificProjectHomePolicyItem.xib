@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXSpecificProjectHomePolicyItem" customModule="skyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="expireTime" destination="Y8u-2s-sJt" id="nrw-9T-4R2"/>
+                <outlet property="fileName" destination="kog-Kn-qRp" id="XtB-OS-Jb2"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kog-Kn-qRp">
+                    <rect key="frame" x="29" y="37" width="354" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Ophthalmologist to View Patient Records" id="ptR-eA-btM">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIf-rO-E9K">
+                    <rect key="frame" x="31" y="12" width="167" height="17"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fL-Ye-6jI">
+                            <rect key="frame" x="-2" y="0.0" width="53" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Expiring" id="H8t-9d-mhB">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="scrollBarColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="knobColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8u-2s-sJt">
+                            <rect key="frame" x="55" y="0.0" width="114" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Tomorrow 5:12PM" id="qax-g6-ptY">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GIf-rO-E9K" firstAttribute="top" secondItem="kog-Kn-qRp" secondAttribute="bottom" constant="8" id="5r8-rm-dUj"/>
+                <constraint firstItem="kog-Kn-qRp" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="31" id="AcG-Tb-0bt"/>
+                <constraint firstItem="GIf-rO-E9K" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="31" id="B19-Os-Pi5"/>
+                <constraint firstAttribute="bottom" secondItem="GIf-rO-E9K" secondAttribute="bottom" constant="12" id="O6F-31-PRH"/>
+                <constraint firstAttribute="trailing" secondItem="kog-Kn-qRp" secondAttribute="trailing" constant="18" id="OST-B8-GId"/>
+                <constraint firstItem="kog-Kn-qRp" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="13" id="WTG-6x-Bm3"/>
+            </constraints>
+            <point key="canvasLocation" x="98.5" y="72"/>
+        </customView>
+        <collectionViewItem id="dnW-4M-cyY" customClass="NXSpecificProjectHomePolicyItem" customModule="skyDRM" customModuleProvider="target"/>
+    </objects>
+</document>

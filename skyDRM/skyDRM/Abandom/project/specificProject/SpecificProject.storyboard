@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="xap-GK-HnN">
+            <objects>
+                <windowController storyboardIdentifier="SpecificProjectWindow" id="L89-JU-pdq" customClass="NXSpecificProjectWindow" customModule="SkyDRM" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" id="9j8-Fa-dOw">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="500" y="500" width="960" height="640"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <value key="minSize" type="size" width="900" height="540"/>
+                    </window>
+                    <connections>
+                        <segue destination="Q0X-J1-De3" kind="relationship" relationship="window.shadowedContentViewController" id="q7a-gz-FvX"/>
+                    </connections>
+                </windowController>
+                <customObject id="GVe-Gy-HMx" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-243" y="27"/>
+        </scene>
+        <!--Specific Project View Controller-->
+        <scene sceneID="khf-s2-8N2">
+            <objects>
+                <viewController id="Q0X-J1-De3" customClass="NXSpecificProjectViewController" customModule="SkyDRM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="AWs-LE-boG">
+                        <rect key="frame" x="0.0" y="0.0" width="1280" height="780"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="cSn-S4-rTz">
+                                <rect key="frame" x="0.0" y="720" width="1280" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xSS-Rr-Ms7"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="EGB-RX-LKS">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="720"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="QNo-bx-LiE"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="HEr-8c-MRL">
+                                <rect key="frame" x="200" y="0.0" width="1080" height="720"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HEr-8c-MRL" secondAttribute="trailing" id="5pB-xH-9r1"/>
+                            <constraint firstItem="EGB-RX-LKS" firstAttribute="leading" secondItem="AWs-LE-boG" secondAttribute="leading" id="76v-H0-FqP"/>
+                            <constraint firstAttribute="bottom" secondItem="HEr-8c-MRL" secondAttribute="bottom" id="8Xv-o7-nae"/>
+                            <constraint firstItem="HEr-8c-MRL" firstAttribute="leading" secondItem="EGB-RX-LKS" secondAttribute="trailing" id="AsZ-Fd-eQA"/>
+                            <constraint firstItem="cSn-S4-rTz" firstAttribute="leading" secondItem="AWs-LE-boG" secondAttribute="leading" id="JAX-4Q-sE7"/>
+                            <constraint firstItem="EGB-RX-LKS" firstAttribute="top" secondItem="cSn-S4-rTz" secondAttribute="bottom" id="Npq-oJ-b8O"/>
+                            <constraint firstItem="cSn-S4-rTz" firstAttribute="top" secondItem="AWs-LE-boG" secondAttribute="top" id="SG4-NP-bsT"/>
+                            <constraint firstItem="HEr-8c-MRL" firstAttribute="top" secondItem="cSn-S4-rTz" secondAttribute="bottom" id="aRQ-KH-WtV"/>
+                            <constraint firstAttribute="trailing" secondItem="cSn-S4-rTz" secondAttribute="trailing" id="caJ-BG-p6T"/>
+                            <constraint firstAttribute="bottom" secondItem="EGB-RX-LKS" secondAttribute="bottom" id="xWL-zc-PSI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="HEr-8c-MRL" id="9lS-Wq-hHk"/>
+                        <outlet property="leftNav" destination="EGB-RX-LKS" id="0vW-ey-ijZ"/>
+                        <outlet property="titleSection" destination="cSn-S4-rTz" id="9q4-NT-TVD"/>
+                    </connections>
+                </viewController>
+                <customObject id="nTf-i6-6tv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-243" y="860"/>
+        </scene>
+    </scenes>
+</document>

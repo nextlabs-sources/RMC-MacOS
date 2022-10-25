@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXTagsDisplayViewItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="rightsTagLabel" destination="CFT-5O-Wn0" id="kD2-oC-NIU"/>
+                <outlet property="view" destination="Boa-YG-yri" id="tpI-Fh-BXf"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="NXTagsDisplayViewItemIdentifier" id="Boa-YG-yri">
+            <rect key="frame" x="0.0" y="0.0" width="516" height="18"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-5O-Wn0" userLabel="rightsLab">
+                    <rect key="frame" x="0.0" y="0.0" width="512" height="18"/>
+                    <textFieldCell key="cell" truncatesLastVisibleLine="YES" continuous="YES" id="nem-Fy-Yi3">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" red="0.36165529819999997" green="0.36165529819999997" blue="0.36165529819999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="CFT-5O-Wn0" firstAttribute="leading" secondItem="Boa-YG-yri" secondAttribute="leading" constant="2" id="EZu-ht-QGV"/>
+                <constraint firstItem="CFT-5O-Wn0" firstAttribute="top" secondItem="Boa-YG-yri" secondAttribute="top" id="Msh-dl-A3S"/>
+                <constraint firstAttribute="trailing" secondItem="CFT-5O-Wn0" secondAttribute="trailing" constant="6" id="Wqz-fF-OBg"/>
+                <constraint firstAttribute="bottom" secondItem="CFT-5O-Wn0" secondAttribute="bottom" id="d4B-TA-dmY"/>
+            </constraints>
+            <point key="canvasLocation" x="-366" y="-184.5"/>
+        </customView>
+    </objects>
+</document>

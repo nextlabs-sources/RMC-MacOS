@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXCheckPermissionViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="4tN-S7-7Iq" id="g0E-ME-LQS"/>
+                <outlet property="topView" destination="DKw-aS-yBn" id="6Yf-3i-sx8"/>
+                <outlet property="view" destination="ijH-1y-PtB" id="Chs-vS-EdR"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="ijH-1y-PtB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="420"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="DKw-aS-yBn">
+                    <rect key="frame" x="0.0" y="220" width="600" height="200"/>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="4tN-S7-7Iq">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="flg-VD-kwC"/>
+                    </constraints>
+                </customView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rk7-OY-m6T">
+                    <rect key="frame" x="548" y="367" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Sez-aG-dbz"/>
+                        <constraint firstAttribute="height" constant="20" id="i95-S5-yx9"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Close" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="3Dw-T5-eJj">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="close:" target="-2" id="CEh-8l-Bx5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="DKw-aS-yBn" firstAttribute="top" secondItem="ijH-1y-PtB" secondAttribute="top" id="22o-2C-drl"/>
+                <constraint firstItem="4tN-S7-7Iq" firstAttribute="top" secondItem="DKw-aS-yBn" secondAttribute="bottom" id="2xa-sf-pRF"/>
+                <constraint firstItem="DKw-aS-yBn" firstAttribute="trailing" secondItem="4tN-S7-7Iq" secondAttribute="trailing" id="EGn-Z5-AEG"/>
+                <constraint firstAttribute="trailing" secondItem="4tN-S7-7Iq" secondAttribute="trailing" id="TWv-ju-jNf"/>
+                <constraint firstAttribute="trailing" secondItem="rk7-OY-m6T" secondAttribute="trailing" constant="32" id="dkd-Ci-ByM"/>
+                <constraint firstItem="DKw-aS-yBn" firstAttribute="leading" secondItem="ijH-1y-PtB" secondAttribute="leading" id="ehw-Fj-mGu"/>
+                <constraint firstItem="rk7-OY-m6T" firstAttribute="top" secondItem="ijH-1y-PtB" secondAttribute="top" constant="33" id="fxQ-0J-oBs"/>
+                <constraint firstItem="4tN-S7-7Iq" firstAttribute="leading" secondItem="ijH-1y-PtB" secondAttribute="leading" id="psu-wt-Hsu"/>
+                <constraint firstAttribute="bottom" secondItem="4tN-S7-7Iq" secondAttribute="bottom" id="xQo-4Z-8f4"/>
+            </constraints>
+            <point key="canvasLocation" x="146" y="152"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Close" width="32" height="33"/>
+    </resources>
+</document>

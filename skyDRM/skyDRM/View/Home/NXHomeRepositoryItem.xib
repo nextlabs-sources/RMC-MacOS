@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXHomeRepositoryItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="accountLabel" destination="WQb-ax-f0X" id="qsS-Ok-ApC"/>
+                <outlet property="aliasLabel" destination="OMV-dp-tJf" id="koH-Ga-6RY"/>
+                <outlet property="authBtn" destination="hN3-zR-cVq" id="Zhj-O2-oCh"/>
+                <outlet property="repoImageView" destination="0ZA-OQ-LtN" id="87G-Qq-qly"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ZA-OQ-LtN" customClass="NXMouseEventImageView" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="45" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="7f8-Th-Gfq"/>
+                        <constraint firstAttribute="height" constant="50" id="Y8F-iM-ZpI"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="VfU-e1-tzb"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OMV-dp-tJf" customClass="NXMouseEventTextField" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="53" y="25" width="156" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="YrR-nc-HnA"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="left" title="Label" id="oxr-3m-SJ3">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hN3-zR-cVq">
+                    <rect key="frame" x="207" y="0.0" width="30" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="NeN-2P-5mc"/>
+                        <constraint firstAttribute="height" constant="50" id="pUf-ut-XeT"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="highpriority" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="FMc-2T-JbI">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onAuth:" target="-2" id="ZL8-dk-jog"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-ax-f0X" customClass="NXMouseEventTextField" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="53" y="0.0" width="156" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="XHk-Xh-bxe"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="left" title="Label" id="TJq-In-6LC">
+                        <font key="font" size="14" name="CourierNewPS-ItalicMT"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hN3-zR-cVq" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="8Tw-tK-qBX"/>
+                <constraint firstItem="WQb-ax-f0X" firstAttribute="top" secondItem="OMV-dp-tJf" secondAttribute="bottom" id="D8r-vT-DRl"/>
+                <constraint firstItem="0ZA-OQ-LtN" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="GyI-cC-8PS"/>
+                <constraint firstAttribute="trailing" secondItem="hN3-zR-cVq" secondAttribute="trailing" constant="3" id="HLX-xe-j3f"/>
+                <constraint firstItem="OMV-dp-tJf" firstAttribute="leading" secondItem="0ZA-OQ-LtN" secondAttribute="trailing" constant="10" id="Jao-IJ-pIk"/>
+                <constraint firstItem="0ZA-OQ-LtN" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="KPi-ee-Y8T"/>
+                <constraint firstItem="hN3-zR-cVq" firstAttribute="leading" secondItem="OMV-dp-tJf" secondAttribute="trailing" id="OwO-Jl-tM3"/>
+                <constraint firstItem="WQb-ax-f0X" firstAttribute="leading" secondItem="0ZA-OQ-LtN" secondAttribute="trailing" constant="10" id="Smg-LQ-Xui"/>
+                <constraint firstAttribute="bottom" secondItem="WQb-ax-f0X" secondAttribute="bottom" id="Wc4-Bh-ed2"/>
+                <constraint firstItem="hN3-zR-cVq" firstAttribute="leading" secondItem="WQb-ax-f0X" secondAttribute="trailing" id="a3k-9E-jDX"/>
+                <constraint firstAttribute="bottom" secondItem="0ZA-OQ-LtN" secondAttribute="bottom" id="cuc-I2-oeg"/>
+                <constraint firstAttribute="bottom" secondItem="hN3-zR-cVq" secondAttribute="bottom" id="pt8-lv-IlL"/>
+                <constraint firstItem="WQb-ax-f0X" firstAttribute="leading" secondItem="OMV-dp-tJf" secondAttribute="leading" id="txf-Vh-kS8"/>
+            </constraints>
+        </customView>
+        <collectionViewItem id="hhE-XJ-04S" customClass="NXHomeRepositoryItem" customModule="SkyDRM" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="highpriority" width="50" height="50"/>
+    </resources>
+</document>

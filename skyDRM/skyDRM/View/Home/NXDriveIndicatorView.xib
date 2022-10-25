@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="driveIndicatorView" id="c22-O7-iKe" customClass="NXDriveIndicatorView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ppb-uv-dkQ">
+                    <rect key="frame" x="33" y="83" width="4" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="LMu-Bs-pKN">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bRU-ve-LKV">
+                    <rect key="frame" x="33" y="56" width="4" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="htp-kr-rMF">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KaM-dx-4h0">
+                    <rect key="frame" x="155" y="60" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="GPW-nt-KIM"/>
+                        <constraint firstAttribute="width" constant="40" id="IED-28-b6e"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="c3a-4G-pec"/>
+                </imageView>
+                <button focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xxy-PD-2fc" customClass="NXMouseEventButton" customModule="SkyDRM" customModuleProvider="target">
+                    <rect key="frame" x="35" y="20" width="4" height="15"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="nNe-i9-SBq">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onView:" target="c22-O7-iKe" id="do3-SG-UG9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="KaM-dx-4h0" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="25" id="6gr-Zg-AYp"/>
+                <constraint firstItem="bRU-ve-LKV" firstAttribute="leading" secondItem="ppb-uv-dkQ" secondAttribute="leading" id="8Xl-2e-4Zh"/>
+                <constraint firstItem="ppb-uv-dkQ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="35" id="B7j-tN-kfc"/>
+                <constraint firstAttribute="bottom" secondItem="Xxy-PD-2fc" secondAttribute="bottom" constant="20" id="Lb7-te-Njd"/>
+                <constraint firstItem="Xxy-PD-2fc" firstAttribute="leading" secondItem="bRU-ve-LKV" secondAttribute="leading" id="TYB-af-maE"/>
+                <constraint firstAttribute="trailing" secondItem="KaM-dx-4h0" secondAttribute="trailing" constant="20" id="YjQ-WW-hhR"/>
+                <constraint firstItem="bRU-ve-LKV" firstAttribute="top" secondItem="ppb-uv-dkQ" secondAttribute="bottom" constant="10" id="aoq-V6-tFO"/>
+                <constraint firstItem="ppb-uv-dkQ" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="25" id="g1m-KW-nNv"/>
+            </constraints>
+            <connections>
+                <outlet property="image" destination="KaM-dx-4h0" id="PGb-IH-dNk"/>
+                <outlet property="nameLabel" destination="ppb-uv-dkQ" id="U9j-ra-grf"/>
+                <outlet property="sizeLabel" destination="bRU-ve-LKV" id="yeW-Yj-HOG"/>
+                <outlet property="viewBtn" destination="Xxy-PD-2fc" id="lB9-GL-dzY"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

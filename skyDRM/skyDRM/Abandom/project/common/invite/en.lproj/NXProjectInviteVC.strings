@@ -1,0 +1,21 @@
+
+/* Class = "NSTextFieldCell"; title = "Project"; ObjectID = "59B-QZ-zdM"; */
+"59B-QZ-zdM.title" = "Project";
+
+/* Class = "NSTextFieldCell"; title = "(optional)"; ObjectID = "HTK-Vr-bkk"; */
+"HTK-Vr-bkk.title" = "(optional)";
+
+/* Class = "NSTextFieldCell"; title = "Enter multiple email addresses separated by comma"; ObjectID = "KPu-SS-aos"; */
+"KPu-SS-aos.title" = "Enter multiple email addresses separated by comma";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "iDM-nS-0P4"; */
+"iDM-nS-0P4.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "Invite Members to "; ObjectID = "kcj-zp-lbp"; */
+"kcj-zp-lbp.title" = "Invite Members to ";
+
+/* Class = "NSTextFieldCell"; title = "Invitation message"; ObjectID = "p2C-gM-fKU"; */
+"p2C-gM-fKU.title" = "Invitation message";
+
+/* Class = "NSButtonCell"; title = "Invite"; ObjectID = "zR6-F0-DSo"; */
+"zR6-F0-DSo.title" = "Invite";

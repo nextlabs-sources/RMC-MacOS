@@ -1,0 +1,17 @@
+
+CHANNEL: CUBEMAP0
+SOURCE: chrome
+
+CHANNEL: CUBEMAP1
+SOURCE: paint
+
+CHANNEL: CUBEMAP2
+SOURCE: metal
+
+CHANNEL: CUBEMAP3
+SOURCE: diffuse
+
+CHANNEL: LIGHT4
+OPTIONS: +1.0 1.0 -0.5
+COLOR: lights=(R=1.0 G=0.9 B=0.75), ambient up=(R=0.29 G=0.44 B=0.66), ambient down=(R=0.43 G=0.28 B=0.21)
+

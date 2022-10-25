@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="normalFileMenu" id="c22-O7-iKe" customClass="NXNormalFileMenuView" customModule="skyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qQF-oA-3GT" userLabel="Download Button">
+                    <rect key="frame" x="354" y="21" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="downloadinmenu" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="iGQ-db-edv">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="downloadFile:" target="c22-O7-iKe" id="NGi-cK-hvk"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4sA-kA-Cuu" userLabel="Protect Button">
+                    <rect key="frame" x="379" y="21" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="protectinmenu" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="Qkh-Uv-r66">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="protectFile:" target="c22-O7-iKe" id="NoA-kX-jK2"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTD-gu-HEh" userLabel="Share Button">
+                    <rect key="frame" x="404" y="21" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="shareinmenu" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="VOC-xR-P7B">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="shareFile:" target="c22-O7-iKe" id="1w7-IC-rts"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0GS-Qc-RJV" userLabel="property Button">
+                    <rect key="frame" x="429" y="21" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="propertyinmenu" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="NoL-D5-f6j">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="viewProperty:" target="c22-O7-iKe" id="xDM-hB-oFK"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otz-Y1-Z0x" userLabel="delete Button">
+                    <rect key="frame" x="454" y="21" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="deleteinmenu" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="96p-FZ-baA">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="deleteFile:" target="c22-O7-iKe" id="hPO-ha-P8s"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="139" y="70"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="deleteinmenu" width="55" height="55"/>
+        <image name="downloadinmenu" width="55" height="55"/>
+        <image name="propertyinmenu" width="55" height="56"/>
+        <image name="protectinmenu" width="55" height="56"/>
+        <image name="shareinmenu" width="55" height="56"/>
+    </resources>
+</document>

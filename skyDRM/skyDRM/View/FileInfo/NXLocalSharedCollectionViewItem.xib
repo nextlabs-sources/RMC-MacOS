@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXLocalSharedCollectionViewItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="emailLbl" destination="2Bq-7e-qSF" id="TIm-pA-BaE"/>
+                <outlet property="nameLbl" destination="GJU-xW-9bH" id="svL-PL-NIq"/>
+                <outlet property="portraitView" destination="3eg-T5-Xl0" id="zQM-eW-4pf"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dtu-oG-QYB">
+                    <rect key="frame" x="8" y="0.0" width="262" height="60"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="3eg-T5-Xl0" customClass="NXCircleText" customModule="SkyDRM" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="15" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="3eg-T5-Xl0" secondAttribute="height" id="ROf-uD-2QL"/>
+                                <constraint firstAttribute="width" constant="30" id="xC1-iQ-u7W"/>
+                            </constraints>
+                        </customView>
+                        <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9o-Z5-0Zz">
+                            <rect key="frame" x="38" y="11" width="224" height="39"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GJU-xW-9bH">
+                                    <rect key="frame" x="-2" y="20" width="42" height="19"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="zaX-eA-b4D">
+                                        <font key="font" metaFont="system" size="15"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Bq-7e-qSF">
+                                    <rect key="frame" x="-2" y="0.0" width="35" height="16"/>
+                                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="Label" id="1TP-fk-iCt">
+                                        <font key="font" metaFont="system" size="12"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="GJU-xW-9bH" firstAttribute="leading" secondItem="e9o-Z5-0Zz" secondAttribute="leading" id="SVE-Ma-Raz"/>
+                                <constraint firstItem="2Bq-7e-qSF" firstAttribute="leading" secondItem="e9o-Z5-0Zz" secondAttribute="leading" id="iah-5X-bwk"/>
+                            </constraints>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Dtu-oG-QYB" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="BhM-Tc-8B2"/>
+                <constraint firstItem="Dtu-oG-QYB" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="KPS-O9-BW6"/>
+                <constraint firstAttribute="trailing" secondItem="Dtu-oG-QYB" secondAttribute="trailing" id="lzo-j1-LTi"/>
+                <constraint firstAttribute="bottom" secondItem="Dtu-oG-QYB" secondAttribute="bottom" id="pez-IU-l1y"/>
+            </constraints>
+            <point key="canvasLocation" x="119" y="51"/>
+        </customView>
+        <customObject id="u02-Tc-wrQ" customClass="NXLocalSharedCollectionViewItem" customModule="SkyDRM" customModuleProvider="target"/>
+    </objects>
+</document>

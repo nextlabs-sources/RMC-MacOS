@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXHomeShareVC" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="Qbw-sq-PJx" id="Kjc-at-6SG"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="650" height="550"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Qbw-sq-PJx">
+                    <rect key="frame" x="0.0" y="0.0" width="650" height="550"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="650" id="6Un-6I-veP"/>
+                        <constraint firstAttribute="height" constant="550" id="uc3-LU-fsT"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Qbw-sq-PJx" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="CyX-Na-g9T"/>
+                <constraint firstItem="Qbw-sq-PJx" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="FnP-Sa-iYV"/>
+                <constraint firstAttribute="bottom" secondItem="Qbw-sq-PJx" secondAttribute="bottom" id="HEF-kX-QbL"/>
+                <constraint firstAttribute="trailing" secondItem="Qbw-sq-PJx" secondAttribute="trailing" id="NBO-dW-Isk"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

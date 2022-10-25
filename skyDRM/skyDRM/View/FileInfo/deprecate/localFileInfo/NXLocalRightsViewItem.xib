@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXLocalRightsViewItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="ekx-Ao-QrY" id="MeO-48-LCv"/>
+                <outlet property="textField" destination="j8h-Je-C4B" id="C0N-z1-nVX"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="NXLocalRightsViewItem" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ekx-Ao-QrY">
+                    <rect key="frame" x="25" y="30" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="3lC-ba-pJH"/>
+                        <constraint firstAttribute="width" secondItem="ekx-Ao-QrY" secondAttribute="height" id="EXe-5t-uO1"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="view" id="rix-u2-QZu"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j8h-Je-C4B">
+                    <rect key="frame" x="30" y="13" width="41" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="omQ-Wj-Tyc">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ekx-Ao-QrY" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="HHh-Dg-B4i"/>
+                <constraint firstItem="ekx-Ao-QrY" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="Pu2-he-Wgy"/>
+                <constraint firstItem="j8h-Je-C4B" firstAttribute="top" secondItem="ekx-Ao-QrY" secondAttribute="bottom" id="tdd-Dl-XAn"/>
+                <constraint firstItem="j8h-Je-C4B" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="vLk-eV-bpf"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="168"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="view" width="84" height="84"/>
+    </resources>
+</document>

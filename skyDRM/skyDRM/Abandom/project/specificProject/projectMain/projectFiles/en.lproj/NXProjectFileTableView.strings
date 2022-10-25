@@ -1,0 +1,36 @@
+
+/* Class = "NSTextFieldCell"; title = "2017"; ObjectID = "5Of-eg-68y"; */
+"5Of-eg-68y.title" = "2017";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "6Nq-yw-i7Y"; */
+"6Nq-yw-i7Y.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "filesize"; ObjectID = "Dfz-sp-kL8"; */
+"Dfz-sp-kL8.title" = "filesize";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "IJL-Vn-VEZ"; */
+"IJL-Vn-VEZ.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "File Size"; ObjectID = "Pbi-VF-0o1"; */
+"Pbi-VF-0o1.headerCell.title" = "File Size";
+
+/* Class = "NSButtonCell"; title = "filename"; ObjectID = "R5K-0E-mTU"; */
+"R5K-0E-mTU.title" = "filename";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "SzL-qJ-1cK"; */
+"SzL-qJ-1cK.title" = "This folder is empty!";
+
+/* Class = "NSTableColumn"; headerCell.title = "File Name"; ObjectID = "aUM-vr-7IJ"; */
+"aUM-vr-7IJ.headerCell.title" = "File Name";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "gt9-q7-nj6"; */
+"gt9-q7-nj6.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Date Modified"; ObjectID = "hNg-kx-nC2"; */
+"hNg-kx-nC2.headerCell.title" = "Date Modified";
+
+/* Class = "NSTableColumn"; headerCell.title = "Shared by"; ObjectID = "jR7-k5-awD"; */
+"jR7-k5-awD.headerCell.title" = "Shared by";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "zZH-ce-pLQ"; */
+"zZH-ce-pLQ.title" = "Text Cell";

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="helpView" id="c22-O7-iKe" customClass="NXTrayHelpView" customModule="SkyDRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tac-Re-Qur">
+                    <rect key="frame" x="20" y="235" width="70" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="HYB-62-5Sq"/>
+                        <constraint firstAttribute="width" constant="70" id="f7G-Uk-1Hd"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="SkyDRM_logo_color" id="Yv2-hS-HzV"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="8fF-79-YYt">
+                    <rect key="frame" x="20" y="210" width="33" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="label" drawsBackground="YES" id="L55-oh-3JV">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Zb-Eo-yyJ">
+                    <rect key="frame" x="215" y="10" width="67" height="17"/>
+                    <buttonCell key="cell" type="bevel" title="NOT NOW" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="cHR-gu-oMj">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="clickCancel:" target="c22-O7-iKe" id="BYD-4Z-a4Q"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bKw-rj-ZZq">
+                    <rect key="frame" x="98" y="235" width="38" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="label" drawsBackground="YES" id="aVl-IM-ESm">
+                        <font key="font" metaFont="systemBold" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eBA-NS-Icd">
+                    <rect key="frame" x="302" y="7" width="158" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="jyg-N2-QvE"/>
+                        <constraint firstAttribute="width" constant="158" id="uMP-5K-z8l"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Open SkyDRM Desktop" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="xAY-5U-CU2">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="clickOpen:" target="c22-O7-iKe" id="fsv-M8-ZYy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eBA-NS-Icd" secondAttribute="trailing" constant="20" symbolic="YES" id="08q-xN-meb"/>
+                <constraint firstItem="8fF-79-YYt" firstAttribute="leading" secondItem="tac-Re-Qur" secondAttribute="leading" id="6lw-1d-VEx"/>
+                <constraint firstItem="eBA-NS-Icd" firstAttribute="leading" secondItem="1Zb-Eo-yyJ" secondAttribute="trailing" constant="20" id="A0j-wK-UXz"/>
+                <constraint firstItem="tac-Re-Qur" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" symbolic="YES" id="GPF-JT-AO0"/>
+                <constraint firstItem="bKw-rj-ZZq" firstAttribute="centerY" secondItem="tac-Re-Qur" secondAttribute="centerY" id="HuD-ho-Ljd"/>
+                <constraint firstItem="eBA-NS-Icd" firstAttribute="baseline" secondItem="1Zb-Eo-yyJ" secondAttribute="baseline" constant="3" id="IUv-rN-ay3"/>
+                <constraint firstItem="bKw-rj-ZZq" firstAttribute="leading" secondItem="tac-Re-Qur" secondAttribute="trailing" constant="8" symbolic="YES" id="Vt0-qc-kES"/>
+                <constraint firstAttribute="bottom" secondItem="eBA-NS-Icd" secondAttribute="bottom" constant="7" id="gsq-9S-O6p"/>
+                <constraint firstItem="8fF-79-YYt" firstAttribute="top" secondItem="tac-Re-Qur" secondAttribute="bottom" constant="8" symbolic="YES" id="ndb-ds-FyT"/>
+                <constraint firstItem="tac-Re-Qur" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="syD-dk-FNh"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelBtn" destination="1Zb-Eo-yyJ" id="I48-vE-PFy"/>
+                <outlet property="contentLbl" destination="8fF-79-YYt" id="79z-gK-R93"/>
+                <outlet property="headLbl" destination="bKw-rj-ZZq" id="10B-9D-LFv"/>
+                <outlet property="openBtn" destination="eBA-NS-Icd" id="JEl-7t-O4E"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="140"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="SkyDRM_logo_color" width="187" height="39"/>
+    </resources>
+</document>

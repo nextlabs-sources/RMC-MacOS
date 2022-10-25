@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXRepositoryItem" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="accountName" destination="Uxr-Zm-GVD" id="gxy-34-k61"/>
+                <outlet property="serviceAlias" destination="InF-wP-z9E" id="1Tu-yN-Iqc"/>
+                <outlet property="serviceType" destination="uKd-tJ-4JF" id="vWN-ex-F6S"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="InF-wP-z9E" userLabel="AliasLabel">
+                    <rect key="frame" x="-2" y="43" width="204" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" id="U1u-4Z-zYt">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uxr-Zm-GVD" userLabel="AccountLabel">
+                    <rect key="frame" x="-2" y="20" width="204" height="18"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" id="IUB-mL-9eO">
+                        <font key="font" size="12" name="CourierNewPS-ItalicMT"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfm-A8-ejb" userLabel="MoreButton">
+                    <rect key="frame" x="172" y="133" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="more" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="alz-65-V4i">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onMoreButton:" target="-2" id="LiR-7a-SWo"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uKd-tJ-4JF">
+                    <rect key="frame" x="75" y="80" width="50" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ELK-g3-LVf"/>
+                        <constraint firstAttribute="width" constant="50" id="GQe-KB-vpv"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Dwn-or-fvc"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="InF-wP-z9E" secondAttribute="trailing" id="0kT-h8-iBy"/>
+                <constraint firstItem="InF-wP-z9E" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="48w-MN-gDS"/>
+                <constraint firstItem="Uxr-Zm-GVD" firstAttribute="top" secondItem="InF-wP-z9E" secondAttribute="bottom" constant="5" id="SBX-lv-n5w"/>
+                <constraint firstItem="InF-wP-z9E" firstAttribute="top" secondItem="uKd-tJ-4JF" secondAttribute="bottom" constant="20" id="TlA-GD-7fz"/>
+                <constraint firstItem="Uxr-Zm-GVD" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="XHU-yj-EOf"/>
+                <constraint firstItem="InF-wP-z9E" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="ZLJ-ap-BsN"/>
+                <constraint firstItem="Uxr-Zm-GVD" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="mEO-D0-KPZ"/>
+                <constraint firstItem="uKd-tJ-4JF" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="50" id="rRa-TP-nlR"/>
+                <constraint firstAttribute="trailing" secondItem="Uxr-Zm-GVD" secondAttribute="trailing" id="vl0-0o-8Xt"/>
+                <constraint firstItem="uKd-tJ-4JF" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="z6f-tD-tqQ"/>
+            </constraints>
+        </customView>
+        <collectionViewItem id="pgD-dL-XCq" customClass="NXRepositoryItem" customModule="SkyDRM" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="more" width="22" height="22"/>
+    </resources>
+</document>

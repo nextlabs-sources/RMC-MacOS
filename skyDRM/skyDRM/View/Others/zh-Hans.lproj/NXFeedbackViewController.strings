@@ -1,0 +1,24 @@
+
+/* Class = "NSTextFieldCell"; title = "Provide your feedback or Report an Issue"; ObjectID = "Bdr-5L-aco"; */
+"Bdr-5L-aco.title" = "提供你的反馈或者上报一个问题";
+
+/* Class = "NSTextFieldCell"; title = "Report an Issue / Feedback"; ObjectID = "DuD-40-lGK"; */
+"DuD-40-lGK.title" = "上报问题与反馈";
+
+/* Class = "NSButtonCell"; title = "Submit"; ObjectID = "GjH-tO-TIJ"; */
+"GjH-tO-TIJ.title" = "提交";
+
+/* Class = "NSTextFieldCell"; title = "Allow 1-2 business days for a response"; ObjectID = "IxL-Lk-gEt"; */
+"IxL-Lk-gEt.title" = "允许1-2个工作日内答复";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "Znu-OR-a8J"; */
+"Znu-OR-a8J.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Description"; ObjectID = "gDE-GX-dai"; */
+"gDE-GX-dai.title" = "描述";
+
+/* Class = "NSTextFieldCell"; title = "Summary"; ObjectID = "goN-bh-7AB"; */
+"goN-bh-7AB.title" = "概要";
+
+/* Class = "NSTextFieldCell"; title = "Feedback Type"; ObjectID = "sbL-qp-Ccm"; */
+"sbL-qp-Ccm.title" = "反馈类型";

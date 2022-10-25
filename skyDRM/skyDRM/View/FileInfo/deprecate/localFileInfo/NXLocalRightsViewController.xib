@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXLocalRightsViewController" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="IG7-m3-jRU" id="eWL-FG-A0Q"/>
+                <outlet property="textLabel" destination="Tla-KS-mYM" id="e7B-hz-7C0"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tla-KS-mYM">
+                    <rect key="frame" x="18" y="175" width="444" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="vWm-qH-x7g">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmO-Cg-bUT">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="210"/>
+                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="VcX-yi-85T">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="210"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView id="IG7-m3-jRU">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="210"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="8AJ-vb-5bV">
+                                    <size key="itemSize" width="50" height="50"/>
+                                </collectionViewFlowLayout>
+                                <color key="primaryBackgroundColor" red="0.94891661405563354" green="0.94907897710800171" blue="0.94890636205673218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hz6-mo-xeY" id="cgq-oa-50u"/>
+                                    <outlet property="delegate" destination="Hz6-mo-xeY" id="gSD-I2-67x"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94891661405563354" green="0.94907897710800171" blue="0.94890636205673218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="qdP-bX-Yxe">
+                        <rect key="frame" x="1" y="173" width="419" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="tkN-oo-duB">
+                        <rect key="frame" x="464" y="0.0" width="16" height="210"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="wmO-Cg-bUT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Cwi-Qp-BBM"/>
+                <constraint firstAttribute="trailing" secondItem="Tla-KS-mYM" secondAttribute="trailing" constant="20" id="EUJ-vq-XV0"/>
+                <constraint firstItem="Tla-KS-mYM" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="27" id="RIP-bZ-vUE"/>
+                <constraint firstAttribute="bottom" secondItem="wmO-Cg-bUT" secondAttribute="bottom" id="VWL-gu-FhM"/>
+                <constraint firstItem="Tla-KS-mYM" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="Yt3-fF-dwC"/>
+                <constraint firstItem="wmO-Cg-bUT" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="ZAh-QO-yKS"/>
+                <constraint firstAttribute="trailing" secondItem="wmO-Cg-bUT" secondAttribute="trailing" id="iGf-7n-p9q"/>
+            </constraints>
+            <point key="canvasLocation" x="136" y="168"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NXHomeProtectVC" customModule="SkyDRM" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="MrD-gK-yAa" id="PbP-Gf-tSy"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="650" height="550"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="MrD-gK-yAa">
+                    <rect key="frame" x="0.0" y="0.0" width="650" height="550"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MrD-gK-yAa" secondAttribute="bottom" id="Ipx-rY-XSn"/>
+                <constraint firstAttribute="trailing" secondItem="MrD-gK-yAa" secondAttribute="trailing" id="cGa-7b-E1l"/>
+                <constraint firstItem="MrD-gK-yAa" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="dJY-ep-WNk"/>
+                <constraint firstItem="MrD-gK-yAa" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="yUa-QB-gmY"/>
+            </constraints>
+            <point key="canvasLocation" x="12" y="159"/>
+        </customView>
+    </objects>
+</document>
